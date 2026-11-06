@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "release_date": "2026-11-06",
+  "author": "Jiacheng Shi",
+  "language": "en",
+  "files": {
+    "cycle12-complete-source.zip": {
+      "bytes": 46853490,
+      "sha256": "d2186774d13781c068ac4ed5d7a32e11f7d16d12743c838a1557f13b98f9da76"
+    },
+    "cycle12-paper-source.zip": {
+      "bytes": 1340826,
+      "sha256": "e06efa98fa03e5991211e0458303c57e318bb55875e871cc4b21675681421999"
+    },
+    "cycle12-paper.pdf": {
+      "bytes": 557351,
+      "sha256": "068f553302bfbe76e55df45d198c4a74b8215615cb7921806a77565205c2b0d3"
+    }
+  }
+}
