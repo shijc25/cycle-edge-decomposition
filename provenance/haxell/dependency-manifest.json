@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/mbucic4/Nearly-spanning-Lovasz",
+  "commit": "7f2728d07ce648ed74cae08bbfa7084b9ec13f4b",
+  "license": "Apache-2.0",
+  "modules": {
+    "HaxellLib.Haxell": {
+      "path": "RequestProject/Haxell.lean",
+      "sha256": "6fbdbee782e74254510ad8a4470e9d3f75013851eb0aaccad643e17448aa6ce8",
+      "imports": [
+        "Mathlib"
+      ],
+      "bytes": 18861
+    }
+  },
+  "source_changes": false
+}

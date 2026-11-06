@@ -1,0 +1,58 @@
+import Cycle12.RationalCoverAssembly
+import Cycle12.RoutedCases.Batch0872
+import Cycle12.RoutedCases.Batch0873
+
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+
+namespace Cycle12.CoverAssembly.Source376
+
+def strip0 : RatCoverRectangle := ⟨(41/1000),(33/800),20,(some 100)⟩
+def pieces0 : List RatCoverRectangle := [RoutedCases.Batch0872.certificate17447.rectangle,RoutedCases.Batch0872.certificate17448.rectangle,RoutedCases.Batch0872.certificate17449.rectangle,RoutedCases.Batch0872.certificate17450.rectangle,RoutedCases.Batch0872.certificate17451.rectangle,RoutedCases.Batch0872.certificate17452.rectangle,RoutedCases.Batch0872.certificate17454.rectangle,RoutedCases.Batch0872.certificate17456.rectangle,RoutedCases.Batch0873.certificate17460.rectangle,RoutedCases.Batch0873.certificate17462.rectangle,RoutedCases.Batch0873.certificate17463.rectangle]
+theorem valid0 : strip0.JoinS pieces0 := by decide +kernel
+theorem sound0 : strip0.Sound := rat_cover_join_s_sound strip0 pieces0 valid0 (by
+  exact List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17447,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17448,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17449,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17450,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17451,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17452,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17454,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17456,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17460,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17462,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17463,List.forall_mem_nil _⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩)
+
+def strip1 : RatCoverRectangle := ⟨(33/800),(331/8000),20,(some 100)⟩
+def pieces1 : List RatCoverRectangle := [RoutedCases.Batch0872.certificate17447.rectangle,RoutedCases.Batch0872.certificate17448.rectangle,RoutedCases.Batch0872.certificate17449.rectangle,RoutedCases.Batch0872.certificate17450.rectangle,RoutedCases.Batch0872.certificate17451.rectangle,RoutedCases.Batch0872.certificate17452.rectangle,RoutedCases.Batch0872.certificate17454.rectangle,RoutedCases.Batch0872.certificate17456.rectangle,RoutedCases.Batch0873.certificate17461.rectangle,RoutedCases.Batch0873.certificate17464.rectangle,RoutedCases.Batch0873.certificate17465.rectangle]
+theorem valid1 : strip1.JoinS pieces1 := by decide +kernel
+theorem sound1 : strip1.Sound := rat_cover_join_s_sound strip1 pieces1 valid1 (by
+  exact List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17447,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17448,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17449,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17450,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17451,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17452,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17454,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17456,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17461,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17464,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17465,List.forall_mem_nil _⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩)
+
+def strip2 : RatCoverRectangle := ⟨(331/8000),(83/2000),20,(some 100)⟩
+def pieces2 : List RatCoverRectangle := [RoutedCases.Batch0872.certificate17447.rectangle,RoutedCases.Batch0872.certificate17448.rectangle,RoutedCases.Batch0872.certificate17449.rectangle,RoutedCases.Batch0872.certificate17450.rectangle,RoutedCases.Batch0872.certificate17451.rectangle,RoutedCases.Batch0872.certificate17452.rectangle,RoutedCases.Batch0872.certificate17454.rectangle,RoutedCases.Batch0872.certificate17456.rectangle,RoutedCases.Batch0873.certificate17461.rectangle,RoutedCases.Batch0873.certificate17464.rectangle,RoutedCases.Batch0873.certificate17466.rectangle]
+theorem valid2 : strip2.JoinS pieces2 := by decide +kernel
+theorem sound2 : strip2.Sound := rat_cover_join_s_sound strip2 pieces2 valid2 (by
+  exact List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17447,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17448,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17449,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17450,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17451,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17452,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17454,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17456,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17461,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17464,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17466,List.forall_mem_nil _⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩)
+
+def strip3 : RatCoverRectangle := ⟨(83/2000),(333/8000),20,(some 100)⟩
+def pieces3 : List RatCoverRectangle := [RoutedCases.Batch0872.certificate17447.rectangle,RoutedCases.Batch0872.certificate17448.rectangle,RoutedCases.Batch0872.certificate17449.rectangle,RoutedCases.Batch0872.certificate17450.rectangle,RoutedCases.Batch0872.certificate17451.rectangle,RoutedCases.Batch0872.certificate17453.rectangle,RoutedCases.Batch0872.certificate17455.rectangle,RoutedCases.Batch0872.certificate17457.rectangle,RoutedCases.Batch0872.certificate17458.rectangle,RoutedCases.Batch0873.certificate17467.rectangle,RoutedCases.Batch0873.certificate17469.rectangle,RoutedCases.Batch0873.certificate17470.rectangle]
+theorem valid3 : strip3.JoinS pieces3 := by decide +kernel
+theorem sound3 : strip3.Sound := rat_cover_join_s_sound strip3 pieces3 valid3 (by
+  exact List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17447,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17448,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17449,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17450,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17451,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17453,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17455,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17457,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17458,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17467,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17469,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17470,List.forall_mem_nil _⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩)
+
+def strip4 : RatCoverRectangle := ⟨(333/8000),(167/4000),20,(some 100)⟩
+def pieces4 : List RatCoverRectangle := [RoutedCases.Batch0872.certificate17447.rectangle,RoutedCases.Batch0872.certificate17448.rectangle,RoutedCases.Batch0872.certificate17449.rectangle,RoutedCases.Batch0872.certificate17450.rectangle,RoutedCases.Batch0872.certificate17451.rectangle,RoutedCases.Batch0872.certificate17453.rectangle,RoutedCases.Batch0872.certificate17455.rectangle,RoutedCases.Batch0872.certificate17457.rectangle,RoutedCases.Batch0872.certificate17458.rectangle,RoutedCases.Batch0873.certificate17467.rectangle,RoutedCases.Batch0873.certificate17469.rectangle,RoutedCases.Batch0873.certificate17471.rectangle]
+theorem valid4 : strip4.JoinS pieces4 := by decide +kernel
+theorem sound4 : strip4.Sound := rat_cover_join_s_sound strip4 pieces4 valid4 (by
+  exact List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17447,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17448,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17449,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17450,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17451,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17453,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17455,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17457,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17458,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17467,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17469,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17471,List.forall_mem_nil _⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩)
+
+def strip5 : RatCoverRectangle := ⟨(167/4000),(67/1600),20,(some 100)⟩
+def pieces5 : List RatCoverRectangle := [RoutedCases.Batch0872.certificate17447.rectangle,RoutedCases.Batch0872.certificate17448.rectangle,RoutedCases.Batch0872.certificate17449.rectangle,RoutedCases.Batch0872.certificate17450.rectangle,RoutedCases.Batch0872.certificate17451.rectangle,RoutedCases.Batch0872.certificate17453.rectangle,RoutedCases.Batch0872.certificate17455.rectangle,RoutedCases.Batch0872.certificate17457.rectangle,RoutedCases.Batch0872.certificate17459.rectangle,RoutedCases.Batch0873.certificate17468.rectangle,RoutedCases.Batch0873.certificate17472.rectangle,RoutedCases.Batch0873.certificate17474.rectangle]
+theorem valid5 : strip5.JoinS pieces5 := by decide +kernel
+theorem sound5 : strip5.Sound := rat_cover_join_s_sound strip5 pieces5 valid5 (by
+  exact List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17447,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17448,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17449,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17450,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17451,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17453,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17455,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17457,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17459,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17468,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17472,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17474,List.forall_mem_nil _⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩)
+
+def strip6 : RatCoverRectangle := ⟨(67/1600),(21/500),20,(some 100)⟩
+def pieces6 : List RatCoverRectangle := [RoutedCases.Batch0872.certificate17447.rectangle,RoutedCases.Batch0872.certificate17448.rectangle,RoutedCases.Batch0872.certificate17449.rectangle,RoutedCases.Batch0872.certificate17450.rectangle,RoutedCases.Batch0872.certificate17451.rectangle,RoutedCases.Batch0872.certificate17453.rectangle,RoutedCases.Batch0872.certificate17455.rectangle,RoutedCases.Batch0872.certificate17457.rectangle,RoutedCases.Batch0872.certificate17459.rectangle,RoutedCases.Batch0873.certificate17468.rectangle,RoutedCases.Batch0873.certificate17473.rectangle,RoutedCases.Batch0873.certificate17475.rectangle]
+theorem valid6 : strip6.JoinS pieces6 := by decide +kernel
+theorem sound6 : strip6.Sound := rat_cover_join_s_sound strip6 pieces6 valid6 (by
+  exact List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17447,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17448,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17449,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17450,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17451,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17453,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17455,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17457,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0872.sound17459,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17468,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17473,List.forall_mem_cons.mpr ⟨RoutedCases.Batch0873.sound17475,List.forall_mem_nil _⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩)
+
+def rectangle : RatCoverRectangle := ⟨(41/1000),(21/500),20,(some 100)⟩
+def strips : List RatCoverRectangle := [strip0,strip1,strip2,strip3,strip4,strip5,strip6]
+theorem valid : rectangle.JoinX strips := by decide +kernel
+theorem sound : rectangle.Sound := rat_cover_join_x_sound rectangle strips valid (by
+  exact List.forall_mem_cons.mpr ⟨sound0,List.forall_mem_cons.mpr ⟨sound1,List.forall_mem_cons.mpr ⟨sound2,List.forall_mem_cons.mpr ⟨sound3,List.forall_mem_cons.mpr ⟨sound4,List.forall_mem_cons.mpr ⟨sound5,List.forall_mem_cons.mpr ⟨sound6,List.forall_mem_nil _⟩⟩⟩⟩⟩⟩⟩)
+
+end Cycle12.CoverAssembly.Source376

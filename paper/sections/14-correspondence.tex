@@ -1,0 +1,39 @@
+\section{Correspondence with Lean}\label{app:correspondence}
+The following declarations are present in the audited transitive proof-body
+closure of the main theorem. The machine-readable table
+\mcode{docs/proof-map.json} records their modules and source paths. The
+conditional induction interface in the last part of the proof is instantiated
+with the proved physical construction; it is not an additional assumption
+of Theorem~\ref{thm:main}. Some source comments record earlier intermediate
+obligations. Their discharge is determined by the final theorem and its
+actual dependency chain, not by those historical comments.
+
+\begin{longtable}{@{}p{0.30\textwidth}p{0.66\textwidth}@{}}
+\toprule Statement & Lean declaration\\\midrule\endhead
+Final original-edge partition (\ref{thm:main}) & {\small\nolinkurl{Cycle12.coefficient12}}\\[7pt]
+Rotation and deletion cycle bound (\ref{lem:eg-input}) & {\small\nolinkurl{Cycle12.Independent.erdosGallai_cycle}}\\[7pt]
+Bernoulli sample lower tail (\ref{lem:sampling-input}) & {\small\nolinkurl{Cycle13.vertex_sample_edge_lower_tail}}\\[7pt]
+Weighted order to coefficient twelve (\ref{prop:weighted-reduction}) & {\small\nolinkurl{Cycle12.coefficient12_from_weighted_order_bound}}\\[7pt]
+Finite rooted amplification (\ref{lem:amplification}) & {\small\nolinkurl{Cycle12.rooted_weighted_order_to_predecessor}}\\[7pt]
+Circumference at most six (\ref{lem:six}) & {\small\nolinkurl{Cycle12.terminal_rank_no_seven_cycle}}\\[7pt]
+Harmonic affine extension (\ref{lem:harmonic}) & {\small\nolinkurl{Cycle13.weightedAffine_harmonic}}\\[7pt]
+Mixed cover (\ref{lem:mixed}) & {\small\nolinkurl{Cycle12.mixed_cover}}\\[7pt]
+Certified DFS step (\ref{lem:dfs-step}) & {\small\nolinkurl{Cycle12.FiniteStageCertificate.step}}\\[7pt]
+Finite-degree potential bound (\ref{prop:finite-base}) & {\small\nolinkurl{Cycle12.Global12.finite_degree_potential}}\\[7pt]
+Uniform loss decay (\ref{lem:loss-decay}) & {\small\nolinkurl{Cycle12.Global12.lossH_decay}}\\[7pt]
+Renewal potential payment (\ref{lem:potential}) & {\small\nolinkurl{Cycle12.Global12.globalPhi_fold_budget}}\\[7pt]
+Actual even scale layers (\ref{sec:layers}) & {\small\nolinkurl{Cycle12.Even12.exists_actual_scale_layers}}\\[7pt]
+High-centre completion (\ref{lem:completion}) & {\small\nolinkurl{Cycle12.Even12.high_center_completion_at_scale}}\\[7pt]
+Even-bank grouped weighted routing (\ref{lem:routing}) & {\small\nolinkurl{Cycle12.Even12.bank_routing_at_scale}}\\[7pt]
+Joint original endpoint family (\ref{sec:routing}) & {\small\nolinkurl{Cycle12.Even12.ActualFoldStage12.jointFamily}}\\[7pt]
+Active mass lower bound (\ref{eq:fold-masses}) & {\small\nolinkurl{Cycle12.Even12.ActualFoldStage12.activeMass_lower}}\\[7pt]
+Four-family actual packing payment (\ref{lem:physical}) & {\small\nolinkurl{Cycle12.Even12.ActualFoldStage12.actual_fold_target_payment}}\\[7pt]
+Whole-graph physical construction (\ref{lem:physical}) & {\small\nolinkurl{Cycle12.Global12.physical_fold_construction12}}\\[7pt]
+Physical scalar ledger (\ref{lem:ledger}) & {\small\nolinkurl{Cycle12.Global12.physical_fold_ledger_payment}}\\[7pt]
+No-fold core mass bound (\ref{lem:no-fold-mass}) & {\small\nolinkurl{Cycle12.Even12.EvenScaleLayers12.kept_mass_of_no_fold}}\\[7pt]
+Infinite terminal tail (\ref{lem:terminal-payment}) & {\small\nolinkurl{Cycle12.Global12.infinite_terminal_tail_payment}}\\[7pt]
+Terminal potential payment (\ref{lem:terminal-payment}) & {\small\nolinkurl{Cycle12.Global12.terminal_potential_payment}}\\[7pt]
+Strong induction from physical branch (\ref{thm:weighted-potential}) & {\small\nolinkurl{Cycle12.Global12.potential_bound_from_fold_branch}}\\[7pt]
+Coverage of finite parameter tuples (\ref{app:terminal}) & {\small\nolinkurl{Cycle12.six_residue_parameter_coverage}}\\[7pt]
+Full continuous cover (\ref{app:cover}) & {\small\nolinkurl{Cycle12.CoverAssembly.Full.sound}}\\[7pt]
+\bottomrule\end{longtable}

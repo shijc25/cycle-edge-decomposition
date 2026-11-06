@@ -1,0 +1,13 @@
+'Cycle12.coefficient12' depends on axioms: [propext, Classical.choice, Quot.sound]
+def Cycle13.CycleOrSingleEdge.{u} : {V : Type u} → SimpleGraph V → Set (Sym2 V) → Prop :=
+fun {V} G s => (∃ v p, p.IsCycle ∧ s = p.edgeSet) ∨ ∃ e ∈ G.edgeSet, s = {e}
+def Cycle13.EdgeDecomposition.{u} : {V : Type u} → SimpleGraph V → ℕ → Prop :=
+fun {V} G k =>
+  ∃ parts,
+    (∀ (i : Fin k), Cycle13.CycleOrSingleEdge G (parts i)) ∧
+      (Pairwise fun i j => Disjoint (parts i) (parts j)) ∧ ⋃ i, parts i = G.edgeSet
+def Cycle13.componentCount.{u} : {V : Type u} → SimpleGraph V → ℕ :=
+fun {V} G => Nat.card G.ConnectedComponent
+SimpleGraph.Walk.isCycle_iff_isPath_tail_and_le_length.{u} {V : Type u} {G : SimpleGraph V} {u : V} {p : G.Walk u u} :
+  p.IsCycle ↔ p.tail.IsPath ∧ 3 ≤ p.length
+Direct proof-body audit: 1068913 declarations; 999202 project declarations; 860704 project theorems; 0 new axioms.

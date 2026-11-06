@@ -1,0 +1,27 @@
+\section{Completion of the proof}\label{sec:induction}
+\begin{theorem}[Weighted potential bound]\label{thm:weighted-potential}
+Every finite simple graph on $n$ vertices has a packing of weight at most
+$C\phi(n)n$, where $C=485/42$ and $\phi$ is defined in~\eqref{eq:Phi}.
+\end{theorem}
+\begin{proof}
+Use strong induction on $n$. If $2m\le2^{B_{\rm main}}n$, apply
+Proposition~\ref{prop:finite-base}; this includes $n=0$.
+Otherwise the simple-graph inequality $2m\le n^2$ implies
+$n>2^{B_{\rm main}}$, and hence $X=\log_2n\ge w_A$.
+Construct the actual scale decomposition of Section~\ref{sec:layers}.
+All completion and quotient calls use graphs of strictly smaller order,
+so the induction hypothesis supplies their packings.
+
+If an active stage satisfies~\eqref{eq:fold-test}, apply the physical fold
+and its scalar payment in Section~\ref{sec:fold}. Otherwise apply the
+no-fold construction and terminal payment in Section~\ref{sec:terminal}.
+In both cases the packing is on the original graph and has the claimed
+weight. This completes the induction.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Since $\phi(n)\le1$, Theorem~\ref{thm:weighted-potential} implies
+\eqref{eq:weighted-order}. Proposition~\ref{prop:weighted-reduction}
+then gives $\ce(G)\le12r(G)$, including the empty graph and isolated
+components.
+\end{proof}

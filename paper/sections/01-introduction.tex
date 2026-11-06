@@ -1,0 +1,62 @@
+\section{Introduction}\label{sec:introduction}
+All graphs in this paper are finite, simple, and undirected. A
+\emph{cycle--edge decomposition} is a partition of the original edge set
+into edge sets of simple cycles and singleton edges. Let $\ce(G)$ be the
+minimum number of parts in such a partition. We write
+\[
+ n=\abs{V(G)},\qquad m=\abs{E(G)},\qquad r(G)=n-c(G),
+\]
+where $c(G)$ counts all connected components, including isolated vertices.
+The empty graph on no vertices has $c(G)=0$.
+
+\begin{theorem}\label{thm:main}
+Every finite simple graph $G$ satisfies
+\[
+                 \ce(G)\le 12\bigl(\abs{V(G)}-c(G)\bigr).
+\]
+\end{theorem}
+
+The problem of obtaining a linear bound for $\ce(G)$ goes back to Erd\H{o}s
+and Gallai; it appears in the discussion of Erd\H{o}s, Goodman and
+P\'osa~\cite{EGP1966}. Conlon, Fox and Sudakov~\cite{CFS2014} proved an
+$O(n\log\log n)$ bound, and Buci\'c and Montgomery~\cite{BM2024} subsequently
+obtained $O(n\log^*n)$. Linear bounds were presented in 2026 by
+OpenAI~\cite{OAI2026}, by Kim~\cite{Kim2026}, and in a separate manuscript
+and formalization of Coffey~\cite{Coffey2026}. The present paper addresses an
+explicit coefficient. Its large-scale construction follows the
+quotient-and-lifting approach of~\cite{OAI2026}; the result is not a new proof
+of the mere existence of some linear constant.
+
+Our proof first assigns weight $1$ to a cycle and weight
+$\sigma=23/42$ to a singleton edge. With $C=485/42$, the central estimate is
+\begin{equation}\label{eq:weighted-order}
+ \exists\mathcal P\quad \wt_\sigma(\mathcal P)\le Cn,
+\end{equation}
+where $\mathcal P$ is an actual cycle packing and all uncovered original
+edges are counted as singletons. A component-rank normalization and the
+identity
+\[
+                  C+1-\sigma=12
+\]
+then give Theorem~\ref{thm:main}. Keeping the singleton weight throughout
+the proof is essential: replacing weighted completion costs by unweighted
+ones at intermediate stages loses the final coefficient.
+
+The quantitative proof has three parts. First, a mixed cycle-packing estimate
+with constants $43/10$ and $3$ is combined with a short-circumference base
+and finite depth-first-search chains. Second, an indexed scale decomposition
+uses three final degree-reduction rates and preserves the exact assignment of
+every original edge. Third, a positive renewal potential pays the accumulated
+losses. Forty stopping-phase intervals determine different prefix thresholds;
+a positive second-order recurrence controls every possible number of layers.
+
+The proof is computer-assisted. Two local interfaces require substantial
+finite certificates: the short-circumference base and the quantitative
+mixed-cover estimate. Their mathematical specifications and certification
+procedures are given in Sections~\ref{sec:finite}, \ref{app:terminal}, and
+\ref{app:cover}. The subsequent scale and cost calculations are displayed
+explicitly, with the rational data and the complete formal proofs supplied
+in the companion repository. Appendix~\ref{app:correspondence} records the
+correspondence between the principal statements here and their Lean
+counterparts. The coefficient throughout this paper is exactly $12$; no
+parameters from later numerical experiments are used.

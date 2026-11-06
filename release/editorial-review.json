@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "release_date": "2026-11-06",
+  "checked_relative_document_links": 12,
+  "broken": [],
+  "chinese_content_matches": [],
+  "chinese_filename_matches": [],
+  "decoded_gzip_records": 3,
+  "scanned_files": 10749,
+  "pdf_text_identical_except_release_date": true,
+  "proof_source_modules_byte_identical": 10554,
+  "scope": "UTF-8 files, decoded Unicode escapes, decompressed gzip records, PDF extracted text, and relative Markdown document links.",
+  "title_page_visually_reviewed": true
+}

@@ -1,0 +1,24 @@
+# Build outputs and local dependency checkouts
+.lake/
+.cycle12-build/
+.cycle12-check/
+__pycache__/
+*.pyc
+dist/
+*.olean
+*.olean.private
+*.olean.server
+*.ilean
+*.ir
+*.c
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.toc
+# Large regenerated audit output (the verified gzip is retained)
+audit/main-dependency-audit.json
+audit/inspection-progress.json

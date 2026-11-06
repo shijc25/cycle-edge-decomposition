@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "time_utc": "2026-11-03T17:09:53.562300+00:00",
+  "source_modules": 10554,
+  "source_manifest_sha256": "17c72c62a7f90598c14f8bd7643e7b1e3c829c2969e3c134df84c916ba901960",
+  "all_checked_source_hashes_match": true,
+  "literal_patterns": [
+    "\\bskipKernelTC\\b",
+    "\\bskipKernel\\b",
+    "\\bnative_decide\\b",
+    "\\bofReduceBool\\b",
+    "\\baddDecl\\b",
+    "\\baddDeclCore\\b",
+    "\\baddAndCompile\\b",
+    "\\bsetEnv\\b",
+    "\\bmodifyEnv\\b",
+    "\\brun_elab\\b",
+    "\\brun_meta\\b",
+    "\\bimplemented_by\\b",
+    "\\bextern\\b",
+    "\\btrustLevel\\b",
+    "\\bunsafe\\b",
+    "set_option\\s+debug"
+  ],
+  "matches": [],
+  "scope": "Additional literal source scan of the frozen project closure, not a substitute for compiler kernel checking or the actual main proof-body/axiom audit; audit tools and fixed external libraries are outside this scan."
+}

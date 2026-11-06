@@ -1,0 +1,61 @@
+{
+  "time": "2026-11-03T15:32:36.923483+00:00",
+  "reason": "Measured lightweight certificate parallelism; retain two workers for other modules",
+  "old_script_sha256": "a55b4afb77ccff648ed484358d811a512a1ee397293315b7e8f1dc77c27d103c",
+  "source_manifest_sha256": "17c72c62a7f90598c14f8bd7643e7b1e3c829c2969e3c134df84c916ba901960",
+  "before_status": {
+    "compiled": 3502,
+    "total": 10554,
+    "failed": [],
+    "active": [
+      "Cycle12/BankParameterCertificates/Batch0224.lean"
+    ],
+    "ready": 3165,
+    "workers": 2,
+    "complete": false
+  },
+  "proof_sources_changed": false,
+  "pilot_three": {
+    "purpose": "One additional lightweight certificate process alongside two current build workers; object not used by the main build",
+    "source": "Cycle12/BankParameterCertificates/Batch0999.lean",
+    "source_sha256": "dbd545e59fd2e2ca70b5183d56dd2b04a923942ecb31365e6b351eb42a46f97d",
+    "exit_code": 0,
+    "elapsed_seconds": 7.898,
+    "peak_cgroup_GiB": 13.168460845947266,
+    "peak_anon_plus_shmem_GiB": 4.531440734863281,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "object_sha256": "e424e535f17bd45240d628c97f46a497cbda60576dad6d7e0c13cce9b56f7f8f"
+  },
+  "pilot_four": {
+    "purpose": "Two additional lightweight certificate processes alongside two current build workers; objects not used by main build",
+    "elapsed_seconds": 8.839,
+    "peak_cgroup_GiB": 13.579975128173828,
+    "peak_anon_plus_shmem_GiB": 4.670093536376953,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "objects": [
+      {
+        "source": "Cycle12/BankParameterCertificates/Batch0998.lean",
+        "source_sha256": "30c6f0403d4871d7b1f2ac10dcfdaa9040f09f562b460a7dd83eeb8f61eddb83",
+        "exit_code": 0,
+        "object_sha256": "715e36856a008854fdbb7cf59d8de2909185254d4b78070eb76ca8305432d95f"
+      },
+      {
+        "source": "Cycle12/BankParameterCertificates/Batch0999.lean",
+        "source_sha256": "dbd545e59fd2e2ca70b5183d56dd2b04a923942ecb31365e6b351eb42a46f97d",
+        "exit_code": 0,
+        "object_sha256": "e424e535f17bd45240d628c97f46a497cbda60576dad6d7e0c13cce9b56f7f8f"
+      }
+    ]
+  },
+  "new_script_sha256": "c982b4a30268f254c54fc0dec6dc80cb8f6d0c6cec9608af512baf38d4f86360",
+  "source_manifest_unchanged": true,
+  "resumed_utc": "2026-11-03T15:33:45.433375+00:00",
+  "base_workers": 2,
+  "maximum_small_certificate_workers": 4,
+  "post_transition_observation": {
+    "compiled": 4253,
+    "failed": [],
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "source_manifest_unchanged": true
+  }
+}

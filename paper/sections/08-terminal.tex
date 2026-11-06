@@ -1,0 +1,108 @@
+\section{The no-fold branch and the infinite tail}\label{sec:terminal}
+Fix the phase interval $[a,d]$ containing $W$. Alongside $P_t$, its
+certificate gives a positive summable sequence $(u_t)_{t\ge1}$ such that
+\begin{equation}\label{eq:supersequence}
+ u_1\ge M_1(a),\qquad u_2\ge M_2(a),\qquad
+                  \sum_{s\ge t-2}u_s\le P_tu_t\quad(t\ge3).
+\end{equation}
+The initial terms are rational. The continuation is the positive recurrence
+\begin{equation}\label{eq:tail-recurrence}
+ u_{t+2}=(1-r)u_{t+1}+r(1-r)u_t\quad(t\ge15),
+ \qquad r=\frac{88331750161}{10^{11}}.
+\end{equation}
+Since $0<r<1$, the recurrence is summable. If $\beta=r(1-r)$ and
+$Q=1/[r^2(1-r)]$, then
+\begin{equation}\label{eq:tail-sum}
+       \sum_{s\ge15}u_s=Q\bigl(\beta u_{15}+(1-r)u_{16}\bigr).
+\end{equation}
+This follows by summing the recurrence. Its positive characteristic root
+is less than $1$, or equivalently the same conclusion follows by the
+geometric majorant used in the formal tail proof. The certificates check
+the finite prefix of~\eqref{eq:supersequence} and the recurrence conditions
+that extend it to every $t$; in particular $Q<P_{16}$.
+
+\begin{lemma}[No-fold mass bound]\label{lem:no-fold-mass}
+If no active stage with positive core mass satisfies~\eqref{eq:fold-test},
+then
+\[
+                    S_i\le n u_{m_0-i}\quad(0\le i<m_0).
+\]
+In particular the cores retained before the terminal stop have total mass
+at most $n\sum_{s=3}^{m_0}u_s$.
+\end{lemma}
+\begin{proof}
+If the conclusion fails, take the maximum
+$R=\max_i S_i/(nu_{m_0-i})>1$. The last two stages cannot attain this
+maximum, by~\eqref{eq:last-core-masses} and~\eqref{eq:supersequence}.
+At a maximizing active stage $i$, set $t=m_0-i\ge3$. Then
+\[
+ \sum_{j=0}^{i+2}S_j
+   \le Rn\sum_{s=t-2}^{m_0}u_s
+   \le RnP_tu_t=P_tS_i.
+\]
+Here $S_i>0$, so this is an active fold, a contradiction.
+The retained stages are $0,\ldots,m_0-3$, giving the last assertion.
+\end{proof}
+
+Write
+\[
+ T_u=\sum_{s\ge3}u_s,\qquad R_m=\sum_{s\ge m+1}u_s.
+\]
+For the actual stopped graph $H$ in Lemma~\ref{lem:stopped}, the phase
+certificate chooses one finite chain with fee $f_{a,d}$ and integer cap
+at least $M_3(a)2^{\theta_2d}$. Thus $H$ has a packing of weight at most
+$f_{a,d}n$. Packing the retained cores at cost $1+C\eta$ per unit mass
+and adding the retained long cycles gives
+\begin{equation}\label{eq:terminal-physical}
+ \frac{\wt_\sigma(\mathcal P)}n
+       \le f_{a,d}+(1+C\eta)(T_u-R_{m_0})+J_{\rm tr}(a).
+\end{equation}
+The negative tail $-R_{m_0}$ is kept throughout; it is an unused portion
+of a summable majorant, not a negative physical graph cost.
+
+\begin{lemma}[Terminal payment]\label{lem:terminal-payment}
+For every phase and every integer $m\ge3$,
+\begin{equation}\label{eq:terminal-payment}
+ f_{a,d}+(1+C\eta)(T_u-R_m)+J_{\rm tr}(a)
+                 \le C\Phi\bigl(a\theta_2^{-(m-3)}\bigr).
+\end{equation}
+\end{lemma}
+\begin{proof}
+The phase data first certify
+\[
+       f_{a,d}+(1+C\eta)T_u+J_{\rm tr}(a)\le C.
+\]
+For $3\le m<15$, they directly certify
+\[
+ C L\bigl(a\theta_2^{-(m-3)}\bigr)
+    +f_{a,d}+(1+C\eta)T_u+J_{\rm tr}(a)
+                      \le C+(1+C\eta)R_m.
+\]
+These are finite rational interval certificates for the positive series
+in Section~\ref{sec:potential}.
+
+For all later $m$, a stronger inequality suffices:
+\begin{equation}\label{eq:zero-slack}
+            C L\bigl(a\theta_2^{-(m-3)}\bigr)\le(1+C\eta)R_m.
+\end{equation}
+It is checked separately at $m=15$ and $m=16$. Positivity in
+\eqref{eq:tail-recurrence} gives $R_{m+2}\ge\beta R_m$.
+On the other hand Lemma~\ref{lem:loss-decay}, applied to every summand of
+$L$, gives
+\[
+ L(x/\theta_2^2)\le
+  2^{-(r_*/b)x(\theta_2^{-2}-1)}L(x).
+\]
+The certificate at $x=a\theta_2^{-12}$ bounds the exponential factor by
+$\beta$. The factor only decreases as $x$ increases. Induction separately
+on the two parities therefore proves~\eqref{eq:zero-slack} for every
+$m\ge15$. Combine it with the total-budget inequality and use
+$\Phi(x)=1-L(x)$ on this range to get~\eqref{eq:terminal-payment}.
+\end{proof}
+
+The $40$ closed phase intervals cover $[w_A,w_A/\theta_2]$. At a shared
+endpoint either adjacent certificate can be used. For the actual phase,
+$X=W\theta_2^{-(m_0-3)}\ge a\theta_2^{-(m_0-3)}$.
+Equations~\eqref{eq:terminal-physical} and~\eqref{eq:terminal-payment},
+and monotonicity of $\Phi$, show that the no-fold branch also has weight
+at most $C\phi(n)n$.

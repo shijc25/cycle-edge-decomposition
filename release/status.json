@@ -1,0 +1,21 @@
+{
+  "publication_ready": true,
+  "author": "Jiacheng Shi",
+  "paper_license": "CC-BY-4.0",
+  "project_owned_code_license": "Apache-2.0",
+  "all_required_project_sources_included": true,
+  "separately_fetched_source_files": 0,
+  "license_unresolved_source_files_in_current_closure": 0,
+  "source_groups_replaced": 2,
+  "new_independent_source_modules": 10,
+  "modified_consumer_source_modules": 5,
+  "removed_source_modules": 29,
+  "current_project_source_modules": 10554,
+  "replacement_interface_audit_passed": true,
+  "current_full_build_completed": true,
+  "current_main_body_audit_completed": true,
+  "verification_basis": "Current-source full build, exact theorem and proof-body audit, source/license inventory, and final manuscript checks passed.",
+  "version": "1.0.0",
+  "release_date": "2026-11-06",
+  "language": "en"
+}

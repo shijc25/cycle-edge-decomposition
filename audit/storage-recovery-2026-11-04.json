@@ -1,0 +1,13 @@
+{
+  "observed_utc": "2026-11-04T03:04:52.367967+00:00",
+  "temporary_directory_lost": true,
+  "previous_successful_source_compilations": 10128,
+  "exact_matching_objects_copied_from_historical_caches": 7452,
+  "missing_previous_objects_to_recompile": 2676,
+  "source_manifest_sha256": "17c72c62a7f90598c14f8bd7643e7b1e3c829c2969e3c134df84c916ba901960",
+  "prior_journal_gzip_sha256": "b6d9e88f5bb2e56b83fba119d6453b1e57335052cc809a26c117e5c7857ecd9c",
+  "no_old_compilation_substitutes_for_current_run_compilation": true,
+  "historical_cache_bytes_restored": true,
+  "new_proof_axioms_added": false,
+  "scope": "Copies are accepted only with the previously persisted current-run source/object/auxiliary hashes; their prerequisites must match the same persisted build before deferred resumption."
+}

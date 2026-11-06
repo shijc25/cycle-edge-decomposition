@@ -1,0 +1,210 @@
+[
+  {
+    "paper_label": "thm:main",
+    "description": "Final original-edge partition",
+    "declaration": "Cycle12.coefficient12",
+    "module": "Cycle12.Coefficient12Complete",
+    "source": "Cycle12/Coefficient12Complete.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:eg-input",
+    "description": "Rotation and deletion cycle bound",
+    "declaration": "Cycle12.Independent.erdosGallai_cycle",
+    "module": "Cycle12.Independent.ErdosGallai",
+    "source": "Cycle12/Independent/ErdosGallai.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:sampling-input",
+    "description": "Bernoulli sample lower tail",
+    "declaration": "Cycle13.vertex_sample_edge_lower_tail",
+    "module": "Cycle12.Foundations.GraphJanson",
+    "source": "Cycle12/Foundations/GraphJanson.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "prop:weighted-reduction",
+    "description": "Weighted order to coefficient twelve",
+    "declaration": "Cycle12.coefficient12_from_weighted_order_bound",
+    "module": "Cycle12.OrderNormalization",
+    "source": "Cycle12/OrderNormalization.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:amplification",
+    "description": "Finite rooted amplification",
+    "declaration": "Cycle12.rooted_weighted_order_to_predecessor",
+    "module": "Cycle12.OrderNormalization",
+    "source": "Cycle12/OrderNormalization.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:six",
+    "description": "Circumference at most six",
+    "declaration": "Cycle12.terminal_rank_no_seven_cycle",
+    "module": "Cycle12.TerminalNoSevenCycle",
+    "source": "Cycle12/TerminalNoSevenCycle.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:harmonic",
+    "description": "Harmonic affine extension",
+    "declaration": "Cycle13.weightedAffine_harmonic",
+    "module": "Cycle12.Foundations.FiniteHarmonicStep",
+    "source": "Cycle12/Foundations/FiniteHarmonicStep.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:mixed",
+    "description": "Mixed cover",
+    "declaration": "Cycle12.mixed_cover",
+    "module": "Cycle12.MixedCover",
+    "source": "Cycle12/MixedCover.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:dfs-step",
+    "description": "Certified DFS step",
+    "declaration": "Cycle12.FiniteStageCertificate.step",
+    "module": "Cycle12.FiniteStageCertificate",
+    "source": "Cycle12/FiniteStageCertificate.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "prop:finite-base",
+    "description": "Finite-degree potential bound",
+    "declaration": "Cycle12.Global12.finite_degree_potential",
+    "module": "Cycle12.FinitePotentialBase12",
+    "source": "Cycle12/FinitePotentialBase12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:loss-decay",
+    "description": "Uniform loss decay",
+    "declaration": "Cycle12.Global12.lossH_decay",
+    "module": "Cycle12.GlobalLossFunctions12",
+    "source": "Cycle12/GlobalLossFunctions12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:potential",
+    "description": "Renewal potential payment",
+    "declaration": "Cycle12.Global12.globalPhi_fold_budget",
+    "module": "Cycle12.GlobalPotential12",
+    "source": "Cycle12/GlobalPotential12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "sec:layers",
+    "description": "Actual even scale layers",
+    "declaration": "Cycle12.Even12.exists_actual_scale_layers",
+    "module": "Cycle12.ActualEvenScaleLayers12",
+    "source": "Cycle12/ActualEvenScaleLayers12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:completion",
+    "description": "High-centre completion",
+    "declaration": "Cycle12.Even12.high_center_completion_at_scale",
+    "module": "Cycle12.GlobalHighCenterCompletion12",
+    "source": "Cycle12/GlobalHighCenterCompletion12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:routing",
+    "description": "Even-bank grouped weighted routing",
+    "declaration": "Cycle12.Even12.bank_routing_at_scale",
+    "module": "Cycle12.EvenRoutingBanks12",
+    "source": "Cycle12/EvenRoutingBanks12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "sec:routing",
+    "description": "Joint original endpoint family",
+    "declaration": "Cycle12.Even12.ActualFoldStage12.jointFamily",
+    "module": "Cycle12.ActualJointRequestFamily12",
+    "source": "Cycle12/ActualJointRequestFamily12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "eq:fold-masses",
+    "description": "Active mass lower bound",
+    "declaration": "Cycle12.Even12.ActualFoldStage12.activeMass_lower",
+    "module": "Cycle12.ActualFoldStage12",
+    "source": "Cycle12/ActualFoldStage12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:physical",
+    "description": "Four-family actual packing payment",
+    "declaration": "Cycle12.Even12.ActualFoldStage12.actual_fold_target_payment",
+    "module": "Cycle12.ActualFoldTargetPayment12",
+    "source": "Cycle12/ActualFoldTargetPayment12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:physical",
+    "description": "Whole-graph physical construction",
+    "declaration": "Cycle12.Global12.physical_fold_construction12",
+    "module": "Cycle12.PhysicalFoldConstructionComplete12",
+    "source": "Cycle12/PhysicalFoldConstructionComplete12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:ledger",
+    "description": "Physical scalar ledger",
+    "declaration": "Cycle12.Global12.physical_fold_ledger_payment",
+    "module": "Cycle12.GlobalFoldLedger12",
+    "source": "Cycle12/GlobalFoldLedger12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:no-fold-mass",
+    "description": "No-fold core mass bound",
+    "declaration": "Cycle12.Even12.EvenScaleLayers12.kept_mass_of_no_fold",
+    "module": "Cycle12.EvenActualPrefixMass12",
+    "source": "Cycle12/EvenActualPrefixMass12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:terminal-payment",
+    "description": "Infinite terminal tail",
+    "declaration": "Cycle12.Global12.infinite_terminal_tail_payment",
+    "module": "Cycle12.GlobalTerminalTail12",
+    "source": "Cycle12/GlobalTerminalTail12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "lem:terminal-payment",
+    "description": "Terminal potential payment",
+    "declaration": "Cycle12.Global12.terminal_potential_payment",
+    "module": "Cycle12.GlobalTerminalTail12",
+    "source": "Cycle12/GlobalTerminalTail12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "thm:weighted-potential",
+    "description": "Strong induction from physical branch",
+    "declaration": "Cycle12.Global12.potential_bound_from_fold_branch",
+    "module": "Cycle12.PotentialInductionReduction12",
+    "source": "Cycle12/PotentialInductionReduction12.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "app:terminal",
+    "description": "Coverage of finite parameter tuples",
+    "declaration": "Cycle12.six_residue_parameter_coverage",
+    "module": "Cycle12.SixResidueParameterCoverage",
+    "source": "Cycle12/SixResidueParameterCoverage.lean",
+    "actual_dependency": true
+  },
+  {
+    "paper_label": "app:cover",
+    "description": "Full continuous cover",
+    "declaration": "Cycle12.CoverAssembly.Full.sound",
+    "module": "Cycle12.CoverAssembly.Full",
+    "source": "Cycle12/CoverAssembly/Full.lean",
+    "actual_dependency": true
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/yidiq7/ProbMethodCombinatorics",
+  "commit": "cad50267e2ac05badf1b07cd9dbc5f08f6372af1",
+  "license": "No license file or repository license metadata was present at this revision; original author rights retained.",
+  "source_changes": true,
+  "modules": {
+    "ProbMethodCombinatorics.SecondMoment": {
+      "path": "lean/ProbMethodCombinatorics/SecondMoment.lean",
+      "sha256": "79d9f1362ad786363db5a0c12d1066ef7c527723d634bb5cc1f739118810fbd0",
+      "original_sha256": "79d9f1362ad786363db5a0c12d1066ef7c527723d634bb5cc1f739118810fbd0",
+      "modified": false
+    },
+    "ProbMethodCombinatorics.Correlation": {
+      "path": "lean/ProbMethodCombinatorics/Correlation.lean",
+      "sha256": "ca194013a3068b87a6cba37393bcf726c416efe5dfddf3cb1590e9e44641ad42",
+      "original_sha256": "099317503061f58876f9da22f7f147edd0973c2a3fe214de34e20cc9aff14c90",
+      "modified": true
+    },
+    "ProbMethodCombinatorics.Janson": {
+      "path": "lean/ProbMethodCombinatorics/Janson.lean",
+      "sha256": "f4e247b6e39f05a4e73c929863ce5613ff447e588a0c59abf2946f21452673f8",
+      "original_sha256": "6da6e7616d522527c22fa1790b0595220b56acc823a96b1e32e56ec4bfce768a",
+      "modified": true
+    }
+  },
+  "compatibility_changes": [
+    "Measurable.of_eval replaces measurable_pi_lambda with its removed extra argument",
+    "bernoulliMeasure_def unfolded where SetBernoulli now uses bernoulliMeasure",
+    "map probability measure is now inferred as an instance"
+  ]
+}

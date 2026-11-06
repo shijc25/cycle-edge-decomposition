@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "release_source_modules": 10554,
+  "all_current_sources_have_successful_compilation_records": true,
+  "current_replacement_closure": true,
+  "removed_libraries_absent": true,
+  "audit_uncompressed_sha256": "7048d942c0a8aeba942bed5733e63121ac582d40e71635ab29bc6b4c698acea7",
+  "deep_audit_checked": true,
+  "lean_recompiled_by_this_command": false
+}

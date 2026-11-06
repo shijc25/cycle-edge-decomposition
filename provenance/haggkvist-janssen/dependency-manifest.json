@@ -1,0 +1,34 @@
+{
+  "repository": "https://github.com/jtraverso/haggkvist-janssen",
+  "commit": "807e08bd7c480d4fae80c1b78377d23989d39ab0",
+  "original_lean": "v4.35.0-rc3",
+  "local_lean": "v4.34.1",
+  "license": "Apache-2.0",
+  "modules": {
+    "LeanPool.ListEdgeColoringComplete.Basic": {
+      "sha256": "333ec8871512b3235e4bf4b77319c7acf033f2a851fcafcfa77e17cb58fdd7ca",
+      "source": "LeanPool/ListEdgeColoringComplete/Basic.lean"
+    },
+    "LeanPool.ListEdgeColoringComplete.Certificate": {
+      "sha256": "53f6bb5006e5aced2a14ba263664b1062730e2c28ef7934dd36362482b0e3284",
+      "source": "LeanPool/ListEdgeColoringComplete/Certificate.lean"
+    },
+    "LeanPool.ListEdgeColoringComplete.Imports": {
+      "sha256": "bf8eaa4d0c2ce893f0031d09faaba871140e5f369b57d661d4073f70d6fb0374",
+      "source": "LeanPool/ListEdgeColoringComplete/Imports.lean"
+    },
+    "LeanPool.ListEdgeColoringComplete.Main": {
+      "sha256": "926cba9806b6e3a078480525257d1e451da79a2999eb0c703429224e76f98f4a",
+      "source": "LeanPool/ListEdgeColoringComplete/Main.lean"
+    },
+    "LeanPool.ListEdgeColoringComplete.Polynomial": {
+      "sha256": "3ed1641db2079bcdcd1e9689f5ab57996513aa78a814a8c5ae4ff8b7b84d0d5d",
+      "source": "LeanPool/ListEdgeColoringComplete/Polynomial.lean"
+    },
+    "LeanPool.ListEdgeColoringComplete": {
+      "sha256": "0181c8b74dfe6887afb5d5322c5424ba57b3b53811fafcd7b7dfaccaf461dff3",
+      "source": "LeanPool/ListEdgeColoringComplete.lean"
+    }
+  },
+  "changes": []
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "modules": 10554,
+  "entry": "Cycle12.Coefficient12Complete",
+  "full_closure": true,
+  "topological_plan": true,
+  "compilation_started": false
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Cycle-edge decompositions with coefficient twelve: Lean verification artifact",
+  "upload_type": "software",
+  "description": "Complete Lean 4 project source artifact for ce(G) <= 12(|V(G)|-c(G)) for finite simple graphs, counting isolated components. Includes exact certificates, audit evidence and reproduction scripts. Own code is Apache-2.0, third-party notices are preserved, and the manuscript is CC BY 4.0.",
+  "creators": [
+    {
+      "name": "Shi, Jiacheng"
+    }
+  ],
+  "license": "apache-2.0",
+  "keywords": [
+    "graph theory",
+    "cycle decomposition",
+    "Lean",
+    "formal verification"
+  ],
+  "publication_date": "2026-11-06",
+  "version": "1.0.0"
+}

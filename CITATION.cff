@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying preprint and the formal verification artifact."
+title: "Cycle-edge decompositions with coefficient twelve: Lean verification artifact"
+type: software
+version: 1.0.0
+date-released: 2026-11-06
+authors:
+  - family-names: Shi
+    given-names: Jiacheng
+license: Apache-2.0
+keywords:
+  - graph theory
+  - cycle decomposition
+  - Lean
+  - formal verification
+preferred-citation:
+  type: unpublished
+  title: "An explicit bound of twelve for cycle-edge decompositions"
+  authors:
+    - family-names: Shi
+      given-names: Jiacheng
+  year: 2026

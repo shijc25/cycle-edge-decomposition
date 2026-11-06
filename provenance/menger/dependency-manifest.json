@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/jtraverso/menger-hamiltonian",
+  "commit": "35c5f684f9bfbd244bd0999ce725623ab571adb6",
+  "original_lean": "v4.35.0-rc3",
+  "local_lean": "v4.34.1",
+  "license": "Apache-2.0",
+  "modules": {
+    "MengerHamilton.MengerCore": {
+      "sha256": "2222b03a08e2c238d415133b30ea337086d1e4c6c87b4eca29010885ded80700",
+      "source": "MengerHamilton/MengerCore.lean"
+    },
+    "MengerHamilton.Menger": {
+      "sha256": "e297798fc564b1922e22b840a925b1c58b41e31246228afd8ade5dff43c0020e",
+      "source": "MengerHamilton/Menger.lean"
+    }
+  },
+  "changes": []
+}

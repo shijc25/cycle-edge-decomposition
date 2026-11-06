@@ -1,0 +1,162 @@
+\section{Classical inputs and their formal proofs}\label{sec:classical-inputs}
+We record two inputs whose formal implementations are supplied in the
+artifact. The first uses the rotation-and-deletion argument attributed to
+Woodall~\cite{Woodall1972}; see also~\cite[Theorem 2.7.1]{Gunderson2022}.
+The second is a lower-tail estimate proved from finite product weights,
+the FKG inequality~\cite{FKG1971}, and a Laplace-transform argument.
+These are implementations of classical methods, not claims of new
+extremal or correlation inequalities.
+
+\begin{lemma}[Erd\H{o}s--Gallai cycle bound]\label{lem:eg-input}
+Let $G$ be a finite simple graph on $n$ vertices and let $k\ge2$ be an
+integer. If every simple cycle has length at most $k$, then
+\[
+                         2\abs{E(G)}\le k(n-1)
+\]
+when $n\ge1$. For $n=0$ both sides of the corresponding natural-number
+statement are zero, with the predecessor interpreted as $n\mathbin{\dot-}1$.
+\end{lemma}
+\begin{proof}
+We use strong induction on $n$. The edgeless case is immediate. Otherwise
+choose a longest path $P=v_0\cdots v_\ell$, maximizing $d=\deg(v_0)$ among
+the starting degrees of all longest paths. Then $\ell\ge1$. All neighbors
+of the first vertex of any longest path lie on that path, since an outside
+neighbor would extend it.
+
+Define
+\[
+ W=\{v_i:0\le i<\ell,\ v_0v_{i+1}\in E(G)\},\qquad
+ X=\{v_j:0\le j<\min\{k,\ell+1\}\}.
+\]
+The predecessor operation is a bijection from $N(v_0)$ to $W$, so
+$\abs W=d\ge1$, and $v_\ell\notin W$. For each $v_i\in W$, the rotation
+\[
+             v_i v_{i-1}\cdots v_0v_{i+1}\cdots v_\ell
+\]
+is another longest path with the same vertex set. Consequently
+$\deg(v_i)\le d$ and $N(v_i)\subseteq V(P)$.
+
+A chord $v_0v_j$ with $j\ge2$ closes a prefix of $P$ to a simple cycle
+of length $j+1$, whence $j<k$. The case $j=1$ also has $j<k$.
+In particular, $v_i\in W$ implies $i+1<k$, and $W\subseteq X$.
+If $v_i\in W$ has a neighbor $v_j$ with $j\ge k$, then $i+1<j$ and
+\[
+                v_0\cdots v_i v_j v_{j-1}\cdots v_{i+1}v_0
+\]
+is a simple cycle of length $j+1>k$. Thus every neighbor of $W$ lies in $X$.
+
+Let $a$ count the edges inside $W$ and let $b$ count the edges between
+$W$ and $X\setminus W$. The degree bounds and simplicity give
+\[
+             2a+b\le d^2,\qquad b\le d(\abs X-d).
+\]
+The $a+b$ edges removed with $W$ therefore satisfy
+\[
+                     2(a+b)\le d\abs X\le dk.
+\]
+The remaining graph has $n-d$ vertices, where $1\le n-d<n$, and retains
+the same bound on cycle lengths. Applying induction and adding the
+deletion cost yields
+\[
+ 2\abs{E(G)}\le dk+k(n-d-1)=k(n-1).
+\]
+No connectivity hypothesis is used.
+\end{proof}
+
+In Lean, the rotations and the degree-maximizing choice are implemented in
+\begin{center}\small\nolinkurl{Cycle12/Independent/PathRotation.lean}.\end{center}
+The set $W$ and its neighborhood bounds are implemented in
+\begin{center}\small\nolinkurl{Cycle12/Independent/WoodallSet.lean}.\end{center}
+The counting step is implemented by splitting degree sums across $W$ and
+its complement, so internal edges are counted exactly twice in the degree
+sum and exactly once in the deletion. The final strong induction is
+\mcode{Cycle12.Independent.erdosGallai_cycle}. Passing to a longest cycle
+gives the precise long-cycle interface used in the finite completion
+argument; its denominator is $n-1$.
+
+\begin{lemma}[Lower tail for a Bernoulli vertex sample]\label{lem:sampling-input}
+Let $G$ have $m$ edges, let $D\ge0$, and suppose that
+$\deg(u)+\deg(v)\le D+2$ for every edge $uv$.
+Independently select each vertex with probability $p\in[0,1]$, and let $X$
+count the edges with both endpoints selected. Put
+\[
+                       \mu=mp^2,\qquad v=mp^2+mDp^3.
+\]
+If $\mu>0$ and $0\le t\le\mu$, then
+\[
+                    \Prob(X\le\mu-t)\le
+                    \exp\!\left(-\frac{t^2}{2v}\right).
+\]
+If $\mu=0$, the only required value is $t=0$, for which the bound is the
+elementary probability bound by $1$.
+\end{lemma}
+\begin{proof}
+For a subset $S$ of the vertex set, its probability mass is
+$w(S)=p^{\abs S}(1-p)^{n-\abs S}$. The identity
+\[
+                     w(A)w(B)=w(A\cap B)w(A\cup B)
+\]
+follows by adding the corresponding cardinalities and complement
+cardinalities. FKG gives positive association of nonnegative increasing
+functions. Shifting an increasing function by its value at the empty set
+extends this to real-valued increasing functions. Applying positive
+association to $f$ and $M-g$, where $g$ is decreasing and $M\ge\max g$,
+gives
+\begin{equation}\label{eq:opposite-association}
+                 \E(fg)\le (\E f)(\E g)
+\end{equation}
+for nonnegative increasing $f$ and nonnegative decreasing $g$.
+Independence of observables using disjoint coordinates follows by
+induction on the finite ground set, conditioning on its last coordinate.
+
+Write $I_e$ for the indicator that edge $e$ survives. For a fixed edge
+$e$, split
+\[
+                         X=I_e+Y_e+Z_e,
+\]
+where $Y_e$ sums the indicators of the other edges sharing an endpoint
+with $e$, and $Z_e$ sums all remaining indicators. There are at most $D$
+terms in $Y_e$. Coordinate independence gives, for $s\ge0$,
+\[
+                  \E(I_e e^{-sZ_e})=p^2\E(e^{-sZ_e}).
+\]
+For each edge $f$ contributing to $Y_e$, the increasing function $I_eI_f$
+has expectation $p^3$; the formal estimate only needs the upper bound
+$p^3$. Applying \eqref{eq:opposite-association} and summing gives
+\[
+                  \E(I_eY_e e^{-sZ_e})\le Dp^3\E(e^{-sZ_e}).
+\]
+The inequality $e^{-sY_e}\ge1-sY_e$, applied on the event $I_e=1$, now gives
+\[
+ \E(I_e e^{-sX})\ge e^{-s}(p^2-sDp^3)\E(e^{-sZ_e}).
+\]
+If $0\le s\le(1+Dp)^{-1}$, the coefficient on the right is nonnegative.
+Since $Z_e\le X$, putting $L(s)=\E(e^{-sX})$ yields
+\[
+ \E(I_e e^{-sX})\ge e^{-s}(p^2-sDp^3)L(s)
+                    \ge p^2\bigl(1-s(1+Dp)\bigr)L(s).
+\]
+For the second inequality, use $e^{-s}\ge1-s$ and then discard the
+nonnegative term $s^2Dp^3$. Summation over $e$ gives
+\[
+                        \E(Xe^{-sX})\ge(\mu-vs)L(s).
+\]
+Finite summation permits differentiation, with
+$L'(s)=-\E(Xe^{-sX})$. Hence
+\[
+                 s\longmapsto e^{\mu s-vs^2/2}L(s)
+\]
+is nonincreasing on $[0,\mu/v]$. Its value at $0$ is $1$, so
+$L(s)\le e^{-\mu s+vs^2/2}$ there. Finally, the exponential Markov
+inequality applied with $s=t/v$ proves the claim. The case $t=0$ is
+handled directly by the probability bound by $1$.
+\end{proof}
+
+The finite-law calculation is formalized first for a family of distinct
+two-element sets, with explicit dependency neighborhoods. The graph
+interface instantiates these sets with the endpoints of the original
+edges and uses the degree bound in the line graph. The statements
+{\small\nolinkurl{Cycle13.vertex_sample_edge_lower_tail}} and
+{\small\nolinkurl{Cycle13.finite_graph_janson_restricted}} retain the exact constants
+and the finite-sample conventions required later. The proof invokes
+Mathlib's FKG theorem and does not assume a separate Janson theorem.

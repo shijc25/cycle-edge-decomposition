@@ -1,0 +1,117 @@
+\section{Certification of the mixed-cover construction}\label{app:cover}
+This appendix specifies the hard case in Lemma~\ref{lem:mixed}. The
+certificate concludes the existence of actual packings; it is not merely
+a numerical upper bound for a hypothetical sample.
+
+\subsection{Coordinates and fixed-size samples}
+For $m>0$ put
+\[
+ x=\frac{\sqrt n}{B_*m^{1/3}},\quad s'=\frac{n^2}{2m}\ge1,\quad
+ W(x)=B_*^3x^2,\quad v(x)=W(x)(1+3x).
+\]
+Then
+\begin{equation}\label{eq:cover-coordinates}
+ n=\frac{4B_*^3(s')^2}{W(x)^3},\qquad
+ m=\frac{n^2}{2s'},\qquad D(n,m)/m=v(x).
+\end{equation}
+The irreducible range is $0<x\le17/250$, $s'\ge1$.
+Set
+\[
+ p_0(x)=v(x)\left(\frac{99}{200}+\frac{11}{100}v(x)
+                                      +\frac7{100}v(x)^2\right),\qquad
+ N=\floor{p_0(x)n},\quad p=N/n.
+\]
+The sample is uniform among the $N$-element subsets of $V(G)$.
+In particular, the proof does not substitute independent vertex sampling
+for this fixed-cardinality law. For $P=p/W(x)$ and
+$P_0(x)=p_0(x)/W(x)$ the exact floor bounds are
+\[
+ P_0(x)-\frac{W(x)^2}{4B_*^3(s')^2}\le P\le P_0(x).
+\]
+Monotone endpoint bounds turn these into rational bounds on every parameter
+rectangle.
+
+Let
+\[
+ H(x)=103/250+(351/200)x,\qquad D_0(x)=1-(33/125)W(x),
+ \]\[
+ h_G=B_*m^{1/3}H(x)/D_0(x),\qquad z=ph_G.
+\]
+Here $H(x)$ is a local coordinate function, unrelated to the loss $H(w)$
+in Section~\ref{sec:potential}. The graph is assumed to meet the sparse-cut
+irreducibility and minimum-degree inequalities left by the induction in
+Lemma~\ref{lem:mixed}.
+
+A good sample $U$ has size exactly $N$, certified lower neighbour degrees
+into $U$, cut expansion inside $U$, an anchoring inequality, at least
+$(97/100)p^2m$ induced edges, and at most $D(n,m)$ edges incident with $U$.
+The anchoring inequality, for $X\subseteq V\setminus U$ and
+$Y\subseteq U$ with $2\abs Y\le\abs U$, is
+\[
+ L\abs X\le e_G(X,U\setminus Y)+e_G(Y,U\setminus Y).
+\]
+Some rectangles also require a local cut bound up to sample proportion
+$1/125$. The certified selection theorem bounds the union of six bad events:
+low degree, a failed global cut, failed anchoring, too few sample edges,
+too many incident edges, and the optional local-cut failure. Their rational
+upper bounds have sum strictly less than $1$. Thus at least one actual
+$N$-element sample is good. The fixed-size moment, degree, marked-cut and
+anchor bounds and their parameter matches are proved before this union
+bound is used.
+
+\subsection{From the sample to cycles}
+A capacity certificate splits the induced sample edges into banks, constructs
+a weak clique immersion in the appropriate bank, and uses the remaining
+expansion to route the requests from the path-and-cycle decomposition of Lov\'asz~\cite{Lovasz1968} applied to the
+complement. Weak immersion is sufficient: routed paths are edge-disjoint;
+branch vertices are not silently assumed to be avoided by all interiors.
+The indexed routing and cycle-closure lemmas account for endpoint occurrences
+and integer terminal capacities. The global-cut and additional-local-cut
+branches have separate capacity inequalities.
+
+The output is an actual packing $\mathcal C$ in $G$ with
+\begin{equation}\label{eq:sample-output}
+ p(\mathcal C)\le\frac{n-\abs U}{2},\qquad
+ q(\mathcal C)\le D(n,m)+n-\abs U.
+\end{equation}
+The sample-size lower bound, including its floor, pays the fine cycle budget
+$n\psi(m/(2B_*^3n))$. The second inequality in~\eqref{eq:sample-output}
+pays both allowed residual-edge budgets, and the first is also at most
+$n/2$. Thus this hard case proves both conclusions of
+Lemma~\ref{lem:mixed}. The full induction may still choose different
+packings for its two conclusions.
+
+\subsection{Continuous coverage and its soundness interface}
+A rational rectangle is a tuple $(x_-,x_+,s_-,s_+)$, where $s_+$ may be
+absent, denoting an unbounded ray. Its \emph{soundness} statement quantifies
+over every actual graph whose coordinates lie in it and which satisfies
+the irreducibility and degree conditions, and concludes
+\eqref{eq:fine-cover} and~\eqref{eq:coarse-cover}.
+A routed case consists of a sample certificate and a capacity certificate.
+Their common parameters---degree, expansion, anchoring and any optional
+local cut constant---must agree exactly. The theorem
+\mcode{rat_routed_case_sound} combines their graph-theoretic conclusions
+only after these equalities and domain inclusions are checked.
+
+Rectangles are joined by exact rational interval chains. Horizontal joining
+checks that the $x$ intervals cover and that each piece extends over the
+required $s'$ interval. Vertical joining checks the converse. Both operations
+include closed endpoints, and an unbounded target ray must be covered by
+a chain that actually reaches an unbounded piece. These are proved
+soundness-preserving operations, rather than a sampled-grid argument.
+The final assembly is
+\[
+ [0,3/1000]\times[1,\infty)\quad\cup\quad
+ [3/1000,17/250]\times[1,\infty),
+\]
+with each rectangle further split into its certified scale pieces.
+Its final statement is
+\begin{center}\mcode{Cycle12.CoverAssembly.Full.sound}.\end{center} Actual graphs have $x>0$;
+including $x=0$ in the interval certificate causes no division by zero in
+the graph application.
+
+This closes the irreducible case and hence the strong induction. The
+certificate hierarchy contains the actual probability bounds and routing
+capacities, not just the final interval endpoints. Its rational decisions
+are checked in Lean, and its probabilistic and graph-theoretic soundness
+lemmas lie in the same axiom-audited dependency closure as the main theorem.

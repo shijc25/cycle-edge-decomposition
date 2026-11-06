@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "global_parameters_exact": 32,
+  "finite_chains": 83,
+  "base_intervals": 45,
+  "phase_intervals": 40,
+  "phase_rational_sequences_matched": 40,
+  "principal_declarations_in_actual_dependency_closure": 26,
+  "current_replacement_closure": true,
+  "main_proof_dependency_report_sha256": "dd53cc51070bfe77d2c639d835ce77784e9deb84817aacffae161a19bb41b55d"
+}

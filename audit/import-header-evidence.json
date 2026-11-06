@@ -1,0 +1,23 @@
+[
+  {
+    "imports": [
+      "Cycle12.GlobalLossBounds12",
+      "Cycle12.Foundations.ScaleSeriesCertificates"
+    ],
+    "dependency_object_sha256": {
+      "Cycle12.GlobalLossBounds12": "3dbea425d78bca88f358c286676437074e48257ce64090390aa5c829a5aeff5d",
+      "Cycle12.Foundations.ScaleSeriesCertificates": "22847483b57bd9af21b102f3d7a0ccd62100251537c296aaffc93ce8ea42fb8d"
+    },
+    "probe_source": "Cycle12/RenewalAnchor/Point00.lean",
+    "probe_source_sha256": "02b23d4ef0eb104910ecf42355727d966ac0ca59868b5e5d6aab4eea00426767",
+    "save_exit": 0,
+    "ordinary_exit": 0,
+    "cached_exit": 0,
+    "ordinary_object_sha256": "5d67de901957aa20f7884a12f3a2c5314dd6d70e7bff5db965da6ff9f609dc3b",
+    "cached_object_sha256": "5d67de901957aa20f7884a12f3a2c5314dd6d70e7bff5db965da6ff9f609dc3b",
+    "byte_identical_objects": true,
+    "header_only": true,
+    "every_source_body_recompiled": true,
+    "old_project_objects_used": false
+  }
+]

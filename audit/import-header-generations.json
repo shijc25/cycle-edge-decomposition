@@ -1,0 +1,155 @@
+[
+  {
+    "snapshot_sha256": "54241925a897b2ac2fc4ce50b5156cb2adfdff58650c8979834b0ad2cd55fdea",
+    "source": "original_probe_record",
+    "evidence": {
+      "imports": [
+        "Cycle12.RationalBankSound"
+      ],
+      "dependency_object_sha256": {
+        "Cycle12.RationalBankSound": "7aaa33a643f66785af003447bccf543eb7136d620cf6e66ca231c1f1ff16236b"
+      },
+      "probe_source": "Cycle12/BankParameterCertificates/Batch0224.lean",
+      "probe_source_sha256": "9fca0d3e3bc5649d67ad3ad6009fbf985a0bbd1ee9ccc4aa28fda6c017e493a9",
+      "save_exit": 0,
+      "ordinary_exit": 0,
+      "cached_exit": 0,
+      "ordinary_object_sha256": "b35d14e29276610ddff2636f1e4ec695a14dca4188390e2ffdbcc45adb9ad335",
+      "cached_object_sha256": "b35d14e29276610ddff2636f1e4ec695a14dca4188390e2ffdbcc45adb9ad335",
+      "byte_identical_objects": true,
+      "header_only": true,
+      "every_source_body_recompiled": true,
+      "old_project_objects_used": false
+    }
+  },
+  {
+    "snapshot_sha256": "10f3688195ed259d27fcdf1e172e0e0552b52c82cd670b356d7df90be3fd3223",
+    "source": "original_probe_record",
+    "evidence": {
+      "imports": [
+        "Cycle12.RationalCutProfile"
+      ],
+      "dependency_object_sha256": {
+        "Cycle12.RationalCutProfile": "c34fac0c8a6262393424f409c7680df8acf33382eb3b7304705aaf471724d778"
+      },
+      "probe_source": "Cycle12/MergedCutProfiles/Batch000.lean",
+      "probe_source_sha256": "325e74a69105da1f27f3a29b284e3bb2f19aa38dd06d9ba6045cef04656126e9",
+      "save_exit": 0,
+      "ordinary_exit": 0,
+      "cached_exit": 0,
+      "ordinary_object_sha256": "c86aaf21129e1935afc05a068e00c71b8b6fdddf5950c47f002160d6d53bfd58",
+      "cached_object_sha256": "c86aaf21129e1935afc05a068e00c71b8b6fdddf5950c47f002160d6d53bfd58",
+      "byte_identical_objects": true,
+      "header_only": true,
+      "every_source_body_recompiled": true,
+      "old_project_objects_used": false
+    }
+  },
+  {
+    "snapshot_sha256": "25072325755f92d508c2cc99c317b3fdb2c015eacbf20d6598007d488eba25b0",
+    "source": "original_probe_record",
+    "evidence": {
+      "imports": [
+        "Cycle12.GlobalLossBounds12",
+        "Cycle12.Foundations.ScaleSeriesCertificates"
+      ],
+      "dependency_object_sha256": {
+        "Cycle12.GlobalLossBounds12": "3dbea425d78bca88f358c286676437074e48257ce64090390aa5c829a5aeff5d",
+        "Cycle12.Foundations.ScaleSeriesCertificates": "22847483b57bd9af21b102f3d7a0ccd62100251537c296aaffc93ce8ea42fb8d"
+      },
+      "probe_source": "Cycle12/RenewalAnchor/Point00.lean",
+      "probe_source_sha256": "02b23d4ef0eb104910ecf42355727d966ac0ca59868b5e5d6aab4eea00426767",
+      "save_exit": 0,
+      "ordinary_exit": 0,
+      "cached_exit": 0,
+      "ordinary_object_sha256": "5d67de901957aa20f7884a12f3a2c5314dd6d70e7bff5db965da6ff9f609dc3b",
+      "cached_object_sha256": "5d67de901957aa20f7884a12f3a2c5314dd6d70e7bff5db965da6ff9f609dc3b",
+      "byte_identical_objects": true,
+      "header_only": true,
+      "every_source_body_recompiled": true,
+      "old_project_objects_used": false
+    }
+  },
+  {
+    "snapshot_sha256": "69ed6d74c9a6e2d4c4d47a99739dc64a6b2e5db1b690cd3fe1f6a64407390cbf",
+    "source": "original_probe_record",
+    "evidence": {
+      "imports": [
+        "Cycle12.GlobalLossBounds12",
+        "Cycle12.Foundations.ScaleSeriesCertificates"
+      ],
+      "dependency_object_sha256": {
+        "Cycle12.GlobalLossBounds12": "3dbea425d78bca88f358c286676437074e48257ce64090390aa5c829a5aeff5d",
+        "Cycle12.Foundations.ScaleSeriesCertificates": "22847483b57bd9af21b102f3d7a0ccd62100251537c296aaffc93ce8ea42fb8d"
+      },
+      "probe_source": "Cycle12/FinitePotentialAnchors/Anchor14/Point00.lean",
+      "probe_source_sha256": "e9331b372d23072d5956638e93d1633324d6a77260f4eb9a364eddd34156fa63",
+      "save_exit": 0,
+      "ordinary_exit": 0,
+      "cached_exit": 0,
+      "ordinary_object_sha256": "170b132dcd044e57759d6984e4eeedeb9706fe4332afaba6dd3a07cef28438cc",
+      "cached_object_sha256": "170b132dcd044e57759d6984e4eeedeb9706fe4332afaba6dd3a07cef28438cc",
+      "byte_identical_objects": true,
+      "header_only": true,
+      "every_source_body_recompiled": true,
+      "old_project_objects_used": false
+    }
+  },
+  {
+    "snapshot_sha256": "7ce8a1ac8d46b77a839a6327244f75ad996f9a010d29f4b9d2283115a4410558",
+    "source": "retrospective_ordinary_replay",
+    "evidence": {
+      "passed": true,
+      "source": "Cycle12/FoldPotentialAnchors/Phase25/T16/Point00.lean",
+      "source_sha256": "a4785a836cf86ab5748a64f9e9394ad56f767706b5e53cdba464280fa2a6d9dc",
+      "earlier_header_snapshot_sha256": "7ce8a1ac8d46b77a839a6327244f75ad996f9a010d29f4b9d2283115a4410558",
+      "earlier_compiled_object_sha256": "e3dbb61e2b6e9412ca53d2526f9fb09b2ee0d2eba3956342952d176df77a8979",
+      "ordinary_replay_object_sha256": "e3dbb61e2b6e9412ca53d2526f9fb09b2ee0d2eba3956342952d176df77a8979",
+      "exit_code": 0,
+      "elapsed_seconds": 5.971,
+      "earlier_source_count": 567,
+      "description": "Retrospective ordinary recompilation after the original probe record was lost with temporary storage. The actual current-run cached object hash is taken from the previously persisted journal."
+    }
+  },
+  {
+    "snapshot_sha256": "37307d00bf3e9b69e2587a8d9c1a24479077b738bc0b1e455534c65bef2a02a0",
+    "source": "original_probe_record",
+    "evidence": {
+      "imports": [
+        "Cycle12.GlobalLossBounds12",
+        "Cycle12.Foundations.ScaleSeriesCertificates"
+      ],
+      "dependency_object_sha256": {
+        "Cycle12.GlobalLossBounds12": "3dbea425d78bca88f358c286676437074e48257ce64090390aa5c829a5aeff5d",
+        "Cycle12.Foundations.ScaleSeriesCertificates": "22847483b57bd9af21b102f3d7a0ccd62100251537c296aaffc93ce8ea42fb8d"
+      },
+      "probe_source": "Cycle12/RenewalAnchor/Point00.lean",
+      "probe_source_sha256": "02b23d4ef0eb104910ecf42355727d966ac0ca59868b5e5d6aab4eea00426767",
+      "save_exit": 0,
+      "ordinary_exit": 0,
+      "cached_exit": 0,
+      "ordinary_object_sha256": "5d67de901957aa20f7884a12f3a2c5314dd6d70e7bff5db965da6ff9f609dc3b",
+      "cached_object_sha256": "5d67de901957aa20f7884a12f3a2c5314dd6d70e7bff5db965da6ff9f609dc3b",
+      "byte_identical_objects": true,
+      "header_only": true,
+      "every_source_body_recompiled": true,
+      "old_project_objects_used": false
+    }
+  },
+  {
+    "snapshot_sha256": "b26f409dff534147153a88a8775802fe4ded492fc9630f3607bc52da0bf24012",
+    "source": "retrospective_ordinary_replay",
+    "evidence": {
+      "passed": true,
+      "source": "Cycle12/BankParameterCertificates/Batch0001.lean",
+      "source_sha256": "f71f2a91c107172b80b3d35ef80cca1da41fa4bf9626cddbf4583d802d5f23ed",
+      "earlier_header_snapshot_sha256": "b26f409dff534147153a88a8775802fe4ded492fc9630f3607bc52da0bf24012",
+      "earlier_compiled_object_sha256": "a0075bceac767dee80302407ab800a74565c190667c9c4b7922b92980b401684",
+      "ordinary_replay_object_sha256": "a0075bceac767dee80302407ab800a74565c190667c9c4b7922b92980b401684",
+      "exit_code": 0,
+      "elapsed_seconds": 14.557,
+      "earlier_source_count": 224,
+      "description": "Retrospective ordinary compilation of the first source from the previous bank import-header generation, compared with its actual earlier cached object. The initial per-folder probe evidence was superseded during scheduler restart; this preserves a directly checkable comparison instead of relabelling the later probe as the old one."
+    }
+  }
+]

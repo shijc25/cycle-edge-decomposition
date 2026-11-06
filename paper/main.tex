@@ -1,0 +1,91 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array,enumitem,microtype}
+\usepackage[margin=1.05in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue]{hyperref}
+\usepackage{url}
+\hypersetup{pdftitle={An explicit bound of twelve for cycle-edge decompositions},
+ pdfauthor={Jiacheng Shi},pdfsubject={Computer-assisted proof with Lean verification},
+ pdfkeywords={graph theory, cycle decomposition, Erdos-Gallai, Lean}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\ce}{\operatorname{ce}}
+\newcommand{\cc}{\operatorname{cc}}
+\newcommand{\rk}{\operatorname{rk}}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\cost}{\operatorname{cost}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Prob}{\mathbb P}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\ind}{\mathbf1}
+\newcommand{\mcode}[1]{\texttt{\detokenize{#1}}}
+\title[Cycle--edge decompositions with coefficient twelve]{An explicit bound of twelve for cycle--edge decompositions}
+\author{Jiacheng Shi}
+\thanks{Copyright 2026 Jiacheng Shi. This manuscript is licensed under CC BY 4.0.}
+\date{November 6, 2026}
+\subjclass[2020]{05C38, 05C70; 68V15}
+\keywords{cycle decomposition, Erd\H{o}s--Gallai conjecture, weighted graph decomposition, computer-assisted proof, Lean}
+\input{data/verification-macros}
+\begin{document}
+\begin{abstract}
+For a finite simple graph $G$, let $c(G)$ denote its number of connected
+components, including isolated vertices. We prove that the edges of $G$ admit
+a partition into at most $12(\abs{V(G)}-c(G))$ simple cycles and single edges.
+The argument establishes an explicit weighted bound with cycle weight $1$
+and single-edge weight $23/42$, using a finite-degree completion theorem,
+three successive rates in a scale decomposition, and a renewal potential.
+A finite one-vertex amplification and a minimum-weight packing convert the
+weighted estimate into the stated component-rank bound. Rational certificates
+supply the quantitative interfaces, including all stopping phases and the
+infinite tails. A complete Lean formalization of the final graph-theoretic statement
+accompanies the paper; the retained project source closure was rebuilt
+and its proof dependencies audited.
+
+\end{abstract}
+\maketitle
+\tableofcontents
+\input{sections/01-introduction}
+\input{sections/02-weighted}
+\input{sections/02a-classical-inputs}
+\input{sections/03-potential}
+\input{sections/04-finite}
+\input{sections/05-layers}
+\input{sections/06-routing}
+\input{sections/07-fold}
+\input{sections/08-terminal}
+\input{sections/09-induction}
+\input{sections/10-formalization}
+\appendix
+\input{sections/11-terminal-catalogue}
+\input{sections/12-cover-certificates}
+\input{sections/13-parameters}
+\input{sections/14-correspondence}
+\bibliographystyle{amsplain}
+\bibliography{references}
+\section*{Acknowledgements and use of AI tools}
+OpenAI ChatGPT/Codex tools were used extensively in the development of the
+argument, computational exploration, preparation of the Lean formalization,
+and drafting and organization of this manuscript. The source repository
+records the formal theorem, its proof dependencies, and the scope of the
+reported checks. These tools are not authors; responsibility for the submitted
+work rests with the author. The author also acknowledges the contributors to
+Lean, Mathlib, and the third-party formal libraries identified in the repository.
+\end{document}

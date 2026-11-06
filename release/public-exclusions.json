@@ -1,0 +1,4 @@
+{
+  "reason": "The previously separately fetched source libraries have been replaced and removed; no required project source is omitted from the new public package.",
+  "paths": []
+}

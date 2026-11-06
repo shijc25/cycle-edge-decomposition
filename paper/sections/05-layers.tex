@@ -1,0 +1,120 @@
+\section{An exact decomposition into scales}\label{sec:layers}
+The large-order proof uses the scale decomposition of~\cite{OAI2026}, with
+explicit parameters, a parity correction, and three final reduction rates.
+We specify which edges and which vertex multiplicities are counted.
+
+A supported piece consists of a graph on the original vertex set together
+with a vertex support containing both endpoints of every one of its edges.
+Its mass is the size of that support. Different pieces may share vertices;
+their edge sets must be disjoint. The mass of a family is the sum of its
+support sizes, including multiplicity.
+
+\begin{lemma}[One scale]\label{lem:scale}
+At logarithmic scale $w$, set
+\[
+ D=2^w,\quad \ell=2^{(1+\ep)w},\quad L_0=2^{\rho w},\quad h_0=2^{sw}.
+\]
+Under the parameter inequalities at the applicable scale, a piece with
+average degree at most $D$ can be partitioned into long cycles, even
+expanding cores, and a new family of supported remainder pieces. The
+following bounds hold per unit parent mass:
+\begin{enumerate}[label=(\roman*),leftmargin=*]
+\item the number of long cycles is at most $D/(2\ell)$;
+\item the sum of box orders is at most
+      $1+2\ell/(L_0-\ell-2)$, and each box has order at most $L_0$;
+\item cores in a box have disjoint vertex supports, orders greater than
+      $h_0$, and cut expansion at least $(1023/1024)h_0$; every core degree
+      is even;
+\item the next average-degree bound is at most
+      $h_0(1001/1000+\log_2(L_0/h_0))$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+First remove actual edge-disjoint cycles longer than the prescribed
+threshold; their lengths pay (i). On the cycle-free remainder, a DFS
+partition with integer parameters $\floor\ell$ and
+$\floor{(L_0-\floor\ell)/2}$ gives the boxes in (ii). In particular, the
+denominator includes both rounding units.
+Within each box, repeatedly cut a side of insufficient edge expansion.
+The entropy potential pays the cut edges and gives the logarithmic term
+in (iv). The surviving induced cores have disjoint supports. For each core,
+choose a forest whose odd-degree vertices are exactly the odd-degree
+vertices of the core, and move that forest into the remainder. Subtraction
+makes the core even. The cut bound for the forest and the certified scale
+inequalities leave the expansion in (iii); its at most one edge per vertex
+is absorbed by the $1001/1000$ term in (iv).
+The remainder children are defined \emph{after} this move. Each operation
+is a partition of original edges, so composition preserves the partition.
+The conditions $\ell+2<L_0$, $h_0>4096$, $h_0\le L_0$, and
+$2048L_0<h_0^2$ are checked on the complete scale ranges, not assumed from
+asymptotic notation.
+\end{proof}
+
+Let $X=\log_2n\ge w_A$. Choose $k\ge0$ so that
+\begin{equation}\label{eq:phase}
+           w_A\le W:=\theta_2^kX<w_A/\theta_2,
+ \qquad m_0=k+3.
+\end{equation}
+(The symbol $m_0$ counts stages, not edges.) Define
+\begin{equation}\label{eq:schedule}
+ w_i=\begin{cases}
+       \theta_2^iX,&0\le i\le k+1,\\
+       \theta_1\theta_2^{k+1}X,&i=k+2,\\
+       \theta_0\theta_1\theta_2^{k+1}X,&i=k+3.
+      \end{cases}
+\end{equation}
+Apply Lemma~\ref{lem:scale} at stages $0,\ldots,k+2$. The entropy
+inequalities for the three transitions give average degree at most
+$2^{w_{i+1}}$ in every child piece. The last processed scale is at least
+$q_0w_A=w_0$. Let $S_i$ be the total core mass at stage $i$.
+
+For each prefix, the long cycles removed so far, the cores extracted so far,
+and the \emph{whole} current frontier form an exact partition of $E(G)$.
+This prefix identity permits both operations used later: replacing one
+selected core layer together with its descendant frontier, or stopping
+before the last two stages. It would not suffice to retain only the sparse
+edges at the end of all stages.
+
+The overlap factor in (ii) is at most $1+\chi2^{-\delta w}$.
+Products of these factors are bounded by
+$\prod_j(1+x_j)\le(1-\sum_jx_j)^{-1}$ when $x_j\ge0$ and
+$\sum_jx_j<1$. The certified endpoint inequalities give a uniform mass
+factor $M$. For a phase lower endpoint $a\le W$, define
+\begin{align}
+ M_1(a)&=\frac1{1-\chi(2^{-\delta q_0a}+E(\delta\theta_2a))},\notag\\
+ M_2(a)&=\frac1{1-\chi E(\delta\theta_2a)},&
+ M_3(a)&=\frac1{1-\chi E(\delta a)}.\label{eq:phase-masses}
+\end{align}
+All denominators are positive. In particular
+\begin{equation}\label{eq:last-core-masses}
+ S_{m_0-1}\le M_1(a)n,\qquad S_{m_0-2}\le M_2(a)n.
+\end{equation}
+
+\begin{lemma}[Stopped remainder]\label{lem:stopped}
+For $a\le W\le d$, stop the actual partition before stage $k+1=m_0-2$.
+Merge its frontier pieces on the original vertex set and call the resulting
+graph $H$. Then
+\[
+     2\abs{E(H)}\le M_3(a)2^{\theta_2d}n.
+\]
+The long cycles retained before this stop number at most
+\begin{equation}\label{eq:Jtrim}
+                   J_{\rm tr}(a)n,
+       \qquad J_{\rm tr}(a)=\tfrac12M_3(a)E(\ep a).
+\end{equation}
+\end{lemma}
+\begin{proof}
+The frontier average-degree bound is $2^{w_{k+1}}=2^{\theta_2W}$
+per unit support mass. Its support mass is at most $M_3(a)n$.
+The pieces have disjoint edges, so summing their degree bounds proves the
+first inequality after the merge. Sum the long-cycle estimates from
+Lemma~\ref{lem:scale}(i) over stages $0,\ldots,k$; their scales are bounded
+below in reverse order by $a\theta_2^{-j}$. The same mass bound gives
+\eqref{eq:Jtrim}.
+\end{proof}
+
+Every retained even core also has a completion packing of weight at most
+$(1+C\eta)$ times its support size, provided the weighted order bound is
+available for strictly smaller graphs. The completion construction uses
+an edge bank, actual paths, and a smaller-order remainder. We state the
+more precise version, including the extra credit needed for folding, next.

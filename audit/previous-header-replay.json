@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "source": "Cycle12/BankParameterCertificates/Batch0001.lean",
+  "source_sha256": "f71f2a91c107172b80b3d35ef80cca1da41fa4bf9626cddbf4583d802d5f23ed",
+  "earlier_header_snapshot_sha256": "b26f409dff534147153a88a8775802fe4ded492fc9630f3607bc52da0bf24012",
+  "earlier_compiled_object_sha256": "a0075bceac767dee80302407ab800a74565c190667c9c4b7922b92980b401684",
+  "ordinary_replay_object_sha256": "a0075bceac767dee80302407ab800a74565c190667c9c4b7922b92980b401684",
+  "exit_code": 0,
+  "elapsed_seconds": 14.557,
+  "earlier_source_count": 224,
+  "description": "Retrospective ordinary compilation of the first source from the previous bank import-header generation, compared with its actual earlier cached object. The initial per-folder probe evidence was superseded during scheduler restart; this preserves a directly checkable comparison instead of relabelling the later probe as the old one."
+}

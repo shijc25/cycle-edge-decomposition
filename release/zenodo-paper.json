@@ -1,0 +1,21 @@
+{
+  "title": "An explicit bound of twelve for cycle-edge decompositions",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "We prove that every finite simple graph admits an exact partition of its original edges into at most 12(|V(G)|-c(G)) simple cycles and singleton edges, with c(G) including isolated components. The proof establishes a weighted bound with singleton weight 23/42 using finite completion, a scale decomposition and a renewal potential. A Lean formalization and certificate artifact accompany the manuscript.",
+  "creators": [
+    {
+      "name": "Shi, Jiacheng"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "cycle decomposition",
+    "Erdos-Gallai conjecture",
+    "graph theory",
+    "computer-assisted proof",
+    "Lean"
+  ],
+  "publication_date": "2026-11-06",
+  "version": "1.0.0"
+}

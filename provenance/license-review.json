@@ -1,0 +1,380 @@
+{
+  "scope": "current public source candidate after independent replacement",
+  "current_vendored_source_count": 52,
+  "unestablished_source_license_files_in_current_closure": 0,
+  "source_groups_replaced": {
+    "erdos-gallai": 26,
+    "janson": 3
+  },
+  "prior_unestablished_count": 23,
+  "retained_source_files": [
+    {
+      "path": "BergeLib/Berge.lean",
+      "sha256": "fca379ce0af6197f7c8919971f2df98f6fb352fec5d0f172e1714a8cb3209960",
+      "dependency": "berge-matching",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "GallaiEdmondsLib/GEBarrier.lean",
+      "sha256": "681d0443bacb2c7034038f868e593a8c03796914d77888c11ed4c1754c1c1c8a",
+      "dependency": "berge-matching",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "GallaiEdmondsLib/GEComponents.lean",
+      "sha256": "d401062beb6a3c25199073f05f3a21e4a3ef2ff5afc080fdac43d162c22355a7",
+      "dependency": "berge-matching",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "GallaiEdmondsLib/GEConstruct.lean",
+      "sha256": "24767435b2b7bf6c217a536a5a10998b8219981efabdd01e50dbdfde5f5580e6",
+      "dependency": "berge-matching",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "GallaiEdmondsLib/GEMatching.lean",
+      "sha256": "e08db7ecfa153e7d36024f3a8b270e7e000e27134e1a3d7a4ea24d5f47d7a113",
+      "dependency": "berge-matching",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "GallaiEdmondsLib/GallaiEdmonds.lean",
+      "sha256": "3e84c07aa6c85f4e4fca470f2c4c4864d27833cb38c63fbaf91356d745e060e6",
+      "dependency": "berge-matching",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "Euler/Basic.lean",
+      "sha256": "080c41bc729368563d28fcf210a47d0f96d51ad06776df6c3149716840a09e3d",
+      "dependency": "euler-petersen",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "Euler/Trail.lean",
+      "sha256": "dd3d6aff57d0acb961e9670c8fb9dec6c85201d565c29b1792d7b608d4f642c5",
+      "dependency": "euler-petersen",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "Euler/Orientation.lean",
+      "sha256": "15e17640554b8d15ae14fbbd41db8a1d913017bbeb985040275559016e95832b",
+      "dependency": "euler-petersen",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "LeanPool/ListEdgeColoringComplete/Basic.lean",
+      "sha256": "333ec8871512b3235e4bf4b77319c7acf033f2a851fcafcfa77e17cb58fdd7ca",
+      "dependency": "haggkvist-janssen",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "LeanPool/ListEdgeColoringComplete/Certificate.lean",
+      "sha256": "53f6bb5006e5aced2a14ba263664b1062730e2c28ef7934dd36362482b0e3284",
+      "dependency": "haggkvist-janssen",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "LeanPool/ListEdgeColoringComplete/Main.lean",
+      "sha256": "926cba9806b6e3a078480525257d1e451da79a2999eb0c703429224e76f98f4a",
+      "dependency": "haggkvist-janssen",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "LeanPool/ListEdgeColoringComplete/Polynomial.lean",
+      "sha256": "3ed1641db2079bcdcd1e9689f5ab57996513aa78a814a8c5ae4ff8b7b84d0d5d",
+      "dependency": "haggkvist-janssen",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "LeanPool/ListEdgeColoringComplete.lean",
+      "sha256": "0181c8b74dfe6887afb5d5322c5424ba57b3b53811fafcd7b7dfaccaf461dff3",
+      "dependency": "haggkvist-janssen",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "HaxellLib/Haxell.lean",
+      "sha256": "6fbdbee782e74254510ad8a4470e9d3f75013851eb0aaccad643e17448aa6ce8",
+      "dependency": "haxell",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "ARA/Helpers/MultiGraph.lean",
+      "sha256": "87cd3ddbcdef098c188f272ed1853058586932332fb5d798e7b0188f45005ae0",
+      "dependency": "karger",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "MengerHamilton/MengerCore.lean",
+      "sha256": "2222b03a08e2c238d415133b30ea337086d1e4c6c87b4eca29010885ded80700",
+      "dependency": "menger",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "MengerHamilton/Menger.lean",
+      "sha256": "e297798fc564b1922e22b840a925b1c58b41e31246228afd8ade5dff43c0020e",
+      "dependency": "menger",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/Main.lean",
+      "sha256": "03edc7620d991daaa5629313c05395708b83ea44e5634a5ef69227ba2bcf77d9",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/LayerCosts.lean",
+      "sha256": "7ddbf378c4883c08ba7ef4d4117cae15cc1ea2d32c9465921c8aa8d14b8c6e0b",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/UniformLayers.lean",
+      "sha256": "30c59f4a7cdcbf9f5e0f782ba1135b50e27bf9a5eec0a10bb71841474a2d98b1",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/CostRegrouping.lean",
+      "sha256": "290d0a17dba2d0307cbe582ee53adcb316990ddde3d9198396416f40cca5977c",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/PrefixSelection.lean",
+      "sha256": "2ace7017770a5c9593fa87e907fea11d775cd0775c22ec786557628c5058a22c",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/BatchIndexing.lean",
+      "sha256": "5dd10ea708404173b8a60e086de39a9a63938c75badbafdb31bb0425160da072",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/ScaleDecomposition.lean",
+      "sha256": "305492ed8166f07a1dbf8d768767efc39416b10e48ab0ced695c3c0e82574fa0",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/ScaleHierarchy.lean",
+      "sha256": "d0164e09f11e039d7a532026da9aaa4dd16b8cdfcf8c627c31ec995f9fbc8d78",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/ScaleExtraction.lean",
+      "sha256": "86e67577ca500858e49b367a3044bf856ebe1f5e5f0b3513657b6510a08cc76c",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/ExpansionBoxes.lean",
+      "sha256": "08474a1cae35c28c3691033cb4de5bbceec2392dc0fd7545700c62073f0cc548",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/DepthFirstSearch.lean",
+      "sha256": "5a25eaad1f55ccee0cae9e6200a1cc0dfa2b04b429cdd053fc405c7a8fa83097",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/CoupledResolution.lean",
+      "sha256": "6f4e75dd021691bd4ce076dbc5d5bacc865ce23170dc0027baa69b3110e8d53a",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/BatchResolution.lean",
+      "sha256": "a3a7fb57b6aee2ce1682c0f13d618abeff490886b3602db18030118be0002cdc",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/Templates.lean",
+      "sha256": "c8e63c3241a525021205d940a55b1e61f46b0e28630c1ddc0df2b0998806af02",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/CycleLifting.lean",
+      "sha256": "1faf8d15cd44a3ff639f45eb8265dbd90aa0ea289d9c0c83a614e653502ec1ea",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/BatchRouting.lean",
+      "sha256": "b59516c44bec94e1b56b86788899211c65026f3af04a1f008761c153356f9503",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/BatchPreparation.lean",
+      "sha256": "f9c3bf8e297602d91358c5c0a9e13277edc63581db7f81f66a7a2b595b113670",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/CollisionEstimates.lean",
+      "sha256": "164e10dff3d9b722850f1f689918589cb18ecd50ddd056785bb20c5957fd9a61",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/Pairing.lean",
+      "sha256": "7e8bbecd35e0fc9ebb83d54ed3574da5e70cc47f35752bcea15bdbc63f5e1808",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/BatchEndpoints.lean",
+      "sha256": "b9f508fa150ee4180b5589514a917e11ea4d20528a41259e11284228895f6eb5",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/BatchPathDeletion.lean",
+      "sha256": "6345ea5cd484dd5c819820e4695f501bfa2dd89d197abc15901f41d9f4908f12",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/BatchLovasz.lean",
+      "sha256": "8b88880e74a764300e8411eaa6662377ea1722933b65e175e7b775c841e0b96b",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/Decomposition.lean",
+      "sha256": "4f742482cd903447ea3ce10f25f80f8dfbc84540e92877e771c4c08acb441853",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/EndpointPartition.lean",
+      "sha256": "c4d7364ac829d52001e1567b499f3764ecc4fec91889d400974fbee47947a62c",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/PathDeletion.lean",
+      "sha256": "70408e8d6e9132193d9b88cf1a3341645068971027cb6ee5c872690e51f0582d",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/Lovasz.lean",
+      "sha256": "1fa567a0ccd24344fa6eae72a05c25d1090bca655f32aaa5991148a1f2fa7353",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/ReservoirRemainder.lean",
+      "sha256": "e66d9790fbf617721598ec86278bae7418f9ad93cb22b2b9d0164a49a11e3408",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/ReservoirCycles.lean",
+      "sha256": "03b4280fec516953b650dfef2a9623d992cd9f6b398b13064e16051f53d974c9",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/Routing.lean",
+      "sha256": "bda59fcac1565efb22c3bfd21c59b97b8708457e2a3aba334e2e7cb84e8f8586",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/Representatives.lean",
+      "sha256": "4bc9e049246588a1b02582da448de42a2adcbebc780158af57ed097deea0f2d8",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/EdgeSplitting.lean",
+      "sha256": "267f9f00cb7f4f43f3d00399c4c10bb226e013544fd1ff9391c077d960054136",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/ReservoirSampling.lean",
+      "sha256": "296d2e743613f0338aaeed65919709193af57f60375e0f810c5a5836091d7dfb",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/SamplingCuts.lean",
+      "sha256": "eb67aed05e2269fcae158355fc57affed794d9eb5410464315ec369e07553079",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    },
+    {
+      "path": "OAI/Combinatorics/CycleDecomposition/Sampling.lean",
+      "sha256": "0da57bc89c09bab54b5007e3b30ead035aebb369076a3a0929c0e7d67824a048",
+      "dependency": "openai",
+      "license": "Apache-2.0",
+      "upstream_unchanged": true
+    }
+  ],
+  "license_evidence": "license-review-before-replacement.json and license-http-evidence.json",
+  "new_implementation_license": "Apache-2.0",
+  "paper_license": "CC-BY-4.0",
+  "complete_main_rebuild_pending": false
+}

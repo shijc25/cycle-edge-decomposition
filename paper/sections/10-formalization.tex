@@ -1,0 +1,77 @@
+\section{Formal statement and verification artifact}\label{sec:formal}
+The formalization uses Lean~4~\cite{Lean4} and Mathlib~\cite{Mathlib}.
+The declaration
+\begin{center}\mcode{Cycle12.coefficient12}\end{center}
+proves:
+\begin{quote}\small\ttfamily
+\textnormal{For every natural number \(n\) and simple graph \(G\) on
+\(\mathrm{Fin}\,n\), there exists \(k\in\N\) such that}\\
+Cycle13.EdgeDecomposition G k\\
+\textnormal{and}\quad k $\le$ 12 * (n - Cycle13.componentCount G).
+\end{quote}
+The edge-decomposition predicate consists of a family of $k$ edge sets,
+each a simple cycle edge set or a singleton original edge, with pairwise
+disjointness and union equal to $G$'s edge set. The component count is the
+cardinality of the type of all connected components. An additional inspection
+example unfolds these predicates and writes the arithmetic with
+\mcode{Nat.le}, \mcode{Nat.mul}, and \mcode{Nat.sub}. This checks the intended
+statement, including isolated components, without any additional graph
+hypothesis.
+
+The supplied closure contains $10\,554$ project modules. The environment
+is Lean $4.34.1$ and Mathlib revision
+\begin{center}\small\mcode{d13f23b723b8a846827a245b89c10fc7d3f11612}.\end{center}
+All project proof bodies in this release were recompiled from source in
+this layout. After a temporary-storage reset, some lost object files were
+recovered from historical caches only when their bytes matched the hashes
+already recorded by this replacement build. Their prerequisite objects
+were also required to match that recorded build; other objects were
+regenerated. This recovery does not substitute a historical compilation
+for a current-source compilation. The journal and recovery evidence
+distinguish these operations. Preliminary replacement-interface builds
+belong to the same run and use matching source, dependency and object hashes.
+Fixed external Lean/Mathlib objects were reused; their sources were not
+recompiled. Where import-header snapshots were used, an ordinary and a
+snapshot-assisted compilation first produced byte-identical objects for
+a current source. Every subsequent source body was still recompiled.
+The final journal has a successful record for every retained module.
+
+A traversal of the actual declaration types and proof bodies from the
+final theorem found $\CycleDependencyCount$ dependencies, of which
+$\CycleProjectDependencyCount$ belong to the retained project modules.
+These include generated certificate lemmas, definitions, constructors and
+recursors; they are not a count of separately authored mathematical ideas.
+The retained modules contain no new axioms. The only axioms in the final
+closure are
+\[
+              \mcode{propext},\quad\mcode{Classical.choice},\quad
+              \mcode{Quot.sound}.
+\]
+No dependency is a \mcode{sorryAx}, unsafe declaration or partial declaration.
+
+
+The historical declaration namespace \mcode{Cycle13} is retained for
+compatibility. Current source paths are under \nolinkurl{Cycle12/Foundations}
+and \nolinkurl{Cycle12/Independent}; this name does not change the constant
+in \mcode{Cycle12.coefficient12}. Earlier compilation reports are historical
+evidence, not substitutes for checking the replacement proofs.
+The replacement graph bound follows Lemma~\ref{lem:eg-input}; the sampling
+bound follows Lemma~\ref{lem:sampling-input}. Neither implementation imports
+\mcode{ErdosProblems} or \mcode{ProbMethodCombinatorics}.
+No empty-environment replay of the full declaration closure is claimed.
+
+The full large dependency report is included as a gzip file, together with
+its uncompressed SHA256 digest. The reproducibility scripts check every
+source against the accepted manifest, rebuild the local closure in dependency
+order, and check the exact theorem. They do not accept a file's existence
+as evidence that it was compiled successfully. The repository documentation
+separates reproducing the full proof from checking the packaged integrity
+and inspecting an already built target.
+
+The manuscript is a mathematical account of this formal proof, with its
+principal correspondence listed in Appendix~\ref{app:correspondence}.
+Lean verifies the formal declarations, not the correctness of this prose or
+its bibliographic claims. The computational certificates in the source are
+part of the proof artifact. Their generators and exploratory numerical
+searches are not trusted proof oracles. This preprint does not claim
+independent peer review or an optimal coefficient.

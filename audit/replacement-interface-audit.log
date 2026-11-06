@@ -1,0 +1,16 @@
+'Cycle13.vertex_sample_edge_lower_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cycle13.finite_graph_janson_restricted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cycle12.bernoulli_harris_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Cycle12.Independent.erdosGallai_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+REPLACEMENT AUDIT PASS Cycle13.vertex_sample_edge_lower_tail: 32089 declarations, 1198 modules, axioms [propext,
+ Quot.sound,
+ Classical.choice]
+REPLACEMENT AUDIT PASS Cycle13.finite_graph_janson_restricted: 32106 declarations, 1200 modules, axioms [propext,
+ Quot.sound,
+ Classical.choice]
+REPLACEMENT AUDIT PASS Cycle12.bernoulli_harris_monotone: 13423 declarations, 516 modules, axioms [propext,
+ Quot.sound,
+ Classical.choice]
+REPLACEMENT AUDIT PASS Cycle12.Independent.erdosGallai_cycle: 8255 declarations, 342 modules, axioms [propext,
+ Quot.sound,
+ Classical.choice]

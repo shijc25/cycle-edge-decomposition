@@ -1,0 +1,330 @@
+{
+  "checked_utc": "2026-11-03T13:50:10.048217+00:00",
+  "passed": true,
+  "scope": "Pinned upstream trees for six repositories, and complete path-ancestor listings for OpenAI; exact Git source blobs and applicable legal files",
+  "groups": [
+    {
+      "dependency": "berge-matching",
+      "repository": "https://github.com/jtraverso/berge-matching",
+      "revision": "f01d042c071c778fb3f432312356136a92369076",
+      "tree_url": "https://api.github.com/repos/jtraverso/berge-matching/git/trees/f01d042c071c778fb3f432312356136a92369076?recursive=1",
+      "tree_truncated": false,
+      "passed": true,
+      "tree_entries": 22,
+      "source_blob_matches": {
+        "BergeLib/Berge.lean": [
+          "BergeLib/Berge.lean"
+        ],
+        "GallaiEdmondsLib/GEBarrier.lean": [
+          "GallaiEdmondsLib/GEBarrier.lean"
+        ],
+        "GallaiEdmondsLib/GEComponents.lean": [
+          "GallaiEdmondsLib/GEComponents.lean"
+        ],
+        "GallaiEdmondsLib/GEConstruct.lean": [
+          "GallaiEdmondsLib/GEConstruct.lean"
+        ],
+        "GallaiEdmondsLib/GEMatching.lean": [
+          "GallaiEdmondsLib/GEMatching.lean"
+        ],
+        "GallaiEdmondsLib/GallaiEdmonds.lean": [
+          "GallaiEdmondsLib/GallaiEdmonds.lean"
+        ]
+      },
+      "applicable_legal_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/jtraverso/berge-matching/f01d042c071c778fb3f432312356136a92369076/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        }
+      ]
+    },
+    {
+      "dependency": "euler-petersen",
+      "repository": "https://github.com/jtraverso/euler-petersen",
+      "revision": "02c3f1a5327c5f066938860bb07e9fce226b36ca",
+      "tree_url": "https://api.github.com/repos/jtraverso/euler-petersen/git/trees/02c3f1a5327c5f066938860bb07e9fce226b36ca?recursive=1",
+      "tree_truncated": false,
+      "passed": true,
+      "tree_entries": 21,
+      "source_blob_matches": {
+        "Euler/Basic.lean": [
+          "Euler/Basic.lean"
+        ],
+        "Euler/Trail.lean": [
+          "Euler/Trail.lean"
+        ],
+        "Euler/Orientation.lean": [
+          "Euler/Orientation.lean"
+        ]
+      },
+      "applicable_legal_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/jtraverso/euler-petersen/02c3f1a5327c5f066938860bb07e9fce226b36ca/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        }
+      ]
+    },
+    {
+      "dependency": "haggkvist-janssen",
+      "repository": "https://github.com/jtraverso/haggkvist-janssen",
+      "revision": "807e08bd7c480d4fae80c1b78377d23989d39ab0",
+      "tree_url": "https://api.github.com/repos/jtraverso/haggkvist-janssen/git/trees/807e08bd7c480d4fae80c1b78377d23989d39ab0?recursive=1",
+      "tree_truncated": false,
+      "passed": true,
+      "tree_entries": 22,
+      "source_blob_matches": {
+        "LeanPool/ListEdgeColoringComplete/Basic.lean": [
+          "LeanPool/ListEdgeColoringComplete/Basic.lean"
+        ],
+        "LeanPool/ListEdgeColoringComplete/Certificate.lean": [
+          "LeanPool/ListEdgeColoringComplete/Certificate.lean"
+        ],
+        "LeanPool/ListEdgeColoringComplete/Main.lean": [
+          "LeanPool/ListEdgeColoringComplete/Main.lean"
+        ],
+        "LeanPool/ListEdgeColoringComplete/Polynomial.lean": [
+          "LeanPool/ListEdgeColoringComplete/Polynomial.lean"
+        ],
+        "LeanPool/ListEdgeColoringComplete.lean": [
+          "LeanPool/ListEdgeColoringComplete.lean"
+        ]
+      },
+      "applicable_legal_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/jtraverso/haggkvist-janssen/807e08bd7c480d4fae80c1b78377d23989d39ab0/LICENSE",
+          "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+          "bytes": 11358
+        }
+      ]
+    },
+    {
+      "dependency": "haxell",
+      "repository": "https://github.com/mbucic4/Nearly-spanning-Lovasz",
+      "revision": "7f2728d07ce648ed74cae08bbfa7084b9ec13f4b",
+      "tree_url": "https://api.github.com/repos/mbucic4/Nearly-spanning-Lovasz/git/trees/7f2728d07ce648ed74cae08bbfa7084b9ec13f4b?recursive=1",
+      "tree_truncated": false,
+      "passed": true,
+      "tree_entries": 170,
+      "source_blob_matches": {
+        "HaxellLib/Haxell.lean": [
+          "RequestProject/Haxell.lean"
+        ]
+      },
+      "applicable_legal_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/mbucic4/Nearly-spanning-Lovasz/7f2728d07ce648ed74cae08bbfa7084b9ec13f4b/LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+          "bytes": 11357
+        }
+      ]
+    },
+    {
+      "dependency": "karger",
+      "repository": "https://github.com/AntoineduFresne/Master-Thesis",
+      "revision": "b964d9ef3d30471841814f0d42ffb391e78ff2a4",
+      "tree_url": "https://api.github.com/repos/AntoineduFresne/Master-Thesis/git/trees/b964d9ef3d30471841814f0d42ffb391e78ff2a4?recursive=1",
+      "tree_truncated": false,
+      "passed": true,
+      "tree_entries": 66,
+      "source_blob_matches": {
+        "ARA/Helpers/MultiGraph.lean": [
+          "ARA/Helpers/MultiGraph.lean"
+        ]
+      },
+      "applicable_legal_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/AntoineduFresne/Master-Thesis/b964d9ef3d30471841814f0d42ffb391e78ff2a4/LICENSE",
+          "sha256": "ad13774673c1edeac323eecddfab4c57fecb10813cb17363bcd580a1b7c51a57",
+          "bytes": 11363
+        }
+      ]
+    },
+    {
+      "dependency": "menger",
+      "repository": "https://github.com/jtraverso/menger-hamiltonian",
+      "revision": "35c5f684f9bfbd244bd0999ce725623ab571adb6",
+      "tree_url": "https://api.github.com/repos/jtraverso/menger-hamiltonian/git/trees/35c5f684f9bfbd244bd0999ce725623ab571adb6?recursive=1",
+      "tree_truncated": false,
+      "passed": true,
+      "tree_entries": 31,
+      "source_blob_matches": {
+        "MengerHamilton/MengerCore.lean": [
+          "MengerHamilton/MengerCore.lean"
+        ],
+        "MengerHamilton/Menger.lean": [
+          "MengerHamilton/Menger.lean"
+        ]
+      },
+      "applicable_legal_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/jtraverso/menger-hamiltonian/35c5f684f9bfbd244bd0999ce725623ab571adb6/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        }
+      ]
+    },
+    {
+      "dependency": "openai",
+      "repository": "https://github.com/openai/math",
+      "revision": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "passed": true,
+      "full_repository_recursive_tree_was_truncated": true,
+      "method": "Complete nonrecursive listings for every ancestor of every exact retained source path",
+      "checked_directories": {
+        "": {
+          "sha": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+          "entries": 10,
+          "truncated": false
+        },
+        "lean": {
+          "sha": "b67b84636537041bf8da1e7263a827a5ab7ffba4",
+          "entries": 12,
+          "truncated": false
+        },
+        "lean/OAI": {
+          "sha": "351061cd373017200b8e08122a9ecdf78ffd2f0c",
+          "entries": 23,
+          "truncated": false
+        },
+        "lean/OAI/Combinatorics": {
+          "sha": "1c13837c1d7c42a9828e5d805cfbb87bb0c5da37",
+          "entries": 80,
+          "truncated": false
+        },
+        "lean/OAI/Combinatorics/CycleDecomposition": {
+          "sha": "53e54cb91d38cccc3691b5d481d1002b929dfc5f",
+          "entries": 34,
+          "truncated": false
+        }
+      },
+      "source_blob_matches": {
+        "OAI/Combinatorics/CycleDecomposition/Main.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/Main.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/LayerCosts.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/LayerCosts.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/UniformLayers.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/UniformLayers.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/CostRegrouping.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/CostRegrouping.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/PrefixSelection.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/PrefixSelection.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/BatchIndexing.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/BatchIndexing.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/ScaleDecomposition.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/ScaleDecomposition.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/ScaleHierarchy.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/ScaleHierarchy.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/ScaleExtraction.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/ScaleExtraction.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/ExpansionBoxes.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/ExpansionBoxes.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/DepthFirstSearch.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/DepthFirstSearch.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/CoupledResolution.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/CoupledResolution.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/BatchResolution.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/BatchResolution.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/Templates.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/Templates.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/CycleLifting.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/CycleLifting.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/BatchRouting.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/BatchRouting.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/BatchPreparation.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/BatchPreparation.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/CollisionEstimates.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/CollisionEstimates.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/Pairing.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/Pairing.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/BatchEndpoints.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/BatchEndpoints.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/BatchPathDeletion.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/BatchPathDeletion.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/BatchLovasz.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/BatchLovasz.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/Decomposition.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/Decomposition.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/EndpointPartition.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/EndpointPartition.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/PathDeletion.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/PathDeletion.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/Lovasz.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/Lovasz.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/ReservoirRemainder.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/ReservoirRemainder.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/ReservoirCycles.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/ReservoirCycles.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/Routing.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/Routing.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/Representatives.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/Representatives.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/EdgeSplitting.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/EdgeSplitting.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/ReservoirSampling.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/ReservoirSampling.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/SamplingCuts.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/SamplingCuts.lean"
+        ],
+        "OAI/Combinatorics/CycleDecomposition/Sampling.lean": [
+          "lean/OAI/Combinatorics/CycleDecomposition/Sampling.lean"
+        ]
+      },
+      "applicable_legal_files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        },
+        {
+          "path": "lean/LICENSE",
+          "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        }
+      ]
+    }
+  ],
+  "authors_contacted": false,
+  "published": false
+}

@@ -1,0 +1,189 @@
+\section{Routing, completion, and original-edge ownership}\label{sec:routing}
+This section records the graph-theoretic interfaces used by the physical
+fold. They strengthen the routing and completion framework
+of~\cite{OAI2026} quantitatively and keep its original-edge interpretation.
+For a graph $H$, cut expansion at least $h$ means
+\[
+ e_H(Z,V(H)\setminus Z)\ge h\min\{\abs Z,\abs{V(H)\setminus Z}\}
+                         \quad(Z\subseteq V(H)).
+\]
+For a supported core, cuts are taken inside its support.
+
+\subsection{Two edge banks and smaller-order completion}
+An even core at scale $w\ge w_0$ has expansion at least
+$(1023/1024)2^{sw}$. A biased edge partition, with bias $511/512$ and
+deviation $1/1024$, splits it into disjoint routing and completion banks
+of expansions at least
+\begin{equation}\label{eq:banks}
+        \frac{1044483}{1048576}\,2^{sw},\qquad
+        \frac{1023}{1048576}\,2^{sw},
+\end{equation}
+respectively. The cut-probability bound and its logarithmic scale gate
+are certified uniformly for core orders at most $2^{\rho w}$.
+There is no second parity correction: the cores were already corrected
+in Lemma~\ref{lem:scale}.
+
+For completion, the sampling-and-closing construction produces at most
+one cycle per core vertex and leaves a graph supported on fewer than
+$\eta$ times as many vertices. Apply the smaller-order induction hypothesis
+to this induced residual graph and extend the packing by the constructed
+cycles. Its weight is at most $(1+C\eta)$ times the core order. The strict
+support inequality, rather than a comparison of average degrees, justifies
+this induction call.
+
+A fold also leaves high-degree external centres attached to a core. The
+following is the precise credit needed in this case.
+\begin{lemma}[High-centre completion]\label{lem:completion}
+Let a graph be supported on $W=U\cup Z$, with $U\cap Z=\varnothing$ and
+$2\le\abs W$. Suppose $w\ge w_A$, $2^{sw}\le\abs U\le2^{\rho w}$,
+the graph has cut expansion on $U$ at least the second quantity in
+\eqref{eq:banks}, and every external vertex has even degree and at least
+$d$ neighbours in $U$. Suppose also
+\[
+ a_w=2^{\alpha w},\quad
+ \deg(v,Z)\le a_w\ (v\in U),\quad
+ \sqrt{2a_w\abs U}\le d\le\sqrt{2a_w\abs U}+1.
+\]
+If the weighted order bound with constant $K\ge0$ holds for all graphs of
+strictly smaller order than $\abs W$, then the graph has a packing with
+\begin{equation}\label{eq:high-credit}
+ \wt_\sigma(\mathcal P)+d/2+2a_w
+            \le(1+\sigma+K\eta+1/2048)\abs U.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Put $q=\abs Z$ and $v=\abs U$. Double-counting edges from $Z$ to $U$
+gives $qd\le a_wv$, and $d^2\ge2a_wv$ gives $q\le d/2$.
+The scale inequalities give the stronger rounding budget
+\[
+                    q+d/2+2a_w\le v/2048.
+\]
+They also allow the core expansion to extend across the high centres with
+the effective expansion required for completion. The completion construction
+then gives weight at most
+\[
+                 (v+q)+(K\eta+\sigma)v.
+\]
+Only vertices of $U$ need a parity charge: vertices of $Z$ already have
+even degree. Add $d/2+2a_w$ and use the rounding budget to obtain
+\eqref{eq:high-credit}. The proof applies on the actual support $W$;
+isolated padding is removed by a cost-preserving embedding. All residual
+induction calls have fewer vertices than $W$.
+\end{proof}
+
+\subsection{A single routing system for all requests}
+At an active scale put
+\begin{equation}\label{eq:teams}
+                 Q(w)=\ceil{c(w)2^{\alpha w}}.
+\end{equation}
+Requests consist of an ordered pair of endpoints, a team index, a set of
+forbidden interior vertices, and a nonnegative vertex weight. Endpoint
+load counts occurrences, so repeated endpoints are retained.
+
+\begin{lemma}[Grouped weighted routing]\label{lem:routing}
+In an even core at scale $w\ge w_A$, suppose that each vertex has endpoint
+load at most $2^{\alpha w}$, each team contains at most $Q(w)$ requests,
+and each forbidden set has size at most $2Q(w)$. There are paths in its
+routing bank for all requests such that distinct paths are edge-disjoint;
+paths in one team have disjoint interiors; each interior avoids its
+forbidden set; and for every request with weight function $\omega$,
+\begin{equation}\label{eq:soft-route}
+       \sum_{v\text{ in its interior}}\omega(v)
+                 \le\frac\gamma{Q(w)}\sum_{v\in U}\omega(v).
+\end{equation}
+Their lengths satisfy the scale-dependent bound
+\mcode{globalRoutingLength} used in the capacity certificates.
+\end{lemma}
+\begin{proof}
+For the large-ratio case, write $v$ for core order, $h$ for the routing
+expansion, $B=Q(w)$ for team capacity and $k_0$ for endpoint capacity.
+Put $q=1/c_0$, $a=a_{\rm prune}$, $R=7519120361/500000000$ and
+$L=30589490361/5000000000$. The exact rational parameters satisfy
+\begin{gather*}
+ 1+q+aq<2a^2(q+2),\qquad 4(1+q)/a<R,\\
+ r_0:=1-a-1/128-1/(R\gamma)>0,\qquad
+ 8/r_0<(L-1/32)^2.
+\end{gather*}
+The scale inequalities give $k_0\le qB$ and
+$R^2L^2B^2v\le h^3$. With $\ell=\floor{L\sqrt{v/h}}$ this implies
+$RB\ell\le h$.
+
+Associate to a candidate path its edge set and the marked interior vertices
+$(\text{team},v)$. These are resources in
+$E(G)\sqcup(\mathcal T\times V(G))$. A path of length at most $\ell$
+uses at most $2\ell$ resources. To apply the Aharoni--Haxell selection
+criterion~\cite{AH2000}, it suffices to show that for every nonempty
+request subfamily $I$ and every resource set $Z$ of size less than
+$4\ell\abs I$, some request in $I$ has an admissible path avoiding $Z$.
+
+Write $F$ for the edge resources of $Z$ and $Y$ for its marked-vertex
+resources. Put $D=4\ell\abs I$ and $x=\abs F/D$. Adaptive pruning chooses
+$z,\tau>0$ with
+\[
+ z+\tau=a,\qquad \frac{qx}{z}+\frac{1-x}{\tau}=\frac{1+q}{a},
+ \qquad \frac{qax}{2(1+q)}<\frac{z^2}{1+z}.
+\]
+After deletion of $F$, pruning discards at most $\abs F/(zh)$ vertices
+and leaves expansion $(1-z)h$. Endpoint and team loads imply
+\[
+          \frac{k_0\abs F}{zh}+\frac{B\abs Y}{\tau h}<\abs I.
+\]
+Thus a request remains whose endpoints survive and whose team has at most
+$\tau h$ marked interior obstructions. Delete those marks together with
+its hard ports, and construct a short path in the surviving expanding core.
+The short-path fan and averaging argument gives the additional weight bound
+$(R\gamma\ell/h)\sum\omega\le(\gamma/B)\sum\omega$.
+The retained expansion $r_0h$ gives the required path length $\ell$.
+This proves the resource-avoidance condition. Aharoni--Haxell then selects
+all paths simultaneously with disjoint resources, giving both forms of
+disjointness in the statement. The formal selection lemma keeps repeated
+endpoint occurrences as separate requests.
+
+The actual integer $Q(w)$ is used throughout. Its rounding inequalities
+prove the endpoint, team, hard-port and cubic-capacity gates at $w_A$ and
+extend them to the full scale half-line.
+
+There are two size regimes. If core order divided by routing-bank expansion
+is at least $4096$, use the grouped weighted router directly. Otherwise
+use the comparison bank and its bounded-ratio routing theorem. The
+comparison ratio remains at least $4$ after the original parity correction.
+Both regimes have the same conclusion~\eqref{eq:soft-route}. Thus no
+intermediate range of core orders is omitted.
+
+The completion machinery additionally uses an indexed reservoir router.
+Its explicit gates are $z\ge8192$, $8192\ln v\le z$,
+$2112\abs I\le z^2$, minimum degree at least $15z/16$, expansion at least
+$z/30$, and endpoint load at most $z/64$. A balanced bank split leaves
+one expanding bank to connect endpoint occurrences to a weak clique
+immersion in the other. The clique-immersion theorem of~\cite{GLW2019}
+and the terminal-pairing construction of~\cite{GMM2018}
+then produce actual edge-disjoint paths. Only edge-disjointness is needed
+from this reservoir theorem; it does not assert disjoint interiors.
+All these graph constructions, including their integer capacities, are
+proved in the formal source, not supplied by numerical gate checks alone.
+\end{proof}
+
+The key bookkeeping object for applying Lemma~\ref{lem:routing} is an
+\emph{original endpoint certificate}. It assigns to each occurrence of
+an endpoint of a request an incidence $(e,v)$ of an original edge, where
+$v$ is that endpoint. The assignment is injective. If the original edges
+used by two families are disjoint, their certificates combine. Reordering
+the incoming endpoints within the same owner core preserves the certificate.
+
+Three families are combined before routing: low two-edge paths, requests
+from paired matching edges, and the switches of quotient cycles. Their
+original edge sets are disjoint. The combined injection implies that the
+\emph{total} endpoint load at $v$ is bounded by its degree in the assigned
+descendant graph. Active-block preparation bounds this degree by
+$2^{\alpha w}$. Bounding the three families separately and adding those
+bounds would not establish the required load.
+
+The combined team construction also preserves the $Q(w)$ capacity and
+$2Q(w)$ hard-port limit. Apply Lemma~\ref{lem:routing} once to each selected
+core, and use those same paths in all subsequent closures. Low groups and
+paired matching groups close into actual simple cycles. Quotient cycles
+are lifted through their switches, with the soft charge
+\eqref{eq:soft-route}. The untouched completion bank remains available;
+the core remainder deletes exactly the paths actually used. These ownership
+rules are the reason that the four families in the next section have both
+an exact edge cover and pairwise disjointness.

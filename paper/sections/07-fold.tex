@@ -1,0 +1,120 @@
+\section{Folding a layer and paying its cost}\label{sec:fold}
+We work under the strong-induction hypothesis that every graph on fewer
+than $n$ vertices has a packing of weight at most $C\phi(v)v$.
+At an active stage $0\le i\le k$, put $w=w_i\ge w_A$ and
+\[
+ S=S_i,\qquad T=\sum_{j=0}^{i+2}S_j,\qquad f=\Phi(bw).
+\]
+Descendant pieces are grouped inside their actual DFS boxes into batches.
+Write $D$ for total batch order and $A$ for the total size of the active
+blocks that are contracted. The graph construction proves
+\begin{equation}\label{eq:fold-masses}
+ S-(N(w)+U(w))n\le A\le S+O(w)n,
+       \qquad D\le(1+O(w))n.
+\end{equation}
+Here $N$ pays the small or unusable descendants, $U$ the discarded boundary
+and grouping terms, and $O$ the overlapping support multiplicity.
+Each batch has order at most $2^{bw}$. Its active blocks are pairwise
+vertex-disjoint and belong to uniquely determined parent cores.
+
+\begin{lemma}[Physical fold]\label{lem:physical}
+There is an actual packing of the whole graph $G$ of weight at most
+\begin{align}
+ &(1+C\eta)T+\sigma S+S/2048+(B(w)+g(w))A\notag\\
+ &\hspace{20mm}+Cf(D-\kappa A)+(J(w)+V(w))n.\label{eq:physical}
+\end{align}
+\end{lemma}
+\begin{proof}
+For each batch, retain one original representative of every quotient edge;
+classify the original edges lost by contraction as internal pairs or
+matching requests. This produces a simple quotient. An active block saves
+at least $\kappa$ times its order in the quotient order, so the summed
+quotient orders are at most $D-\kappa A$. Each quotient has order at most
+$2^{bw}\le n^b<n$, since $n>1$ and $b<1$. Apply the induction hypothesis
+and monotonicity of $\phi$ to obtain quotient packing weight at most
+$Cf(D-\kappa A)$.
+
+Use the joint routing construction of Section~\ref{sec:routing} on each
+selected core. The single original-edge-endpoint injection covers low
+pairs, paired matching edges, and switches in quotient cycles simultaneously.
+The resulting four families are: completed core graphs, closed low groups,
+closed matching groups, and lifted quotient packings. Uncovered quotient
+edges keep their chosen original singleton representatives. Unused routing
+paths are not deleted from the core.
+
+The completed core and low-group families have combined weight at most
+\[
+ (1+\sigma+C\eta+1/2048)S
+                  +\text{(prepared pair count)}/Q(w).
+\]
+This bound uses the high-centre credit of Lemma~\ref{lem:completion}
+before any mass upper bound is substituted. The matching groups and the
+prepared-pair fee together are at most $(B(w)+g(w))A$, and the soft routing
+charge for lifted quotient cycles is at most $V(w)n$. The quotient packing
+contributes the term already obtained above.
+
+The four families are pairwise edge-disjoint and their union is exactly
+the selected cores and the full descendant frontier. To see the importance
+of both assertions, separate original non-routing edges from the paths
+deleted during routing. Every original edge has exactly one of the four
+owners by the quotient classification. Every deleted path has exactly its
+request owner; joint routing makes different owners edge-disjoint. An edge
+cannot belong to both classes because the core remainders were defined by
+deleting precisely the selected paths. This is the partition proved in
+\mcode{ActualFoldDisjoint12} and \mcode{ActualFoldCover12}.
+
+Finally insert the other prefix cores, of total mass $T-S$, at cost
+$(1+C\eta)(T-S)$, and the prefix long cycles at cost at most $J(w)n$.
+The prefix partition from Section~\ref{sec:layers} now covers the whole
+original graph. Adding the displayed costs proves~\eqref{eq:physical}.
+\end{proof}
+
+Define the coefficient of the selected core mass by
+\begin{equation}\label{eq:fold-coefficient}
+ \Gamma(P,w)=(1+C\eta)P+\sigma+B(w)+g(w)+\frac1{2048}
+                                     -C\kappa\Phi(bw).
+\end{equation}
+\begin{lemma}[Fold ledger]\label{lem:ledger}
+If $T\le PS$, then the right-hand side of~\eqref{eq:physical} is at most
+\begin{equation}\label{eq:paid-fold}
+                Cf n+\Gamma(P,w)S+CH(w)n.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Write the terms involving $A$ as $BA-(C\kappa f-g)A$.
+The second coefficient is nonnegative by~\eqref{eq:fee-endpoints}.
+Consequently the \emph{lower} bound on $A$ in~\eqref{eq:fold-masses}
+is used in its negative term, and the upper bound is used only in $BA$.
+The resulting error coefficient of $n$ is
+\[
+ CfO+(C\kappa f-g)(N+U)+BO+J+V.
+\]
+All losses are nonnegative, $0<f\le1$, $g\ge0$, and $B\le B_0$, so this
+is at most $CO+C\kappa(N+U)+B_0O+J+V=CH$.
+The coefficient of $S$ is exactly~\eqref{eq:fold-coefficient}.
+This proves~\eqref{eq:paid-fold}. In particular, one does not introduce
+an extra $gO$ term by applying an upper bound to the negative group term.
+\end{proof}
+
+For each of the $40$ phase intervals $[a,d]$, the certificates supply
+positive thresholds $P_t$ for all $t\ge3$. They prove
+\begin{equation}\label{eq:fold-phase-payment}
+ \Gamma(P_t,w)\le0\quad\text{whenever}\quad
+                   w\ge a\theta_2^{-(t-3)}.
+\end{equation}
+There are explicit thresholds for $3\le t\le16$ and a constant threshold
+for $t\ge16$. The scalar proof uses the monotonicity of $B,g,\Phi$;
+the constant tail therefore requires only its first scale endpoint.
+
+If $i$ is a stage with $S_i>0$ and
+\begin{equation}\label{eq:fold-test}
+                   \sum_{j=0}^{i+2}S_j\le P_{m_0-i}S_i,
+\end{equation}
+then $t=m_0-i$ and~\eqref{eq:schedule} give
+$w_i=W\theta_2^{-(t-3)}\ge a\theta_2^{-(t-3)}$.
+Lemmas~\ref{lem:physical} and~\ref{lem:ledger}, followed by
+\eqref{eq:fold-phase-payment} and~\eqref{eq:potential-payment}, give
+\[
+        \wt_\sigma(\mathcal P)\le Cf n+CH(w_i)n\le C\phi(n)n.
+\]
+This completes every branch in which an active fold exists.

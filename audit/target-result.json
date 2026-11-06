@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "expanded_statement_checked": true,
+  "main_theorem": "Cycle12.coefficient12",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proof_body_audit_requested": true,
+  "empty_environment_replay": false,
+  "objects": "/tmp/cycle12-independent-replacement-2026-11-03/full-build/lib/lean"
+}

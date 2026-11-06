@@ -1,0 +1,96 @@
+\section{The short-circumference reduction and catalogue}\label{app:terminal}
+We describe the computer-assisted proof of Lemma~\ref{lem:six} in enough
+detail to specify both its infinite reduction and its finite verification.
+For a nonempty connected graph the target is
+\begin{equation}\label{eq:six-affine}
+                    z(\mathcal P)\le19(n-1)+6m.
+\end{equation}
+A cut-vertex split is additive for this target: if its two sides meet only
+at the cut vertex, their $(n_i-1)$ terms sum to $n-1$. Thus strong induction
+reduces to a block that remains connected after deletion of any one vertex.
+The small-order cases are checked directly. The corresponding result for
+circumference at most $5$ is proved first by the same block induction.
+
+If a minimal counterexample to~\eqref{eq:six-affine} has circumference $6$,
+choose a six-cycle and label its vertices cyclically by $0,\ldots,5$.
+The structural reduction uses ears between cycle vertices. An ear and the
+longer of the two cycle arcs cannot form a cycle of length at least $7$.
+The allowed ear endpoints and the compatibility of two ears are checked
+with explicit path-splicing witnesses. Together with deletion of repeated
+attachments, this shows that the graph outside the chosen cycle is a set
+of isolated vertices together with at most one edge.
+
+Here the induction reductions are essential. For example, two degree-two
+vertices with the same pair of neighbours can be deleted and their four
+edges restored as a four-cycle. Restoring costs $42$, whereas the target
+allowance increases by $2\cdot19+4\cdot6=62$. The source also constructs
+the analogous reductions for two exterior edge components with common
+hubs and for three vertices with an alternating three-neighbour attachment.
+They leave at most one vertex of each two-neighbour type and at most two
+of each alternating three-neighbour type. These are reductions of actual
+proper induced graphs, not assumptions that the whole graph has small order.
+
+The $11$ possible attachment types, in their index order $0,\ldots,10$, are
+\[
+ \{0,2\},\{1,3\},\{2,4\},\{3,5\},\{0,4\},\{1,5\},
+ \{0,3\},\{1,4\},\{2,5\},\{0,2,4\},\{1,3,5\}.
+\]
+These are the neighbourhoods in \mcode{SixAttachmentModels}. Pairwise incompatible types have explicit
+simple long-cycle witnesses. All pairwise compatible type sets are
+contained in one of the following $14$ families, using the type indices of
+that file:
+\[
+\begin{gathered}
+\{0,3,6\},\{1,3,6\},\{0,4,6\},\{1,4,6\},\quad
+\{1,4,7\},\{2,4,7\},\{1,5,7\},\{2,5,7\},\\
+\{0,2,8\},\{0,3,8\},\{2,5,8\},\{3,5,8\},\quad
+\{0,2,4,9\},\{1,3,5,10\}.
+\end{gathered}
+\]
+The first nine types have multiplicity at most $1$, and the last two at
+most $2$. If an exterior edge is present, only the first four families
+are possible after relabelling; its endpoints attach at opposite cycle
+vertices $0,3$, with either or both of the two optional cross attachments.
+
+The common model uses $16$ slots: six cycle vertices, four pairs of
+attachment slots, and two slots for the optional exterior edge. At most
+$11$ slots are active. The $12$ three-type families have $8$ multiplicity
+choices each, and the last two families have $24$ choices each. There are
+also $4\cdot8\cdot4$ nonempty exterior-edge choices. Hence the catalogue
+has
+\[
+                       12\cdot8+2\cdot24+4\cdot8\cdot4=272
+\]
+parameter rows. The inverse index in \mcode{SixResidueParameterCoverage}
+proves that every valid tuple is in this list. All nine non-cycle chords
+of the six-cycle are optional, giving $272\cdot2^9=139\,264$ cases.
+
+A certificate row is either a long-cycle word, or a list of pairwise
+edge-disjoint cycle words. It records a set of required chords, and in
+the packing case an upper bound $h$ on the total number of chords.
+If $b_0$ is the number of base edges, $v_0$ the number of active vertices,
+$c_0$ the number of certified cycles and $e_0$ their total number of
+covered edges, the packing check is
+\begin{equation}\label{eq:chord-check}
+          42c_0+17(b_0+h)\le19(v_0-1)+23e_0.
+\end{equation}
+For any accepted chord set, $m'\le b_0+h$, so~\eqref{eq:chord-check}
+implies
+\[
+                  42c_0+23(m'-e_0)\le19(v_0-1)+6m'.
+\]
+Every cycle word is checked for length, distinct vertices, consecutive
+adjacencies and edge-disjointness. A long-cycle word excludes every chord
+superset containing its required chords. The finite check proves that each
+of the $512$ chord sets in each parameter row is accepted by one of its
+certificates. All these checks are evaluated with \mcode{decide +kernel}.
+
+Finally, actual outside vertices are enumerated in their attachment fibres.
+The multiplicity bounds give an injection into the designated slots;
+coverage gives a bijection to the active slots, and the classification gives
+the complete graph equality, including the exterior edge in both
+orientations. The finite witness transfers through this bijection.
+The unused slots are isolated; removing them preserves the number of cycles,
+the number of uncovered edges and the integer cost. This proves
+\eqref{eq:six-affine}. Summing over connected components proves
+Lemma~\ref{lem:six}, including isolated vertices and the graph of order zero.

@@ -1,0 +1,186 @@
+\section{Finite-degree completion}\label{sec:finite}
+For real $a$ and positive $t$, write $\mathcal A(a,t)$ for the assertion
+that every finite simple graph with $n$ vertices and $m$ edges has a packing
+of weight at most $an+m/t$. This section supplies the finite-degree cases
+of the main induction and the completion of the stopped remainder.
+
+\subsection{The short-circumference starting point}
+\begin{lemma}[Short-circumference certificate]\label{lem:six}
+If $G$ has no simple cycle of length at least $7$, then it has a packing
+$\mathcal P$ satisfying
+\[
+                  z(\mathcal P)\le19r(G)+6m.
+\]
+\end{lemma}
+The proof is a structural reduction followed by a finite certificate check;
+it is given in Appendix~\ref{app:terminal}. Both the reduction to the finite
+catalogue and the interpretation of its witnesses as actual original-edge
+packings are part of the formal proof.
+
+\begin{lemma}\label{lem:harmonic}
+For every integer $u\ge7$,
+\begin{equation}\label{eq:harmonic}
+ \mathcal A\left(\frac{19}{42}+\frac12\sum_{j=8}^u\frac1j,u\right)
+ \quad\hbox{holds}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Greedily delete simple cycles of length at least $7$. Their number is at
+most one seventh of the number of deleted edges. On the remaining graph,
+Lemma~\ref{lem:six}, divided by $42$, gives weight at most
+$19n/42+m'/7$. Adding the deleted cycles proves $\mathcal A(19/42,7)$.
+For the successor step from $t$ to $t+1$, first remove cycles of length at
+least $t+1$. On the remaining graph, the Erd\H{o}s--Gallai long-cycle edge
+bound~\cite{EG1959} gives $2m'\le tn$. Consequently
+\[
+ \frac{m'}t-\frac{m'}{t+1}
+          =\frac{m'}{t(t+1)}\le\frac{n}{2(t+1)}.
+\]
+Apply $\mathcal A(a,t)$ to this remainder and pay the deleted cycles by
+their lengths at denominator $t+1$. This proves
+$\mathcal A(a+1/(2(t+1)),t+1)$.
+Iterating that step from $7$ to $u$ gives~\eqref{eq:harmonic}.
+\end{proof}
+
+\subsection{The mixed cover}
+Put $B_*=43/10$, and define
+\[
+ D(n,m)=B_*nm^{1/3}+3n^{3/2},\qquad
+ \psi(v)=\begin{cases}(53/200)v,&0\le v\le1,\\
+              1/2-(47/200)v^{-1/3},&v\ge1.
+              \end{cases}
+\]
+The two formulas for $\psi$ agree at $1$. The function is nonnegative,
+nondecreasing and concave, and is at most $1/2$.
+
+\begin{lemma}[Mixed-cover certificate]\label{lem:mixed}
+Every graph of positive order has each of the following packings:
+\begin{align}
+ p&\le n\psi\left(\frac{m}{2B_*^3n}\right),
+       &q&\le D(n,m)+2n;\label{eq:fine-cover}\\
+ p&\le n/2,&q&\le D(n,m)+n.\label{eq:coarse-cover}
+\end{align}
+The packings in the two lines need not be the same.
+\end{lemma}
+\begin{proof}
+Use strong induction on the order. If $m\le D(n,m)$, the empty packing
+works. The greedy range is handled by the long-cycle estimate. A sparse
+cut is paid from the difference between the parent budget $D(n,m)$ and
+the two child budgets; cycles in the two induced sides are assembled and
+the cut edges are left as singletons. The perspective of the concave
+function $\psi$ pays the cycle counts in~\eqref{eq:fine-cover}.
+A sufficiently low-degree vertex is handled by deletion and the corresponding
+one-vertex budget inequality. The remaining graphs meet the degree and cut
+hypotheses of the routed-sampling construction. Its certificate covers
+\emph{all} the remaining continuous parameters, including the unbounded
+scale range. Appendix~\ref{app:cover} gives the construction, the precise
+coverage interface, and the finite checks closing this induction.
+\end{proof}
+
+\subsection{A certified depth-first-search step}
+Consider a depth-first-search block with $s$ new vertices and at most $T$
+boundary vertices, and let $m'$ denote its assigned edges. The boundary is
+padded to $T$ vertices when needed. Choose the local packings first, and
+then apply $\mathcal A(a,t)$ once to the graph of all uncovered original
+edges, retaining the original vertex set. Its intercept is therefore $an$.
+For a regular block, the fine packing contributes the following additional
+fee, after subtracting the block's assigned-edge budget $m'/T$:
+\begin{equation}\label{eq:regular-fee}
+ (s+T)\psi\left(\frac{m'}{2B_*^3(s+T)}\right)
+       +\frac{D(s+T,m')+2(s+T)}t-\frac{m'}T.
+\end{equation}
+The alternative is to leave the block's edges for that common suffix
+estimate; its additional fee is $m'/t-m'/T$. An entire component with no boundary instead uses
+\eqref{eq:coarse-cover}, giving fee
+\begin{equation}\label{eq:component-fee}
+                  s/2+\frac{D(s,m')+s}t-\frac{m'}T.
+\end{equation}
+These are different branches of the DFS decomposition, not interchangeable
+versions of the same packing.
+
+For $g>0$ let $\Pi_p(g)=(1+g)^pg^{1-p}$. Write
+\begin{align}
+ \mathcal K(T,t,d,g)
+  ={}&(1+g)\left[\psi\left(\frac{d}{4B_*^3}\right)
+                              +\frac2t-\frac d{2T}\right]\notag\\
+     &+\frac{B_*}{t}\left(\frac{dT}{2}\right)^{1/3}\Pi_{4/3}(g)
+                +\frac{3\sqrt T}{t}\Pi_{3/2}(g).\label{eq:core-fee}
+\end{align}
+The substitution $d=2m'/(s+T)$ and $g=T/s$ makes
+\eqref{eq:regular-fee} equal to $s\mathcal K(T,t,d,g)$.
+The functions $\Pi_p$ are convex for $p\ge1$: they are perspectives of
+$x\mapsto x^p$. Thus, for fixed $d$, the maximum of~\eqref{eq:core-fee}
+on a closed $g$-interval occurs at an endpoint, even when its linear
+coefficient is negative.
+
+\begin{lemma}[Finite DFS step]\label{lem:dfs-step}
+Let $T,t$ be positive integers with $T\ge2^{20}$, and let $\beta_0,K>0$.
+Suppose
+\begin{align*}
+ &(1+1/\beta_0)/2\le K,\\
+ &\mathcal K(T,t,d,g)\le K\quad(d>t),\quad
+       g\in\{(2\beta_0+2^{-20})^{-1},\beta_0^{-1}\},\\
+ &s/2+\bigl(D(s,m')+s\bigr)/t-m'/T\le Ks
+                 \quad(0<s\le\beta_0T+1,\ m'\ge0).
+\end{align*}
+Then $\mathcal A(a,t)$ implies $\mathcal A(a+K,T)$.
+\end{lemma}
+\begin{proof}
+First remove simple cycles of length at least $T$. If $h$ edges are
+removed, these cycles cost at most $h/T$. The remaining graph, on the same
+vertex set, has $m-h$ edges and no cycle of length at least $T$; this is the
+circumference hypothesis required by the DFS block construction.
+The rounded DFS construction assigns each remaining edge to exactly one block.
+Its regular blocks have $T/s$ between the two displayed endpoints; the
+rounding error is bounded by $1/T\le2^{-20}$. For $d\le t$, the direct
+suffix branch is paid by $(1+1/\beta_0)/2\le K$. For $d>t$, convexity
+and the two endpoint hypotheses pay~\eqref{eq:regular-fee}. Boundary-free
+components have at most $\beta_0T+1$ vertices and are paid by the last
+hypothesis. Sum over the disjoint sets of new vertices. The assigned edge
+counts sum to $m-h$. Apply the suffix packing once to the actual residual
+graph, so its intercept is charged once per original vertex. This gives
+weight at most $(a+K)n+(m-h)/T$ on the remainder. Restoring the initially
+removed cycles adds at most $h/T$, yielding $(a+K)n+m/T$.
+The original-edge assembly is proved by
+\mcode{Cycle13.weightedAffine_dfs_step}; the scalar hypotheses are supplied in
+\mcode{Cycle12.FiniteComponentPayment}.
+\end{proof}
+
+The endpoint hypotheses in Lemma~\ref{lem:dfs-step} are verified on whole
+real density intervals. In the high-density branch, $t\ge4B_*^3=79507/250$.
+After substitution, the nonlinear density expression has the form
+$A x^{1/3}-B x^{-1/3}-x/2$; a certified tangent and derivative sign pay its
+entire domain. Rational lower and upper bounds for $A,B$ and $\sqrt{\cdot}$
+are established by cubing or squaring nonnegative rational endpoints.
+The component branch has $B=0$ and also includes zero density.
+No finite sampling of possible graph densities is used.
+
+There are $83$ finite chains. A chain begins with~\eqref{eq:harmonic}, uses
+a certified upper bound on its harmonic intercept, and applies
+Lemma~\ref{lem:dfs-step} a finite number of times. If its final affine bound
+is $\mathcal A(a,T)$ and its degree cap is $d_0$, then
+\begin{equation}\label{eq:finite-completion}
+       2m\le d_0n\quad\Longrightarrow\quad
+       \wt_\sigma(\mathcal P)\le\left(a+\frac{d_0}{2T}\right)n.
+\end{equation}
+All $T$ and $d_0$ in the formal certificates are integers; bounds such as
+$2^x\le d_0$ are certified before~\eqref{eq:finite-completion} is applied.
+The chains and their exact fees are tabulated in the companion data.
+
+\begin{proposition}[Finite potential base]\label{prop:finite-base}
+If $2m\le2^{B_{\rm main}}n$, then $G$ has a packing of weight at most
+$C\phi(n)n$.
+\end{proposition}
+\begin{proof}
+The $45$ base intervals cover the required order range, with their shared
+endpoints included. On each interval choose its certified finite chain.
+Use the simple-graph estimate $2m\le n^2$ together with the assumed cap
+to establish the chain's integer degree cap. The resulting constant
+in~\eqref{eq:finite-completion} is at most the lower endpoint value of
+$C\phi(n)$. Monotonicity from Lemma~\ref{lem:potential} pays the entire
+interval. Beyond the last interval the main finite chain and the same
+monotonicity apply. The zero-order case has no edges. The endpoint payments
+and the interval-coverage proof are
+\mcode{Cycle12.FinitePotentialPayments} and
+\mcode{Cycle12.FinitePotentialBase12}.
+\end{proof}

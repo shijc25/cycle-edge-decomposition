@@ -1,0 +1,23 @@
+{
+  "time_utc": "2026-11-03T18:24:08.722060+00:00",
+  "reason": "Execution environment reconnected with prior execution sessions absent; build files retained",
+  "successful_records_before_resume": 8714,
+  "corresponding_primary_objects_present": 8714,
+  "saved_header_generations": 4,
+  "source_manifest_sha256": "17c72c62a7f90598c14f8bd7643e7b1e3c829c2969e3c134df84c916ba901960",
+  "full_object_hash_validation": "Performed by rebuild --resume before accepting objects",
+  "observed_progress_after_resume": {
+    "compiled": 8766,
+    "total": 10554,
+    "failed": [],
+    "active": [
+      "Cycle12/FoldPotentialAnchors/Phase27/T04/Point01.lean",
+      "Cycle12/FoldPotentialAnchors/Phase27/T04/Point02.lean",
+      "Cycle12/FoldPotentialAnchors/Phase27/T04/Point03.lean"
+    ],
+    "ready": 942,
+    "workers": 2,
+    "certificate_workers": 4,
+    "complete": false
+  }
+}

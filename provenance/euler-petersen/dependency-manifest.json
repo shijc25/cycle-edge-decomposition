@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/jtraverso/euler-petersen",
+  "commit": "02c3f1a5327c5f066938860bb07e9fce226b36ca",
+  "original_lean": "v4.35.0-rc3",
+  "local_lean": "v4.34.1",
+  "license": "Apache-2.0",
+  "source_changes": false,
+  "modules": {
+    "Euler.Basic": {
+      "source": "Euler/Basic.lean",
+      "sha256": "080c41bc729368563d28fcf210a47d0f96d51ad06776df6c3149716840a09e3d"
+    },
+    "Euler.Trail": {
+      "source": "Euler/Trail.lean",
+      "sha256": "dd3d6aff57d0acb961e9670c8fb9dec6c85201d565c29b1792d7b608d4f642c5"
+    },
+    "Euler.Orientation": {
+      "source": "Euler/Orientation.lean",
+      "sha256": "15e17640554b8d15ae14fbbd41db8a1d913017bbeb985040275559016e95832b"
+    }
+  }
+}

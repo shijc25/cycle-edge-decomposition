@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "release_date": "2026-11-06",
+  "source_archive_sha256": "0bcdf9f9f3be4cb0beb18be44fbee5dc274f8c4d9b782628ca19e2c9054deb95",
+  "proof_source_modules_unchanged": 10554,
+  "all_proof_sources_byte_identical": true,
+  "lean_recompiled_for_editorial_release": false,
+  "original_verification_dates_preserved": true,
+  "unaltered_proof_records": {
+    "audit/source-manifest.json": "17c72c62a7f90598c14f8bd7643e7b1e3c829c2969e3c134df84c916ba901960",
+    "audit/compilation-results.jsonl": "ae5601aabd9c88cc56584edaa3c623e85ee69bff6be7af3fcda7bda02797abc0",
+    "audit/main-dependency-audit.json.gz": "dd53cc51070bfe77d2c639d835ce77784e9deb84817aacffae161a19bb41b55d",
+    "audit/recovery-prior-journal.jsonl.gz": "b6d9e88f5bb2e56b83fba119d6453b1e57335052cc809a26c117e5c7857ecd9c",
+    "audit/exact-object-recovery-results.jsonl.gz": "9c8fc443ba6a4d4c1facc05e1f0f138c706fd3665169866de93f5395e17a88ff",
+    "tools/ExactStatement.lean": "2069ba2c600bc2e3216b76cce0af72227a8d51053e2e772d00752282b3b27daf",
+    "tools/InspectMain.lean": "19bd3bed6343c7bf7f9a802583fd3166766014211ed626216bde14beb053146a",
+    "scripts/verify_artifact.py": "91c070428c3d281837d9a81604eda5b00941d70202c4993bbababdafc27a7bd0"
+  },
+  "public_evidence_normalization": [
+    {
+      "path": "release/status.json",
+      "original_sha256": "f0c5378945f8bec53b561f9a2bb4adca5348deac84204979a18cdbe0bffcafcb"
+    },
+    {
+      "path": "release/manuscript-validation.json",
+      "original_sha256": "3eb6d13ee7755b5b9f68b2050080b22f47ddd526db82d238acfff7bbb35d3491"
+    },
+    {
+      "path": "release/independent-replacement-inputs.json",
+      "original_sha256": "fae73d7f0fe12dfe2550810405ea6a67080684f2893814778a38e5fd5e8bbe88"
+    },
+    {
+      "path": "audit/storage-recovery-2026-11-04.json",
+      "original_sha256": "90df766289a9547eb3b28b35b805ea95f61735a1aabb5c6a7b647d66e576bcde"
+    },
+    {
+      "path": "audit/environment-resumption.json",
+      "original_sha256": "862e7317217264c2199c5cc596a557882cec91b548d080c4c613e6228fcaa5de"
+    },
+    {
+      "path": "audit/clean-verification.json",
+      "original_sha256": "2c3cf9c0dcfae83c10cf060d14357c5e05b942d1e9107c3387d8f9d0d8b0eeaa"
+    },
+    {
+      "path": "audit/build-scheduling-transition.json",
+      "original_sha256": "ec31eff46d180daa4137c12fb89345ed5ff02b577664fe709d436b434f61d497"
+    }
+  ]
+}

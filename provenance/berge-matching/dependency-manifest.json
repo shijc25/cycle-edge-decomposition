@@ -1,0 +1,34 @@
+{
+  "repository": "https://github.com/jtraverso/berge-matching",
+  "commit": "f01d042c071c778fb3f432312356136a92369076",
+  "original_lean": "v4.35.0-rc3",
+  "local_lean": "v4.34.1",
+  "license": "Apache-2.0",
+  "modules": {
+    "BergeLib.Berge": {
+      "sha256": "fca379ce0af6197f7c8919971f2df98f6fb352fec5d0f172e1714a8cb3209960",
+      "source": "BergeLib/Berge.lean"
+    },
+    "GallaiEdmondsLib.GEBarrier": {
+      "sha256": "681d0443bacb2c7034038f868e593a8c03796914d77888c11ed4c1754c1c1c8a",
+      "source": "GallaiEdmondsLib/GEBarrier.lean"
+    },
+    "GallaiEdmondsLib.GEComponents": {
+      "sha256": "d401062beb6a3c25199073f05f3a21e4a3ef2ff5afc080fdac43d162c22355a7",
+      "source": "GallaiEdmondsLib/GEComponents.lean"
+    },
+    "GallaiEdmondsLib.GEConstruct": {
+      "sha256": "24767435b2b7bf6c217a536a5a10998b8219981efabdd01e50dbdfde5f5580e6",
+      "source": "GallaiEdmondsLib/GEConstruct.lean"
+    },
+    "GallaiEdmondsLib.GEMatching": {
+      "sha256": "e08db7ecfa153e7d36024f3a8b270e7e000e27134e1a3d7a4ea24d5f47d7a113",
+      "source": "GallaiEdmondsLib/GEMatching.lean"
+    },
+    "GallaiEdmondsLib.GallaiEdmonds": {
+      "sha256": "3e84c07aa6c85f4e4fca470f2c4c4864d27833cb38c63fbaf91356d745e060e6",
+      "source": "GallaiEdmondsLib/GallaiEdmonds.lean"
+    }
+  },
+  "changes": []
+}

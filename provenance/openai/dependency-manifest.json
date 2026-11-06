@@ -1,0 +1,248 @@
+{
+  "repository": "https://github.com/openai/math",
+  "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "modules": {
+    "OAI.Combinatorics.CycleDecomposition.Main": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.LayerCosts"
+      ],
+      "sha256": "03edc7620d991daaa5629313c05395708b83ea44e5634a5ef69227ba2bcf77d9",
+      "lines": 226
+    },
+    "OAI.Combinatorics.CycleDecomposition.LayerCosts": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.UniformLayers"
+      ],
+      "sha256": "7ddbf378c4883c08ba7ef4d4117cae15cc1ea2d32c9465921c8aa8d14b8c6e0b",
+      "lines": 344
+    },
+    "OAI.Combinatorics.CycleDecomposition.UniformLayers": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.CostRegrouping"
+      ],
+      "sha256": "30c59f4a7cdcbf9f5e0f782ba1135b50e27bf9a5eec0a10bb71841474a2d98b1",
+      "lines": 297
+    },
+    "OAI.Combinatorics.CycleDecomposition.CostRegrouping": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.PrefixSelection"
+      ],
+      "sha256": "290d0a17dba2d0307cbe582ee53adcb316990ddde3d9198396416f40cca5977c",
+      "lines": 404
+    },
+    "OAI.Combinatorics.CycleDecomposition.PrefixSelection": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.BatchIndexing"
+      ],
+      "sha256": "2ace7017770a5c9593fa87e907fea11d775cd0775c22ec786557628c5058a22c",
+      "lines": 111
+    },
+    "OAI.Combinatorics.CycleDecomposition.BatchIndexing": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.ScaleDecomposition"
+      ],
+      "sha256": "5dd10ea708404173b8a60e086de39a9a63938c75badbafdb31bb0425160da072",
+      "lines": 498
+    },
+    "OAI.Combinatorics.CycleDecomposition.ScaleDecomposition": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.ScaleHierarchy"
+      ],
+      "sha256": "305492ed8166f07a1dbf8d768767efc39416b10e48ab0ced695c3c0e82574fa0",
+      "lines": 632
+    },
+    "OAI.Combinatorics.CycleDecomposition.ScaleHierarchy": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.ScaleExtraction"
+      ],
+      "sha256": "d0164e09f11e039d7a532026da9aaa4dd16b8cdfcf8c627c31ec995f9fbc8d78",
+      "lines": 575
+    },
+    "OAI.Combinatorics.CycleDecomposition.ScaleExtraction": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.ExpansionBoxes"
+      ],
+      "sha256": "86e67577ca500858e49b367a3044bf856ebe1f5e5f0b3513657b6510a08cc76c",
+      "lines": 622
+    },
+    "OAI.Combinatorics.CycleDecomposition.ExpansionBoxes": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.DepthFirstSearch"
+      ],
+      "sha256": "08474a1cae35c28c3691033cb4de5bbceec2392dc0fd7545700c62073f0cc548",
+      "lines": 658
+    },
+    "OAI.Combinatorics.CycleDecomposition.DepthFirstSearch": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.CoupledResolution"
+      ],
+      "sha256": "5a25eaad1f55ccee0cae9e6200a1cc0dfa2b04b429cdd053fc405c7a8fa83097",
+      "lines": 197
+    },
+    "OAI.Combinatorics.CycleDecomposition.CoupledResolution": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.BatchResolution"
+      ],
+      "sha256": "6f4e75dd021691bd4ce076dbc5d5bacc865ce23170dc0027baa69b3110e8d53a",
+      "lines": 817
+    },
+    "OAI.Combinatorics.CycleDecomposition.BatchResolution": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.Templates"
+      ],
+      "sha256": "a3a7fb57b6aee2ce1682c0f13d618abeff490886b3602db18030118be0002cdc",
+      "lines": 467
+    },
+    "OAI.Combinatorics.CycleDecomposition.Templates": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.CycleLifting"
+      ],
+      "sha256": "c8e63c3241a525021205d940a55b1e61f46b0e28630c1ddc0df2b0998806af02",
+      "lines": 784
+    },
+    "OAI.Combinatorics.CycleDecomposition.CycleLifting": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.BatchRouting"
+      ],
+      "sha256": "1faf8d15cd44a3ff639f45eb8265dbd90aa0ea289d9c0c83a614e653502ec1ea",
+      "lines": 835
+    },
+    "OAI.Combinatorics.CycleDecomposition.BatchRouting": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.BatchPreparation"
+      ],
+      "sha256": "b59516c44bec94e1b56b86788899211c65026f3af04a1f008761c153356f9503",
+      "lines": 1100
+    },
+    "OAI.Combinatorics.CycleDecomposition.BatchPreparation": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.CollisionEstimates"
+      ],
+      "sha256": "f9c3bf8e297602d91358c5c0a9e13277edc63581db7f81f66a7a2b595b113670",
+      "lines": 1034
+    },
+    "OAI.Combinatorics.CycleDecomposition.CollisionEstimates": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.Pairing"
+      ],
+      "sha256": "164e10dff3d9b722850f1f689918589cb18ecd50ddd056785bb20c5957fd9a61",
+      "lines": 548
+    },
+    "OAI.Combinatorics.CycleDecomposition.Pairing": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.BatchEndpoints"
+      ],
+      "sha256": "7e8bbecd35e0fc9ebb83d54ed3574da5e70cc47f35752bcea15bdbc63f5e1808",
+      "lines": 835
+    },
+    "OAI.Combinatorics.CycleDecomposition.BatchEndpoints": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.BatchPathDeletion"
+      ],
+      "sha256": "b9f508fa150ee4180b5589514a917e11ea4d20528a41259e11284228895f6eb5",
+      "lines": 275
+    },
+    "OAI.Combinatorics.CycleDecomposition.BatchPathDeletion": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.BatchLovasz"
+      ],
+      "sha256": "6345ea5cd484dd5c819820e4695f501bfa2dd89d197abc15901f41d9f4908f12",
+      "lines": 735
+    },
+    "OAI.Combinatorics.CycleDecomposition.BatchLovasz": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.Decomposition"
+      ],
+      "sha256": "8b88880e74a764300e8411eaa6662377ea1722933b65e175e7b775c841e0b96b",
+      "lines": 1606
+    },
+    "OAI.Combinatorics.CycleDecomposition.Decomposition": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.EndpointPartition"
+      ],
+      "sha256": "4f742482cd903447ea3ce10f25f80f8dfbc84540e92877e771c4c08acb441853",
+      "lines": 514
+    },
+    "OAI.Combinatorics.CycleDecomposition.EndpointPartition": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.PathDeletion"
+      ],
+      "sha256": "c4d7364ac829d52001e1567b499f3764ecc4fec91889d400974fbee47947a62c",
+      "lines": 275
+    },
+    "OAI.Combinatorics.CycleDecomposition.PathDeletion": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.Lovasz"
+      ],
+      "sha256": "70408e8d6e9132193d9b88cf1a3341645068971027cb6ee5c872690e51f0582d",
+      "lines": 735
+    },
+    "OAI.Combinatorics.CycleDecomposition.Lovasz": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.ReservoirRemainder"
+      ],
+      "sha256": "1fa567a0ccd24344fa6eae72a05c25d1090bca655f32aaa5991148a1f2fa7353",
+      "lines": 1605
+    },
+    "OAI.Combinatorics.CycleDecomposition.ReservoirRemainder": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.ReservoirCycles"
+      ],
+      "sha256": "e66d9790fbf617721598ec86278bae7418f9ad93cb22b2b9d0164a49a11e3408",
+      "lines": 741
+    },
+    "OAI.Combinatorics.CycleDecomposition.ReservoirCycles": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.Routing"
+      ],
+      "sha256": "03b4280fec516953b650dfef2a9623d992cd9f6b398b13064e16051f53d974c9",
+      "lines": 775
+    },
+    "OAI.Combinatorics.CycleDecomposition.Routing": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.Representatives"
+      ],
+      "sha256": "bda59fcac1565efb22c3bfd21c59b97b8708457e2a3aba334e2e7cb84e8f8586",
+      "lines": 1040
+    },
+    "OAI.Combinatorics.CycleDecomposition.Representatives": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.EdgeSplitting"
+      ],
+      "sha256": "4bc9e049246588a1b02582da448de42a2adcbebc780158af57ed097deea0f2d8",
+      "lines": 264
+    },
+    "OAI.Combinatorics.CycleDecomposition.EdgeSplitting": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.ReservoirSampling"
+      ],
+      "sha256": "267f9f00cb7f4f43f3d00399c4c10bb226e013544fd1ff9391c077d960054136",
+      "lines": 403
+    },
+    "OAI.Combinatorics.CycleDecomposition.ReservoirSampling": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.SamplingCuts"
+      ],
+      "sha256": "296d2e743613f0338aaeed65919709193af57f60375e0f810c5a5836091d7dfb",
+      "lines": 398
+    },
+    "OAI.Combinatorics.CycleDecomposition.SamplingCuts": {
+      "imports": [
+        "OAI.Combinatorics.CycleDecomposition.Sampling"
+      ],
+      "sha256": "eb67aed05e2269fcae158355fc57affed794d9eb5410464315ec369e07553079",
+      "lines": 713
+    },
+    "OAI.Combinatorics.CycleDecomposition.Sampling": {
+      "imports": [
+        "Mathlib"
+      ],
+      "sha256": "0da57bc89c09bab54b5007e3b30ead035aebb369076a3a0929c0e7d67824a048",
+      "lines": 388
+    }
+  },
+  "external_import_roots": [
+    "Mathlib"
+  ],
+  "compiled": false
+}

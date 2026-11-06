@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/leanprover/cslib",
+  "commit": "197a7be621263b84c67ca4f803f69205b36d06df",
+  "license": "Apache-2.0",
+  "source_changes": false,
+  "modules": {
+    "Cslib.Init": {
+      "sha256": "ab3bdd2c37038fac413d05a67b4892737f538915f35992a2782e116c71bed7bc"
+    },
+    "Cslib.Algorithms.Lean.TimeM": {
+      "sha256": "b58d42bb8ba3345c5ab52701f8f4d77dae557b096b79d326ccda4fa4ffd3dcf6"
+    },
+    "Cslib.Foundations.Lint.Basic": {
+      "sha256": "bf91c4decf90b9790541e486c76621bca2bbd72ee139740e118fdfc9ef2fda7a"
+    }
+  }
+}

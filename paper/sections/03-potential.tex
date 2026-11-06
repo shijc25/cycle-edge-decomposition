@@ -1,0 +1,134 @@
+\section{Parameters and the renewal potential}\label{sec:potential}
+All constants in this section are fixed rational numbers. Their exact values
+are listed in Appendix~\ref{app:parameters}; the symbols agree with the
+formal proof, except that $c_0$ denotes its constant \mcode{c}, $B_0$ its
+constant \mcode{batch}, and $\chi$ its constant \mcode{overlap}.
+In particular
+\[
+ C=\frac{485}{42},\quad \sigma=\frac{23}{42},\quad
+ \kappa=\frac{999999}{1000000},\quad
+ \phi_0=\frac{46220729}{50000000},\quad
+ B_{\rm main}=\frac{158387}{1000}.
+\]
+The parameters satisfy
+\begin{equation}\label{eq:parameter-order}
+ 0<s<\theta_2\le\theta_1\le\theta_0<1,\quad 0<b<1,\quad
+ \rho=1+\delta+\ep,\quad q_0=\theta_1\theta_2,\quad q_0w_A=w_0.
+\end{equation}
+Put
+\[
+ h=\frac{3s-\rho-2\alpha}{2}>0,
+ \qquad c(w)=c_0\,2^{h(w-w_A)}.
+\]
+This growing team scale will be used in Section~\ref{sec:routing}.
+All logarithms in exponents and scale coordinates are to base $2$;
+$\ln$ denotes the natural logarithm.
+
+For $z>0$, define
+\begin{equation}\label{eq:scale-series}
+ E(z)=\sum_{j\ge0}2^{-z\theta_2^{-j}}.
+\end{equation}
+The series converges. Indeed
+$\theta_2^{-j}\ge1+j(\theta_2^{-1}-1)$, which bounds it above by a
+geometric series. The losses at a scale $w\ge w_A$ are
+\begin{align}
+ F(w)&=\left(\frac{1001}{1000}+(\rho-s)q_0w\right)
+                   2^{-(\alpha-sq_0)w},\label{eq:F}\\
+ O(w)&=\chi M E(\delta\theta_2^2w),&
+ N(w)&=M^2F(w),\label{eq:ON}\\
+ J(w)&=\frac M2 E(\ep\theta_2^2w),&
+ U(w)&=M2^{-(s-\lambda)w}+2M^2 2^{-(s+b-\lambda-\rho)w},\label{eq:JU}\\
+ V(w)&=\frac{\gamma M}{2c(w)}F(w).\label{eq:V}
+\end{align}
+The total positive loss used for coefficient $12$ is
+\begin{equation}\label{eq:H}
+ H(w)=O(w)+\kappa\bigl(N(w)+U(w)\bigr)
+                   +\frac{B_0O(w)+J(w)+V(w)}C.
+\end{equation}
+No cancellation between separately bounded positive losses is used in this
+potential.
+
+\begin{lemma}\label{lem:loss-decay}
+Let $r_* =\ep\theta_2^2$. Each loss in~\eqref{eq:ON}--\eqref{eq:V} is
+nonnegative and nonincreasing on $[w_A,\infty)$. Moreover
+\begin{equation}\label{eq:H-decay}
+ H(y)\le 2^{-r_*(y-x)}H(x)\qquad(w_A\le x\le y).
+\end{equation}
+\end{lemma}
+\begin{proof}
+The rational parameter inequalities imply
+\[
+ 0<r_*\le\min\{\delta\theta_2^2,\alpha-\theta_0q_0,
+ s-\lambda,s+b-\lambda-\rho,\alpha-\theta_0q_0+h\}.
+\]
+Every summand of $E(aw)$ decays at least as fast as $2^{-aw}$.
+For $F$, put $A=1001/1000$ and $B=(\rho-s)q_0$. The certified entropy
+slope inequality at $w_A$ is
+\[
+ B\le (\ln2)(\theta_0-s)q_0(A+Bw_A).
+\]
+Since $B\ge0$, its right-hand side increases with $w$. Differentiating
+$\ln F(w)$ therefore gives
+\[
+ \frac{F'(w)}{F(w)}=\frac B{A+Bw}-(\ln2)(\alpha-sq_0)
+       \le-(\ln2)(\alpha-\theta_0q_0).
+\]
+Integrating gives the asserted exponential comparison for $F$ and $N$.
+The additional factor $2^{-h(w-w_A)}$ gives the displayed rate for $V$.
+The two summands of $U$ and the series defining $O,J$ have the other rates
+listed above. Positive linear combinations preserve the comparison with
+the common rate $r_*$, proving~\eqref{eq:H-decay}.
+\end{proof}
+
+Define, for $x\ge bw_A$,
+\begin{equation}\label{eq:renewal-loss}
+ L(x)=\sum_{j\ge1}H(x/b^j).
+\end{equation}
+Lemma~\ref{lem:loss-decay} implies convergence, by the same geometric
+comparison as for~\eqref{eq:scale-series}. Shifting the summation index gives
+\begin{equation}\label{eq:renewal-identity}
+                         L(bw)-L(w)=H(w)\qquad(w\ge w_A).
+\end{equation}
+The anchor certificate proves
+\begin{equation}\label{eq:anchor-floor}
+                         L(bw_A)\le1-\phi_0.
+\end{equation}
+Set
+\begin{equation}\label{eq:Phi}
+ \Phi(x)=\begin{cases}\phi_0,&x<bw_A,\\1-L(x),&x\ge bw_A,\end{cases}
+ \qquad
+ \phi(n)=\begin{cases}\phi_0,&n=0,\\\Phi(\log_2n),&n>0.\end{cases}
+\end{equation}
+The separate definition at zero matches the value used in Lean.
+
+\begin{lemma}\label{lem:potential}
+The functions $\Phi$ and $\phi$ are nondecreasing, and
+$0<\phi_0\le\Phi(x)\le1$. If $w\ge w_A$ and $n\ge2^w$, then
+\begin{equation}\label{eq:potential-payment}
+                   H(w)\le\phi(n)-\Phi(bw).
+\end{equation}
+\end{lemma}
+\begin{proof}
+The summands in~\eqref{eq:renewal-loss} are nonnegative and nonincreasing,
+so $L$ is nonnegative and nonincreasing. At $bw_A$, inequality
+\eqref{eq:anchor-floor} prevents a downward jump in~\eqref{eq:Phi}.
+This proves the bounds and monotonicity. Equation~\eqref{eq:renewal-identity}
+gives $\Phi(w)-\Phi(bw)=H(w)$, and
+$\log_2n\ge w$ gives~\eqref{eq:potential-payment}.
+\end{proof}
+
+For later use define the batch and group fees
+\begin{equation}\label{eq:batch-group-fees}
+ B(w)=\frac{2^{(\rho-s-\alpha)w}}{4c(w)}
+                +\frac12\,2^{(\rho-s-\lambda)w},
+ \qquad g(w)=\frac1{2c(w)}.
+\end{equation}
+They are nonnegative and nonincreasing. The endpoint certificates establish,
+for every $w\ge w_A$,
+\begin{equation}\label{eq:fee-endpoints}
+          B(w)\le B_0,\qquad g(w)\le C\kappa\phi_0
+                                  \le C\kappa\Phi(bw).
+\end{equation}
+All numerical assertions in this section are rational inequalities or
+certified inequalities involving powers of $2$. Section~\ref{sec:formal}
+and Appendix~\ref{app:parameters} specify how they are checked.

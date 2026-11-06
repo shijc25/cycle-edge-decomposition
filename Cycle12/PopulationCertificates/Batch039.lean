@@ -1,0 +1,93 @@
+import Cycle12.RationalPopulationCertificate
+import Cycle12.WitnessCertificates.Batch039
+
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+
+namespace Cycle12.PopulationCertificates.Batch039
+
+def certificate780 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate780,(312854493878473221417/1000000000000000000),(65043133191871673207/100000000000000000),(142705445687782107/1000000000000000000),(1056029620654836723/1000000000000000000),(1121443371/1000000000),(189772777886054493/1000000000000000000),0,0,(135970251772825923/200000000000000000)⟩
+theorem valid780 : certificate780.Valid := by decide +kernel
+theorem sound780 : certificate780.Sound := rat_population_certificate_sound certificate780 valid780 WitnessCertificates.Batch039.valid780
+
+def certificate781 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate781,(312854493878473221417/1000000000000000000),(65043133191871673207/100000000000000000),(142705445687782107/1000000000000000000),(67891885595891817/62500000000000000),(1999999983/500000000),0,(85747819488902239/200000000000000000),(20521857251747803/31250000000000000),(1264571813073683317/50000000000000000)⟩
+theorem valid781 : certificate781.Valid := by decide +kernel
+theorem sound781 : certificate781.Sound := rat_population_certificate_sound certificate781 valid781 WitnessCertificates.Batch039.valid781
+
+def certificate782 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate782,(306286155555872753049/1000000000000000000),(131199597695891156681/200000000000000000),(29153273741294621/200000000000000000),(42261185330045017/40000000000000000),(3493461/3125000),(94491913798408719/500000000000000000),0,0,(171145482160859579/250000000000000000)⟩
+theorem valid782 : certificate782.Valid := by decide +kernel
+theorem sound782 : certificate782.Sound := rat_population_certificate_sound certificate782 valid782 WitnessCertificates.Batch039.valid782
+
+def certificate783 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate783,(306286155555872753049/1000000000000000000),(131199597695891156681/200000000000000000),(29153273741294621/200000000000000000),(1085943988309476827/1000000000000000000),4,0,(214339544950683563/500000000000000000),(328269276542792693/500000000000000000),(2527807769359586691/100000000000000000)⟩
+theorem valid783 : certificate783.Valid := by decide +kernel
+theorem sound783 : certificate783.Sound := rat_population_certificate_sound certificate783 valid783 WitnessCertificates.Batch039.valid783
+
+def certificate784 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate784,(18356026277332973089/62500000000000000),(66164555562751230549/100000000000000000),(2977418090138309/20000000000000000),(16524609129616323/15625000000000000),(1111747909/1000000000),(5864381389027387/31250000000000000),0,0,(173057148871508469/250000000000000000)⟩
+theorem valid784 : certificate784.Valid := by decide +kernel
+theorem sound784 : certificate784.Sound := rat_population_certificate_sound certificate784 valid784 WitnessCertificates.Batch039.valid784
+
+def certificate785 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate785,(18356026277332973089/62500000000000000),(66164555562751230549/100000000000000000),(2977418090138309/20000000000000000),(135692658324816089/125000000000000000),(1999996303/500000000),0,(214186053024490033/500000000000000000),(655716064172639157/1000000000000000000),(6291194853624526439/250000000000000000)⟩
+theorem valid785 : certificate785.Valid := by decide +kernel
+theorem sound785 : certificate785.Sound := rat_population_certificate_sound certificate785 valid785 WitnessCertificates.Batch039.valid785
+
+def certificate786 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate786,(140896379138290870909/500000000000000000),(16829748789247872461/25000000000000000),(31042564430555653/200000000000000000),(827484364641037/781250000000000),(137927681/125000000),(92696870039213249/500000000000000000),0,0,(352182789204628163/500000000000000000)⟩
+theorem valid786 : certificate786.Valid := by decide +kernel
+theorem sound786 : certificate786.Sound := rat_population_certificate_sound certificate786 valid786 WitnessCertificates.Batch039.valid786
+
+def certificate787 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate787,(140896379138290870909/500000000000000000),(16829748789247872461/25000000000000000),(31042564430555653/200000000000000000),(542434248758668351/500000000000000000),(3999999909/1000000000),0,(214121256360183107/500000000000000000),(655369115344976829/1000000000000000000),(1565974799311868649/62500000000000000)⟩
+theorem valid787 : certificate787.Valid := by decide +kernel
+theorem sound787 : certificate787.Sound := rat_population_certificate_sound certificate787 valid787 WitnessCertificates.Batch039.valid787
+
+def certificate788 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate788,(269612376137375753/976562500000000),(685077585366010359969/1000000000000000000),(161735269166716049/1000000000000000000),(1060237674901891067/1000000000000000000),(548587481/500000000),(45924768989499171/250000000000000000),0,0,(142801303315325107/200000000000000000)⟩
+theorem valid788 : certificate788.Valid := by decide +kernel
+theorem sound788 : certificate788.Sound := rat_population_certificate_sound certificate788 valid788 WitnessCertificates.Batch039.valid788
+
+def certificate789 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate789,(269612376137375753/976562500000000),(685077585366010359969/1000000000000000000),(161735269166716049/1000000000000000000),(271063519074154253/250000000000000000),4,0,(107092688592090587/250000000000000000),(655712444625089791/1000000000000000000),(12527302198200351329/500000000000000000)⟩
+theorem valid789 : certificate789.Valid := by decide +kernel
+theorem sound789 : certificate789.Sound := rat_population_certificate_sound certificate789 valid789 WitnessCertificates.Batch039.valid789
+
+def certificate790 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate790,(54105454784568570297/200000000000000000),(138230864950976201577/200000000000000000),(82532750560692869/500000000000000000),(265329210246596291/250000000000000000),(109296659/100000000),(182228460253340847/1000000000000000000),0,0,(22526053143828977/31250000000000000)⟩
+theorem valid790 : certificate790.Valid := by decide +kernel
+theorem sound790 : certificate790.Sound := rat_population_certificate_sound certificate790 valid790 WitnessCertificates.Batch039.valid790
+
+def certificate791 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate791,(54105454784568570297/200000000000000000),(138230864950976201577/200000000000000000),(82532750560692869/500000000000000000),(67744014282156977/62500000000000000),4,0,(13384576505872673/31250000000000000),(163885066123514543/250000000000000000),(12479702866627355967/500000000000000000)⟩
+theorem valid791 : certificate791.Valid := by decide +kernel
+theorem sound791 : certificate791.Sound := rat_population_certificate_sound certificate791 valid791 WitnessCertificates.Batch039.valid791
+
+def certificate792 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate792,(265120006639563607947/1000000000000000000),(348661016450138075451/500000000000000000),(168442461004015859/1000000000000000000),(530906791800516279/500000000000000000),(544615181/500000000),(181451657346801079/1000000000000000000),0,0,(45356521315323251/62500000000000000)⟩
+theorem valid792 : certificate792.Valid := by decide +kernel
+theorem sound792 : certificate792.Sound := rat_population_certificate_sound certificate792 valid792 WitnessCertificates.Batch039.valid792
+
+def certificate793 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate793,(265120006639563607947/1000000000000000000),(348661016450138075451/500000000000000000),(168442461004015859/1000000000000000000),(1083466690759114023/1000000000000000000),4,0,(428182837169852779/1000000000000000000),(131041880824031971/200000000000000000),(24831132594638999937/1000000000000000000)⟩
+theorem valid793 : certificate793.Valid := by decide +kernel
+theorem sound793 : certificate793.Sound := rat_population_certificate_sound certificate793 valid793 WitnessCertificates.Batch039.valid793
+
+def certificate794 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate794,(64964036552798129819/250000000000000000),(703582515360724228517/1000000000000000000),(171866702216895113/1000000000000000000),(1062909676751232527/1000000000000000000),(542270413/500000000),(90006119153118763/500000000000000000),0,0,(732876725123950387/1000000000000000000)⟩
+theorem valid794 : certificate794.Valid := by decide +kernel
+theorem sound794 : certificate794.Sound := rat_population_certificate_sound certificate794 valid794 WitnessCertificates.Batch039.valid794
+
+def certificate795 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate795,(64964036552798129819/250000000000000000),(703582515360724228517/1000000000000000000),(171866702216895113/1000000000000000000),(1083109506237893237/1000000000000000000),4,0,(17124672141365849/40000000000000000),(327516357717239591/500000000000000000),(773103615574589829/31250000000000000)⟩
+theorem valid795 : certificate795.Valid := by decide +kernel
+theorem sound795 : certificate795.Sound := rat_population_certificate_sound certificate795 valid795 WitnessCertificates.Batch039.valid795
+
+def certificate796 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate796,(254730784756770684207/1000000000000000000),(354968809464939955009/500000000000000000),(175338788646913233/1000000000000000000),(53198776970256737/50000000000000000),(67540899/62500000),(178550168860246677/1000000000000000000),0,0,(369672128195639823/500000000000000000)⟩
+theorem valid796 : certificate796.Valid := by decide +kernel
+theorem sound796 : certificate796.Sound := rat_population_certificate_sound certificate796 valid796 WitnessCertificates.Batch039.valid796
+
+def certificate797 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate797,(254730784756770684207/1000000000000000000),(354968809464939955009/500000000000000000),(175338788646913233/1000000000000000000),(54137431865904557/50000000000000000),(999993777/250000000),0,(214024882950778501/500000000000000000),(26194135282014529/40000000000000000),(4929728520984475523/200000000000000000)⟩
+theorem valid797 : certificate797.Valid := by decide +kernel
+theorem sound797 : certificate797.Sound := rat_population_certificate_sound certificate797 valid797 WitnessCertificates.Batch039.valid797
+
+def certificate798 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate798,(9989568828393191787/40000000000000000),(179097308164477876893/250000000000000000),(178859294864719239/1000000000000000000),(1065059461851778461/1000000000000000000),(538141177/500000000),(177116495879082243/1000000000000000000),0,0,(746189293148217977/1000000000000000000)⟩
+theorem valid798 : certificate798.Valid := by decide +kernel
+theorem sound798 : certificate798.Sound := rat_population_certificate_sound certificate798 valid798 WitnessCertificates.Batch039.valid798
+
+def certificate799 : RatPopulationCertificate := ⟨WitnessCertificates.Batch039.certificate799,(9989568828393191787/40000000000000000),(179097308164477876893/250000000000000000),(178859294864719239/1000000000000000000),(1082383171451409723/1000000000000000000),(799993431/200000000),0,(427981855535722447/1000000000000000000),(163667939215669241/250000000000000000),(24558981787317954221/1000000000000000000)⟩
+theorem valid799 : certificate799.Valid := by decide +kernel
+theorem sound799 : certificate799.Sound := rat_population_certificate_sound certificate799 valid799 WitnessCertificates.Batch039.valid799
+
+def certificates : List RatPopulationCertificate := [certificate780,certificate781,certificate782,certificate783,certificate784,certificate785,certificate786,certificate787,certificate788,certificate789,certificate790,certificate791,certificate792,certificate793,certificate794,certificate795,certificate796,certificate797,certificate798,certificate799]
+theorem certificates_sound : ∀ c∈certificates, c.Sound := by
+  unfold certificates
+  exact List.forall_mem_cons.mpr ⟨sound780,List.forall_mem_cons.mpr ⟨sound781,List.forall_mem_cons.mpr ⟨sound782,List.forall_mem_cons.mpr ⟨sound783,List.forall_mem_cons.mpr ⟨sound784,List.forall_mem_cons.mpr ⟨sound785,List.forall_mem_cons.mpr ⟨sound786,List.forall_mem_cons.mpr ⟨sound787,List.forall_mem_cons.mpr ⟨sound788,List.forall_mem_cons.mpr ⟨sound789,List.forall_mem_cons.mpr ⟨sound790,List.forall_mem_cons.mpr ⟨sound791,List.forall_mem_cons.mpr ⟨sound792,List.forall_mem_cons.mpr ⟨sound793,List.forall_mem_cons.mpr ⟨sound794,List.forall_mem_cons.mpr ⟨sound795,List.forall_mem_cons.mpr ⟨sound796,List.forall_mem_cons.mpr ⟨sound797,List.forall_mem_cons.mpr ⟨sound798,List.forall_mem_cons.mpr ⟨sound799,List.forall_mem_nil _⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩⟩
+end Cycle12.PopulationCertificates.Batch039

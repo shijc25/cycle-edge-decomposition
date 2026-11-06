@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "compiled_or_hash_valid_resume": 10554,
+  "total": 10554,
+  "failed": [],
+  "external_library_objects_reused": true,
+  "full_accepted_closure": true,
+  "target": null,
+  "new_output": "/tmp/cycle12-independent-replacement-2026-11-03/full-build",
+  "deferred_exact_current_run_objects_recovered": 7368
+}

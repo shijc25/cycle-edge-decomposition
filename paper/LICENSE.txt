@@ -1,0 +1,4 @@
+Copyright (c) 2026 Jiacheng Shi.
+The manuscript and its LaTeX source are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+License text: https://creativecommons.org/licenses/by/4.0/legalcode
+The Lean source and software are governed separately by the repository Apache-2.0 license and the preserved third-party notices.

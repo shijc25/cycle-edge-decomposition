@@ -1,0 +1,429 @@
+[
+  {
+    "dependency": "berge-matching",
+    "repository": "https://github.com/jtraverso/berge-matching",
+    "revision": "f01d042c071c778fb3f432312356136a92369076",
+    "license_status": "Apache-2.0",
+    "retained_module_count": 6,
+    "modules": [
+      {
+        "module": "BergeLib.Berge",
+        "path": "BergeLib/Berge.lean",
+        "retained_sha256": "fca379ce0af6197f7c8919971f2df98f6fb352fec5d0f172e1714a8cb3209960",
+        "upstream_recorded_sha256": "fca379ce0af6197f7c8919971f2df98f6fb352fec5d0f172e1714a8cb3209960",
+        "upstream_original_sha256": "fca379ce0af6197f7c8919971f2df98f6fb352fec5d0f172e1714a8cb3209960"
+      },
+      {
+        "module": "GallaiEdmondsLib.GEBarrier",
+        "path": "GallaiEdmondsLib/GEBarrier.lean",
+        "retained_sha256": "681d0443bacb2c7034038f868e593a8c03796914d77888c11ed4c1754c1c1c8a",
+        "upstream_recorded_sha256": "681d0443bacb2c7034038f868e593a8c03796914d77888c11ed4c1754c1c1c8a",
+        "upstream_original_sha256": "681d0443bacb2c7034038f868e593a8c03796914d77888c11ed4c1754c1c1c8a"
+      },
+      {
+        "module": "GallaiEdmondsLib.GEComponents",
+        "path": "GallaiEdmondsLib/GEComponents.lean",
+        "retained_sha256": "d401062beb6a3c25199073f05f3a21e4a3ef2ff5afc080fdac43d162c22355a7",
+        "upstream_recorded_sha256": "d401062beb6a3c25199073f05f3a21e4a3ef2ff5afc080fdac43d162c22355a7",
+        "upstream_original_sha256": "d401062beb6a3c25199073f05f3a21e4a3ef2ff5afc080fdac43d162c22355a7"
+      },
+      {
+        "module": "GallaiEdmondsLib.GEConstruct",
+        "path": "GallaiEdmondsLib/GEConstruct.lean",
+        "retained_sha256": "24767435b2b7bf6c217a536a5a10998b8219981efabdd01e50dbdfde5f5580e6",
+        "upstream_recorded_sha256": "24767435b2b7bf6c217a536a5a10998b8219981efabdd01e50dbdfde5f5580e6",
+        "upstream_original_sha256": "24767435b2b7bf6c217a536a5a10998b8219981efabdd01e50dbdfde5f5580e6"
+      },
+      {
+        "module": "GallaiEdmondsLib.GEMatching",
+        "path": "GallaiEdmondsLib/GEMatching.lean",
+        "retained_sha256": "e08db7ecfa153e7d36024f3a8b270e7e000e27134e1a3d7a4ea24d5f47d7a113",
+        "upstream_recorded_sha256": "e08db7ecfa153e7d36024f3a8b270e7e000e27134e1a3d7a4ea24d5f47d7a113",
+        "upstream_original_sha256": "e08db7ecfa153e7d36024f3a8b270e7e000e27134e1a3d7a4ea24d5f47d7a113"
+      },
+      {
+        "module": "GallaiEdmondsLib.GallaiEdmonds",
+        "path": "GallaiEdmondsLib/GallaiEdmonds.lean",
+        "retained_sha256": "3e84c07aa6c85f4e4fca470f2c4c4864d27833cb38c63fbaf91356d745e060e6",
+        "upstream_recorded_sha256": "3e84c07aa6c85f4e4fca470f2c4c4864d27833cb38c63fbaf91356d745e060e6",
+        "upstream_original_sha256": "3e84c07aa6c85f4e4fca470f2c4c4864d27833cb38c63fbaf91356d745e060e6"
+      }
+    ]
+  },
+  {
+    "dependency": "euler-petersen",
+    "repository": "https://github.com/jtraverso/euler-petersen",
+    "revision": "02c3f1a5327c5f066938860bb07e9fce226b36ca",
+    "license_status": "Apache-2.0",
+    "retained_module_count": 3,
+    "modules": [
+      {
+        "module": "Euler.Basic",
+        "path": "Euler/Basic.lean",
+        "retained_sha256": "080c41bc729368563d28fcf210a47d0f96d51ad06776df6c3149716840a09e3d",
+        "upstream_recorded_sha256": "080c41bc729368563d28fcf210a47d0f96d51ad06776df6c3149716840a09e3d",
+        "upstream_original_sha256": "080c41bc729368563d28fcf210a47d0f96d51ad06776df6c3149716840a09e3d"
+      },
+      {
+        "module": "Euler.Trail",
+        "path": "Euler/Trail.lean",
+        "retained_sha256": "dd3d6aff57d0acb961e9670c8fb9dec6c85201d565c29b1792d7b608d4f642c5",
+        "upstream_recorded_sha256": "dd3d6aff57d0acb961e9670c8fb9dec6c85201d565c29b1792d7b608d4f642c5",
+        "upstream_original_sha256": "dd3d6aff57d0acb961e9670c8fb9dec6c85201d565c29b1792d7b608d4f642c5"
+      },
+      {
+        "module": "Euler.Orientation",
+        "path": "Euler/Orientation.lean",
+        "retained_sha256": "15e17640554b8d15ae14fbbd41db8a1d913017bbeb985040275559016e95832b",
+        "upstream_recorded_sha256": "15e17640554b8d15ae14fbbd41db8a1d913017bbeb985040275559016e95832b",
+        "upstream_original_sha256": "15e17640554b8d15ae14fbbd41db8a1d913017bbeb985040275559016e95832b"
+      }
+    ]
+  },
+  {
+    "dependency": "haggkvist-janssen",
+    "repository": "https://github.com/jtraverso/haggkvist-janssen",
+    "revision": "807e08bd7c480d4fae80c1b78377d23989d39ab0",
+    "license_status": "Apache-2.0",
+    "retained_module_count": 5,
+    "modules": [
+      {
+        "module": "LeanPool.ListEdgeColoringComplete.Basic",
+        "path": "LeanPool/ListEdgeColoringComplete/Basic.lean",
+        "retained_sha256": "333ec8871512b3235e4bf4b77319c7acf033f2a851fcafcfa77e17cb58fdd7ca",
+        "upstream_recorded_sha256": "333ec8871512b3235e4bf4b77319c7acf033f2a851fcafcfa77e17cb58fdd7ca",
+        "upstream_original_sha256": "333ec8871512b3235e4bf4b77319c7acf033f2a851fcafcfa77e17cb58fdd7ca"
+      },
+      {
+        "module": "LeanPool.ListEdgeColoringComplete.Certificate",
+        "path": "LeanPool/ListEdgeColoringComplete/Certificate.lean",
+        "retained_sha256": "53f6bb5006e5aced2a14ba263664b1062730e2c28ef7934dd36362482b0e3284",
+        "upstream_recorded_sha256": "53f6bb5006e5aced2a14ba263664b1062730e2c28ef7934dd36362482b0e3284",
+        "upstream_original_sha256": "53f6bb5006e5aced2a14ba263664b1062730e2c28ef7934dd36362482b0e3284"
+      },
+      {
+        "module": "LeanPool.ListEdgeColoringComplete.Main",
+        "path": "LeanPool/ListEdgeColoringComplete/Main.lean",
+        "retained_sha256": "926cba9806b6e3a078480525257d1e451da79a2999eb0c703429224e76f98f4a",
+        "upstream_recorded_sha256": "926cba9806b6e3a078480525257d1e451da79a2999eb0c703429224e76f98f4a",
+        "upstream_original_sha256": "926cba9806b6e3a078480525257d1e451da79a2999eb0c703429224e76f98f4a"
+      },
+      {
+        "module": "LeanPool.ListEdgeColoringComplete.Polynomial",
+        "path": "LeanPool/ListEdgeColoringComplete/Polynomial.lean",
+        "retained_sha256": "3ed1641db2079bcdcd1e9689f5ab57996513aa78a814a8c5ae4ff8b7b84d0d5d",
+        "upstream_recorded_sha256": "3ed1641db2079bcdcd1e9689f5ab57996513aa78a814a8c5ae4ff8b7b84d0d5d",
+        "upstream_original_sha256": "3ed1641db2079bcdcd1e9689f5ab57996513aa78a814a8c5ae4ff8b7b84d0d5d"
+      },
+      {
+        "module": "LeanPool.ListEdgeColoringComplete",
+        "path": "LeanPool/ListEdgeColoringComplete.lean",
+        "retained_sha256": "0181c8b74dfe6887afb5d5322c5424ba57b3b53811fafcd7b7dfaccaf461dff3",
+        "upstream_recorded_sha256": "0181c8b74dfe6887afb5d5322c5424ba57b3b53811fafcd7b7dfaccaf461dff3",
+        "upstream_original_sha256": "0181c8b74dfe6887afb5d5322c5424ba57b3b53811fafcd7b7dfaccaf461dff3"
+      }
+    ]
+  },
+  {
+    "dependency": "haxell",
+    "repository": "https://github.com/mbucic4/Nearly-spanning-Lovasz",
+    "revision": "7f2728d07ce648ed74cae08bbfa7084b9ec13f4b",
+    "license_status": "Apache-2.0",
+    "retained_module_count": 1,
+    "modules": [
+      {
+        "module": "HaxellLib.Haxell",
+        "path": "HaxellLib/Haxell.lean",
+        "retained_sha256": "6fbdbee782e74254510ad8a4470e9d3f75013851eb0aaccad643e17448aa6ce8",
+        "upstream_recorded_sha256": "6fbdbee782e74254510ad8a4470e9d3f75013851eb0aaccad643e17448aa6ce8",
+        "upstream_original_sha256": "6fbdbee782e74254510ad8a4470e9d3f75013851eb0aaccad643e17448aa6ce8"
+      }
+    ]
+  },
+  {
+    "dependency": "karger",
+    "repository": "https://github.com/AntoineduFresne/Master-Thesis",
+    "revision": "b964d9ef3d30471841814f0d42ffb391e78ff2a4",
+    "license_status": "Apache-2.0",
+    "retained_module_count": 1,
+    "modules": [
+      {
+        "module": "ARA.Helpers.MultiGraph",
+        "path": "ARA/Helpers/MultiGraph.lean",
+        "retained_sha256": "87cd3ddbcdef098c188f272ed1853058586932332fb5d798e7b0188f45005ae0",
+        "upstream_recorded_sha256": "87cd3ddbcdef098c188f272ed1853058586932332fb5d798e7b0188f45005ae0",
+        "upstream_original_sha256": "87cd3ddbcdef098c188f272ed1853058586932332fb5d798e7b0188f45005ae0"
+      }
+    ]
+  },
+  {
+    "dependency": "menger",
+    "repository": "https://github.com/jtraverso/menger-hamiltonian",
+    "revision": "35c5f684f9bfbd244bd0999ce725623ab571adb6",
+    "license_status": "Apache-2.0",
+    "retained_module_count": 2,
+    "modules": [
+      {
+        "module": "MengerHamilton.MengerCore",
+        "path": "MengerHamilton/MengerCore.lean",
+        "retained_sha256": "2222b03a08e2c238d415133b30ea337086d1e4c6c87b4eca29010885ded80700",
+        "upstream_recorded_sha256": "2222b03a08e2c238d415133b30ea337086d1e4c6c87b4eca29010885ded80700",
+        "upstream_original_sha256": "2222b03a08e2c238d415133b30ea337086d1e4c6c87b4eca29010885ded80700"
+      },
+      {
+        "module": "MengerHamilton.Menger",
+        "path": "MengerHamilton/Menger.lean",
+        "retained_sha256": "e297798fc564b1922e22b840a925b1c58b41e31246228afd8ade5dff43c0020e",
+        "upstream_recorded_sha256": "e297798fc564b1922e22b840a925b1c58b41e31246228afd8ade5dff43c0020e",
+        "upstream_original_sha256": "e297798fc564b1922e22b840a925b1c58b41e31246228afd8ade5dff43c0020e"
+      }
+    ]
+  },
+  {
+    "dependency": "openai",
+    "repository": "https://github.com/openai/math",
+    "revision": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "license_status": "Apache-2.0",
+    "retained_module_count": 34,
+    "modules": [
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.Main",
+        "path": "OAI/Combinatorics/CycleDecomposition/Main.lean",
+        "retained_sha256": "03edc7620d991daaa5629313c05395708b83ea44e5634a5ef69227ba2bcf77d9",
+        "upstream_recorded_sha256": "03edc7620d991daaa5629313c05395708b83ea44e5634a5ef69227ba2bcf77d9",
+        "upstream_original_sha256": "03edc7620d991daaa5629313c05395708b83ea44e5634a5ef69227ba2bcf77d9"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.LayerCosts",
+        "path": "OAI/Combinatorics/CycleDecomposition/LayerCosts.lean",
+        "retained_sha256": "7ddbf378c4883c08ba7ef4d4117cae15cc1ea2d32c9465921c8aa8d14b8c6e0b",
+        "upstream_recorded_sha256": "7ddbf378c4883c08ba7ef4d4117cae15cc1ea2d32c9465921c8aa8d14b8c6e0b",
+        "upstream_original_sha256": "7ddbf378c4883c08ba7ef4d4117cae15cc1ea2d32c9465921c8aa8d14b8c6e0b"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.UniformLayers",
+        "path": "OAI/Combinatorics/CycleDecomposition/UniformLayers.lean",
+        "retained_sha256": "30c59f4a7cdcbf9f5e0f782ba1135b50e27bf9a5eec0a10bb71841474a2d98b1",
+        "upstream_recorded_sha256": "30c59f4a7cdcbf9f5e0f782ba1135b50e27bf9a5eec0a10bb71841474a2d98b1",
+        "upstream_original_sha256": "30c59f4a7cdcbf9f5e0f782ba1135b50e27bf9a5eec0a10bb71841474a2d98b1"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.CostRegrouping",
+        "path": "OAI/Combinatorics/CycleDecomposition/CostRegrouping.lean",
+        "retained_sha256": "290d0a17dba2d0307cbe582ee53adcb316990ddde3d9198396416f40cca5977c",
+        "upstream_recorded_sha256": "290d0a17dba2d0307cbe582ee53adcb316990ddde3d9198396416f40cca5977c",
+        "upstream_original_sha256": "290d0a17dba2d0307cbe582ee53adcb316990ddde3d9198396416f40cca5977c"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.PrefixSelection",
+        "path": "OAI/Combinatorics/CycleDecomposition/PrefixSelection.lean",
+        "retained_sha256": "2ace7017770a5c9593fa87e907fea11d775cd0775c22ec786557628c5058a22c",
+        "upstream_recorded_sha256": "2ace7017770a5c9593fa87e907fea11d775cd0775c22ec786557628c5058a22c",
+        "upstream_original_sha256": "2ace7017770a5c9593fa87e907fea11d775cd0775c22ec786557628c5058a22c"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.BatchIndexing",
+        "path": "OAI/Combinatorics/CycleDecomposition/BatchIndexing.lean",
+        "retained_sha256": "5dd10ea708404173b8a60e086de39a9a63938c75badbafdb31bb0425160da072",
+        "upstream_recorded_sha256": "5dd10ea708404173b8a60e086de39a9a63938c75badbafdb31bb0425160da072",
+        "upstream_original_sha256": "5dd10ea708404173b8a60e086de39a9a63938c75badbafdb31bb0425160da072"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.ScaleDecomposition",
+        "path": "OAI/Combinatorics/CycleDecomposition/ScaleDecomposition.lean",
+        "retained_sha256": "305492ed8166f07a1dbf8d768767efc39416b10e48ab0ced695c3c0e82574fa0",
+        "upstream_recorded_sha256": "305492ed8166f07a1dbf8d768767efc39416b10e48ab0ced695c3c0e82574fa0",
+        "upstream_original_sha256": "305492ed8166f07a1dbf8d768767efc39416b10e48ab0ced695c3c0e82574fa0"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.ScaleHierarchy",
+        "path": "OAI/Combinatorics/CycleDecomposition/ScaleHierarchy.lean",
+        "retained_sha256": "d0164e09f11e039d7a532026da9aaa4dd16b8cdfcf8c627c31ec995f9fbc8d78",
+        "upstream_recorded_sha256": "d0164e09f11e039d7a532026da9aaa4dd16b8cdfcf8c627c31ec995f9fbc8d78",
+        "upstream_original_sha256": "d0164e09f11e039d7a532026da9aaa4dd16b8cdfcf8c627c31ec995f9fbc8d78"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.ScaleExtraction",
+        "path": "OAI/Combinatorics/CycleDecomposition/ScaleExtraction.lean",
+        "retained_sha256": "86e67577ca500858e49b367a3044bf856ebe1f5e5f0b3513657b6510a08cc76c",
+        "upstream_recorded_sha256": "86e67577ca500858e49b367a3044bf856ebe1f5e5f0b3513657b6510a08cc76c",
+        "upstream_original_sha256": "86e67577ca500858e49b367a3044bf856ebe1f5e5f0b3513657b6510a08cc76c"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.ExpansionBoxes",
+        "path": "OAI/Combinatorics/CycleDecomposition/ExpansionBoxes.lean",
+        "retained_sha256": "08474a1cae35c28c3691033cb4de5bbceec2392dc0fd7545700c62073f0cc548",
+        "upstream_recorded_sha256": "08474a1cae35c28c3691033cb4de5bbceec2392dc0fd7545700c62073f0cc548",
+        "upstream_original_sha256": "08474a1cae35c28c3691033cb4de5bbceec2392dc0fd7545700c62073f0cc548"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.DepthFirstSearch",
+        "path": "OAI/Combinatorics/CycleDecomposition/DepthFirstSearch.lean",
+        "retained_sha256": "5a25eaad1f55ccee0cae9e6200a1cc0dfa2b04b429cdd053fc405c7a8fa83097",
+        "upstream_recorded_sha256": "5a25eaad1f55ccee0cae9e6200a1cc0dfa2b04b429cdd053fc405c7a8fa83097",
+        "upstream_original_sha256": "5a25eaad1f55ccee0cae9e6200a1cc0dfa2b04b429cdd053fc405c7a8fa83097"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.CoupledResolution",
+        "path": "OAI/Combinatorics/CycleDecomposition/CoupledResolution.lean",
+        "retained_sha256": "6f4e75dd021691bd4ce076dbc5d5bacc865ce23170dc0027baa69b3110e8d53a",
+        "upstream_recorded_sha256": "6f4e75dd021691bd4ce076dbc5d5bacc865ce23170dc0027baa69b3110e8d53a",
+        "upstream_original_sha256": "6f4e75dd021691bd4ce076dbc5d5bacc865ce23170dc0027baa69b3110e8d53a"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.BatchResolution",
+        "path": "OAI/Combinatorics/CycleDecomposition/BatchResolution.lean",
+        "retained_sha256": "a3a7fb57b6aee2ce1682c0f13d618abeff490886b3602db18030118be0002cdc",
+        "upstream_recorded_sha256": "a3a7fb57b6aee2ce1682c0f13d618abeff490886b3602db18030118be0002cdc",
+        "upstream_original_sha256": "a3a7fb57b6aee2ce1682c0f13d618abeff490886b3602db18030118be0002cdc"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.Templates",
+        "path": "OAI/Combinatorics/CycleDecomposition/Templates.lean",
+        "retained_sha256": "c8e63c3241a525021205d940a55b1e61f46b0e28630c1ddc0df2b0998806af02",
+        "upstream_recorded_sha256": "c8e63c3241a525021205d940a55b1e61f46b0e28630c1ddc0df2b0998806af02",
+        "upstream_original_sha256": "c8e63c3241a525021205d940a55b1e61f46b0e28630c1ddc0df2b0998806af02"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.CycleLifting",
+        "path": "OAI/Combinatorics/CycleDecomposition/CycleLifting.lean",
+        "retained_sha256": "1faf8d15cd44a3ff639f45eb8265dbd90aa0ea289d9c0c83a614e653502ec1ea",
+        "upstream_recorded_sha256": "1faf8d15cd44a3ff639f45eb8265dbd90aa0ea289d9c0c83a614e653502ec1ea",
+        "upstream_original_sha256": "1faf8d15cd44a3ff639f45eb8265dbd90aa0ea289d9c0c83a614e653502ec1ea"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.BatchRouting",
+        "path": "OAI/Combinatorics/CycleDecomposition/BatchRouting.lean",
+        "retained_sha256": "b59516c44bec94e1b56b86788899211c65026f3af04a1f008761c153356f9503",
+        "upstream_recorded_sha256": "b59516c44bec94e1b56b86788899211c65026f3af04a1f008761c153356f9503",
+        "upstream_original_sha256": "b59516c44bec94e1b56b86788899211c65026f3af04a1f008761c153356f9503"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.BatchPreparation",
+        "path": "OAI/Combinatorics/CycleDecomposition/BatchPreparation.lean",
+        "retained_sha256": "f9c3bf8e297602d91358c5c0a9e13277edc63581db7f81f66a7a2b595b113670",
+        "upstream_recorded_sha256": "f9c3bf8e297602d91358c5c0a9e13277edc63581db7f81f66a7a2b595b113670",
+        "upstream_original_sha256": "f9c3bf8e297602d91358c5c0a9e13277edc63581db7f81f66a7a2b595b113670"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.CollisionEstimates",
+        "path": "OAI/Combinatorics/CycleDecomposition/CollisionEstimates.lean",
+        "retained_sha256": "164e10dff3d9b722850f1f689918589cb18ecd50ddd056785bb20c5957fd9a61",
+        "upstream_recorded_sha256": "164e10dff3d9b722850f1f689918589cb18ecd50ddd056785bb20c5957fd9a61",
+        "upstream_original_sha256": "164e10dff3d9b722850f1f689918589cb18ecd50ddd056785bb20c5957fd9a61"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.Pairing",
+        "path": "OAI/Combinatorics/CycleDecomposition/Pairing.lean",
+        "retained_sha256": "7e8bbecd35e0fc9ebb83d54ed3574da5e70cc47f35752bcea15bdbc63f5e1808",
+        "upstream_recorded_sha256": "7e8bbecd35e0fc9ebb83d54ed3574da5e70cc47f35752bcea15bdbc63f5e1808",
+        "upstream_original_sha256": "7e8bbecd35e0fc9ebb83d54ed3574da5e70cc47f35752bcea15bdbc63f5e1808"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.BatchEndpoints",
+        "path": "OAI/Combinatorics/CycleDecomposition/BatchEndpoints.lean",
+        "retained_sha256": "b9f508fa150ee4180b5589514a917e11ea4d20528a41259e11284228895f6eb5",
+        "upstream_recorded_sha256": "b9f508fa150ee4180b5589514a917e11ea4d20528a41259e11284228895f6eb5",
+        "upstream_original_sha256": "b9f508fa150ee4180b5589514a917e11ea4d20528a41259e11284228895f6eb5"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.BatchPathDeletion",
+        "path": "OAI/Combinatorics/CycleDecomposition/BatchPathDeletion.lean",
+        "retained_sha256": "6345ea5cd484dd5c819820e4695f501bfa2dd89d197abc15901f41d9f4908f12",
+        "upstream_recorded_sha256": "6345ea5cd484dd5c819820e4695f501bfa2dd89d197abc15901f41d9f4908f12",
+        "upstream_original_sha256": "6345ea5cd484dd5c819820e4695f501bfa2dd89d197abc15901f41d9f4908f12"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.BatchLovasz",
+        "path": "OAI/Combinatorics/CycleDecomposition/BatchLovasz.lean",
+        "retained_sha256": "8b88880e74a764300e8411eaa6662377ea1722933b65e175e7b775c841e0b96b",
+        "upstream_recorded_sha256": "8b88880e74a764300e8411eaa6662377ea1722933b65e175e7b775c841e0b96b",
+        "upstream_original_sha256": "8b88880e74a764300e8411eaa6662377ea1722933b65e175e7b775c841e0b96b"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.Decomposition",
+        "path": "OAI/Combinatorics/CycleDecomposition/Decomposition.lean",
+        "retained_sha256": "4f742482cd903447ea3ce10f25f80f8dfbc84540e92877e771c4c08acb441853",
+        "upstream_recorded_sha256": "4f742482cd903447ea3ce10f25f80f8dfbc84540e92877e771c4c08acb441853",
+        "upstream_original_sha256": "4f742482cd903447ea3ce10f25f80f8dfbc84540e92877e771c4c08acb441853"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.EndpointPartition",
+        "path": "OAI/Combinatorics/CycleDecomposition/EndpointPartition.lean",
+        "retained_sha256": "c4d7364ac829d52001e1567b499f3764ecc4fec91889d400974fbee47947a62c",
+        "upstream_recorded_sha256": "c4d7364ac829d52001e1567b499f3764ecc4fec91889d400974fbee47947a62c",
+        "upstream_original_sha256": "c4d7364ac829d52001e1567b499f3764ecc4fec91889d400974fbee47947a62c"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.PathDeletion",
+        "path": "OAI/Combinatorics/CycleDecomposition/PathDeletion.lean",
+        "retained_sha256": "70408e8d6e9132193d9b88cf1a3341645068971027cb6ee5c872690e51f0582d",
+        "upstream_recorded_sha256": "70408e8d6e9132193d9b88cf1a3341645068971027cb6ee5c872690e51f0582d",
+        "upstream_original_sha256": "70408e8d6e9132193d9b88cf1a3341645068971027cb6ee5c872690e51f0582d"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.Lovasz",
+        "path": "OAI/Combinatorics/CycleDecomposition/Lovasz.lean",
+        "retained_sha256": "1fa567a0ccd24344fa6eae72a05c25d1090bca655f32aaa5991148a1f2fa7353",
+        "upstream_recorded_sha256": "1fa567a0ccd24344fa6eae72a05c25d1090bca655f32aaa5991148a1f2fa7353",
+        "upstream_original_sha256": "1fa567a0ccd24344fa6eae72a05c25d1090bca655f32aaa5991148a1f2fa7353"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.ReservoirRemainder",
+        "path": "OAI/Combinatorics/CycleDecomposition/ReservoirRemainder.lean",
+        "retained_sha256": "e66d9790fbf617721598ec86278bae7418f9ad93cb22b2b9d0164a49a11e3408",
+        "upstream_recorded_sha256": "e66d9790fbf617721598ec86278bae7418f9ad93cb22b2b9d0164a49a11e3408",
+        "upstream_original_sha256": "e66d9790fbf617721598ec86278bae7418f9ad93cb22b2b9d0164a49a11e3408"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.ReservoirCycles",
+        "path": "OAI/Combinatorics/CycleDecomposition/ReservoirCycles.lean",
+        "retained_sha256": "03b4280fec516953b650dfef2a9623d992cd9f6b398b13064e16051f53d974c9",
+        "upstream_recorded_sha256": "03b4280fec516953b650dfef2a9623d992cd9f6b398b13064e16051f53d974c9",
+        "upstream_original_sha256": "03b4280fec516953b650dfef2a9623d992cd9f6b398b13064e16051f53d974c9"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.Routing",
+        "path": "OAI/Combinatorics/CycleDecomposition/Routing.lean",
+        "retained_sha256": "bda59fcac1565efb22c3bfd21c59b97b8708457e2a3aba334e2e7cb84e8f8586",
+        "upstream_recorded_sha256": "bda59fcac1565efb22c3bfd21c59b97b8708457e2a3aba334e2e7cb84e8f8586",
+        "upstream_original_sha256": "bda59fcac1565efb22c3bfd21c59b97b8708457e2a3aba334e2e7cb84e8f8586"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.Representatives",
+        "path": "OAI/Combinatorics/CycleDecomposition/Representatives.lean",
+        "retained_sha256": "4bc9e049246588a1b02582da448de42a2adcbebc780158af57ed097deea0f2d8",
+        "upstream_recorded_sha256": "4bc9e049246588a1b02582da448de42a2adcbebc780158af57ed097deea0f2d8",
+        "upstream_original_sha256": "4bc9e049246588a1b02582da448de42a2adcbebc780158af57ed097deea0f2d8"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.EdgeSplitting",
+        "path": "OAI/Combinatorics/CycleDecomposition/EdgeSplitting.lean",
+        "retained_sha256": "267f9f00cb7f4f43f3d00399c4c10bb226e013544fd1ff9391c077d960054136",
+        "upstream_recorded_sha256": "267f9f00cb7f4f43f3d00399c4c10bb226e013544fd1ff9391c077d960054136",
+        "upstream_original_sha256": "267f9f00cb7f4f43f3d00399c4c10bb226e013544fd1ff9391c077d960054136"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.ReservoirSampling",
+        "path": "OAI/Combinatorics/CycleDecomposition/ReservoirSampling.lean",
+        "retained_sha256": "296d2e743613f0338aaeed65919709193af57f60375e0f810c5a5836091d7dfb",
+        "upstream_recorded_sha256": "296d2e743613f0338aaeed65919709193af57f60375e0f810c5a5836091d7dfb",
+        "upstream_original_sha256": "296d2e743613f0338aaeed65919709193af57f60375e0f810c5a5836091d7dfb"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.SamplingCuts",
+        "path": "OAI/Combinatorics/CycleDecomposition/SamplingCuts.lean",
+        "retained_sha256": "eb67aed05e2269fcae158355fc57affed794d9eb5410464315ec369e07553079",
+        "upstream_recorded_sha256": "eb67aed05e2269fcae158355fc57affed794d9eb5410464315ec369e07553079",
+        "upstream_original_sha256": "eb67aed05e2269fcae158355fc57affed794d9eb5410464315ec369e07553079"
+      },
+      {
+        "module": "OAI.Combinatorics.CycleDecomposition.Sampling",
+        "path": "OAI/Combinatorics/CycleDecomposition/Sampling.lean",
+        "retained_sha256": "0da57bc89c09bab54b5007e3b30ead035aebb369076a3a0929c0e7d67824a048",
+        "upstream_recorded_sha256": "0da57bc89c09bab54b5007e3b30ead035aebb369076a3a0929c0e7d67824a048",
+        "upstream_original_sha256": "0da57bc89c09bab54b5007e3b30ead035aebb369076a3a0929c0e7d67824a048"
+      }
+    ]
+  }
+]

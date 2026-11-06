@@ -1,0 +1,44 @@
+{
+  "repository": "https://github.com/AntoineduFresne/Master-Thesis",
+  "commit": "b964d9ef3d30471841814f0d42ffb391e78ff2a4",
+  "license": "Apache-2.0",
+  "source_changes": false,
+  "modules": {
+    "ARA.Infrastructure.Tactics": {
+      "sha256": "8aad0de89a9d691b649d9c22be49bc056ed827d3a77b771b601f31a9e3234aad"
+    },
+    "ARA.Infrastructure.SimpAttr": {
+      "sha256": "97a64c3832895042fa358d2dd0b45e3bfa072ae68b7a8ea6181714be29ade48a"
+    },
+    "ARA.Helpers.MultiGraph": {
+      "sha256": "87cd3ddbcdef098c188f272ed1853058586932332fb5d798e7b0188f45005ae0"
+    },
+    "ARA.Algorithms.Karger.Karger": {
+      "sha256": "678b58c645201f325a6009d4a58d8e7c94d2f1e46c14c560f9f9197bd892ca50"
+    },
+    "ARA.Infrastructure.Complexity.TimedSemantics": {
+      "sha256": "38c01fbd6a3d8ec0da156ab28abe0273d168e48a07f8a0f180de0ade797da299"
+    },
+    "ARA.Infrastructure.Complexity.TimeMT": {
+      "sha256": "57f587195a8f6f640e4b8d12000be6b9e23083de0679e4571e522fa3331b727f"
+    },
+    "ARA.Infrastructure.Complexity.MonadCost": {
+      "sha256": "86b67d78fc8b8c52ed76a444f673d8173a90ce3b95edf60ac205be7fc5a7dde7"
+    },
+    "ARA.Infrastructure.Complexity.ExpectedCost": {
+      "sha256": "1992d557754f0597b9abefcdbf69f3ea764f6f3c436274678ff42981c1ccd8bd"
+    },
+    "ARA.Infrastructure.Randomness.LawfulRandMonad": {
+      "sha256": "5be84ec7327a25bd4d372a7069f45cf807a4f7fa64670da19e4f287a60c20d6f"
+    },
+    "ARA.Infrastructure.Randomness.Prob": {
+      "sha256": "a4f4a94a8ec52140f8accae93d290c873b7f2f88d3be80c981c6608d94a891b0"
+    },
+    "ARA.Infrastructure.Correctness.Correctness": {
+      "sha256": "125bf4f309749089ee41b04e3a78a6cf6d550c9622da0a57e057cbb4a5e42824"
+    },
+    "ARA.Infrastructure.Correctness.Amplify": {
+      "sha256": "1c3f7d8419ccfb58d0a9ac4af9eb2c6ed0e94de0300214ef8952dfbbcdbbda8e"
+    }
+  }
+}

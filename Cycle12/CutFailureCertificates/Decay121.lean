@@ -1,0 +1,88 @@
+import Cycle12.RationalDecay
+
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+
+namespace Cycle12.CutFailureCertificates.Decay121
+
+def certificate2420 : RatDecayCertificate := ⟨(205594289235294297/1000000000000000000),(98467221350285359993/31250000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2420 : certificate2420.Valid := by decide +kernel
+theorem sound2420 : certificate2420.Sound := rat_decay_certificate_sound certificate2420 valid2420
+
+def certificate2421 : RatDecayCertificate := ⟨(204594909229222329/1000000000000000000),(98467221350285359993/31250000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2421 : certificate2421.Valid := by decide +kernel
+theorem sound2421 : certificate2421.Sound := rat_decay_certificate_sound certificate2421 valid2421
+
+def certificate2422 : RatDecayCertificate := ⟨(7661737122471662303/1000000000000000000),(98467221350285359993/31250000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2422 : certificate2422.Valid := by decide +kernel
+theorem sound2422 : certificate2422.Sound := rat_decay_certificate_sound certificate2422 valid2422
+
+def certificate2423 : RatDecayCertificate := ⟨(7517850739212297831/1000000000000000000),(98467221350285359993/31250000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2423 : certificate2423.Valid := by decide +kernel
+theorem sound2423 : certificate2423.Sound := rat_decay_certificate_sound certificate2423 valid2423
+
+def certificate2424 : RatDecayCertificate := ⟨(17350385587257669/1000000000000000000),(98467221350285359993/31250000000000000),(27335108130132827821/1000000000000000000),(672177/500000000000000000),(451821919329/250000000000000000000000000000000000),57⟩
+theorem valid2424 : certificate2424.Valid := by decide +kernel
+theorem sound2424 : certificate2424.Sound := rat_decay_certificate_sound certificate2424 valid2424
+
+def certificate2425 : RatDecayCertificate := ⟨(1698290905798271/100000000000000000),(98467221350285359993/31250000000000000),(1070246313845855829/40000000000000000),(599637/250000000000000000),(359564531769/62500000000000000000000000000000000),57⟩
+theorem valid2425 : certificate2425.Valid := by decide +kernel
+theorem sound2425 : certificate2425.Sound := rat_decay_certificate_sound certificate2425 valid2425
+
+def certificate2426 : RatDecayCertificate := ⟨(54970401734689659821/500000000000000000),(98467221350285359993/31250000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2426 : certificate2426.Valid := by decide +kernel
+theorem sound2426 : certificate2426.Sound := rat_decay_certificate_sound certificate2426 valid2426
+
+def certificate2427 : RatDecayCertificate := ⟨(25978313916551057/125000000000000000),(3107746678209120739629/1000000000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2427 : certificate2427.Valid := by decide +kernel
+theorem sound2427 : certificate2427.Sound := rat_decay_certificate_sound certificate2427 valid2427
+
+def certificate2428 : RatDecayCertificate := ⟨(4164400825700821/20000000000000000),(3107746678209120739629/1000000000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2428 : certificate2428.Valid := by decide +kernel
+theorem sound2428 : certificate2428.Sound := rat_decay_certificate_sound certificate2428 valid2428
+
+def certificate2429 : RatDecayCertificate := ⟨(207172091511312551/1000000000000000000),(3107746678209120739629/1000000000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2429 : certificate2429.Valid := by decide +kernel
+theorem sound2429 : certificate2429.Sound := rat_decay_certificate_sound certificate2429 valid2429
+
+def certificate2430 : RatDecayCertificate := ⟨(1935518588896573121/250000000000000000),(3107746678209120739629/1000000000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2430 : certificate2430.Valid := by decide +kernel
+theorem sound2430 : certificate2430.Sound := rat_decay_certificate_sound certificate2430 valid2430
+
+def certificate2431 : RatDecayCertificate := ⟨(7595740872814924991/1000000000000000000),(3107746678209120739629/1000000000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2431 : certificate2431.Valid := by decide +kernel
+theorem sound2431 : certificate2431.Sound := rat_decay_certificate_sound certificate2431 valid2431
+
+def certificate2432 : RatDecayCertificate := ⟨(4006596382260187/200000000000000000),(3107746678209120739629/1000000000000000000),(31128716494734441699/1000000000000000000),(7567/250000000000000000),(57259489/62500000000000000000000000000000000),57⟩
+theorem valid2432 : certificate2432.Valid := by decide +kernel
+theorem sound2432 : certificate2432.Sound := rat_decay_certificate_sound certificate2432 valid2432
+
+def certificate2433 : RatDecayCertificate := ⟨(4910382624832317/250000000000000000),(3107746678209120739629/1000000000000000000),(1526022529105841631/50000000000000000),(6951/125000000000000000),(48316401/15625000000000000000000000000000000),61⟩
+theorem valid2433 : certificate2433.Valid := by decide +kernel
+theorem sound2433 : certificate2433.Sound := rat_decay_certificate_sound certificate2433 valid2433
+
+def certificate2434 : RatDecayCertificate := ⟨(109107327633224482037/1000000000000000000),(3107746678209120739629/1000000000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2434 : certificate2434.Valid := by decide +kernel
+theorem sound2434 : certificate2434.Sound := rat_decay_certificate_sound certificate2434 valid2434
+
+def certificate2435 : RatDecayCertificate := ⟨(208743777993326251/1000000000000000000),(24522918443256535917/8000000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2435 : certificate2435.Valid := by decide +kernel
+theorem sound2435 : certificate2435.Sound := rat_decay_certificate_sound certificate2435 valid2435
+
+def certificate2436 : RatDecayCertificate := ⟨(52296287444115993/250000000000000000),(24522918443256535917/8000000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2436 : certificate2436.Valid := by decide +kernel
+theorem sound2436 : certificate2436.Sound := rat_decay_certificate_sound certificate2436 valid2436
+
+def certificate2437 : RatDecayCertificate := ⟨(104040479175117941/500000000000000000),(24522918443256535917/8000000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2437 : certificate2437.Valid := by decide +kernel
+theorem sound2437 : certificate2437.Sound := rat_decay_certificate_sound certificate2437 valid2437
+
+def certificate2438 : RatDecayCertificate := ⟨(3890769633351947379/500000000000000000),(24522918443256535917/8000000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2438 : certificate2438.Valid := by decide +kernel
+theorem sound2438 : certificate2438.Sound := rat_decay_certificate_sound certificate2438 valid2438
+
+def certificate2439 : RatDecayCertificate := ⟨(3816976497117786071/500000000000000000),(24522918443256535917/8000000000000000),40,(1/200000000000000000),(1/40000000000000000000000000000000000),48⟩
+theorem valid2439 : certificate2439.Valid := by decide +kernel
+theorem sound2439 : certificate2439.Sound := rat_decay_certificate_sound certificate2439 valid2439
+
+end Cycle12.CutFailureCertificates.Decay121

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "source": "Cycle12/FoldPotentialAnchors/Phase25/T16/Point00.lean",
+  "source_sha256": "a4785a836cf86ab5748a64f9e9394ad56f767706b5e53cdba464280fa2a6d9dc",
+  "earlier_header_snapshot_sha256": "7ce8a1ac8d46b77a839a6327244f75ad996f9a010d29f4b9d2283115a4410558",
+  "earlier_compiled_object_sha256": "e3dbb61e2b6e9412ca53d2526f9fb09b2ee0d2eba3956342952d176df77a8979",
+  "ordinary_replay_object_sha256": "e3dbb61e2b6e9412ca53d2526f9fb09b2ee0d2eba3956342952d176df77a8979",
+  "exit_code": 0,
+  "elapsed_seconds": 5.971,
+  "earlier_source_count": 567,
+  "description": "Retrospective ordinary recompilation after the original probe record was lost with temporary storage. The actual current-run cached object hash is taken from the previously persisted journal."
+}

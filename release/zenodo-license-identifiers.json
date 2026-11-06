@@ -1,0 +1,32 @@
+{
+  "checked_utc": "2026-11-04T05:22:46.107714+00:00",
+  "scope": "Read-only checks of public Zenodo license vocabulary identifiers; no deposit or upload.",
+  "results": [
+    {
+      "url": "https://zenodo.org/api/vocabularies/licenses/apache-2.0",
+      "http_status": 200,
+      "id": "apache-2.0",
+      "title": "Apache License 2.0"
+    },
+    {
+      "url": "https://zenodo.org/api/vocabularies/licenses/Apache-2.0",
+      "http_status": 404
+    },
+    {
+      "url": "https://zenodo.org/api/vocabularies/licenses/cc-by-4.0",
+      "http_status": 200,
+      "id": "cc-by-4.0",
+      "title": "Creative Commons Attribution 4.0 International"
+    },
+    {
+      "url": "https://zenodo.org/api/vocabularies/licenses/CC-BY-4.0",
+      "http_status": 404
+    }
+  ],
+  "metadata_licenses": {
+    ".zenodo.json": "apache-2.0",
+    "release/zenodo-paper.json": "cc-by-4.0"
+  },
+  "license_terms_changed": false,
+  "remote_record_created": false
+}

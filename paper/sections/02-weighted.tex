@@ -1,0 +1,77 @@
+\section{Weighted packings and component-rank normalization}\label{sec:weighted}
+A \emph{cycle packing} $\mathcal P$ is a family of pairwise edge-disjoint
+simple cycles in $G$. Let $p(\mathcal P)$ be its number of cycles and let
+$q(\mathcal P)$ be the number of edges not used by the cycles. Define
+\begin{equation}\label{eq:weights}
+ \wt_\sigma(\mathcal P)=p(\mathcal P)+\frac{23}{42}q(\mathcal P),
+ \qquad
+ z(\mathcal P)=42p(\mathcal P)+23q(\mathcal P).
+\end{equation}
+The cycles together with the $q(\mathcal P)$ remaining singleton edges form
+an exact decomposition of $E(G)$. We use the empty packing when $G$ has no
+cycles. Since the possible integer costs form a nonempty subset of $\N$,
+a minimum-cost packing exists.
+
+\begin{lemma}\label{lem:forest}
+For a minimum-cost packing $\mathcal P$, the graph formed by its uncovered
+edges is a forest. Consequently $q(\mathcal P)\le r(G)$.
+\end{lemma}
+\begin{proof}
+If the uncovered graph contains a simple cycle of length $\ell\ge3$, adding
+that cycle to the packing changes its integer cost by $42-23\ell<0$,
+contrary to minimality. The uncovered graph $F$ retains all $n$ vertices,
+so $q(\mathcal P)=\abs{E(F)}=n-c(F)\le n-c(G)$, since deletion of edges
+cannot merge components.
+\end{proof}
+
+The following finite amplification is the normalization used by the
+formal proof. In particular, no limiting argument is needed.
+\begin{lemma}\label{lem:amplification}
+Suppose every finite simple graph $H$ has a packing of integer cost at most
+$485\abs{V(H)}$. Then every nonempty finite simple graph $G$ has a packing
+of integer cost at most $485(\abs{V(G)}-1)$.
+\end{lemma}
+\begin{proof}
+Choose a vertex $v\in V(G)$ and form a graph $W$ from $486$ disjoint copies
+of $G$ by identifying their copies of $v$. The resulting graph is simple and
+has $486(n-1)+1$ vertices. A simple cycle of $W$ lies entirely in a single
+copy: to visit two copies it would have to pass through the common vertex
+twice before closing. Every singleton edge also belongs to one copy.
+Thus restriction of any packing of $W$ gives a decomposition of each copy.
+If $z$ is the minimum integer cost for $G$, every packing of $W$ has cost
+at least $486z$.
+
+The assumed order bound gives
+\[
+ 486z\le485\bigl(486(n-1)+1\bigr).
+\]
+If $z>485(n-1)$, integrality implies $z\ge485(n-1)+1$; multiplying by
+$486$ contradicts the preceding inequality. Therefore
+$z\le485(n-1)$, as required.
+\end{proof}
+
+\begin{proposition}\label{prop:weighted-reduction}
+The weighted order bound~\eqref{eq:weighted-order} implies
+Theorem~\ref{thm:main}.
+\end{proposition}
+\begin{proof}
+Multiplying~\eqref{eq:weighted-order} by $42$ gives the hypothesis of
+Lemma~\ref{lem:amplification}. Apply that lemma to each connected component
+of $G$ and assemble the resulting packings. This gives a packing of integer
+cost at most $485r(G)$. Choose a minimum-cost packing $\mathcal P$ of $G$;
+then $z(\mathcal P)\le485r(G)$ and Lemma~\ref{lem:forest} gives
+$q(\mathcal P)\le r(G)$. Hence
+\[
+ 42\bigl(p(\mathcal P)+q(\mathcal P)\bigr)
+   =z(\mathcal P)+19q(\mathcal P)
+   \le504r(G).
+\]
+Dividing by $42$ proves the assertion. Isolated components contribute zero
+to the rank and require no parts. If $n=0$, the empty decomposition suffices.
+\end{proof}
+
+We shall prove a stronger form of~\eqref{eq:weighted-order}, with an
+order-dependent factor $\phi(n)\le1$. Every recursive call in that proof
+is on a graph with strictly fewer vertices; induced subgraphs, quotient
+graphs, and padded graphs are transported along explicit vertex bijections
+when necessary.
